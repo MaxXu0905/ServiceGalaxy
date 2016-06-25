@@ -1,0 +1,5 @@
+ret=`sgadmin <<EOF | grep  $1|wc -l
+psr
+exit
+EOF`
+exit $ret

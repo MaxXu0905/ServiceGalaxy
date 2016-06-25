@@ -1,0 +1,23 @@
+include $(SGDIR)/udataobj/env_public.mk
+CFLAGS =  -I../include/ -I${APPDIR}/include -I${SGDIR}/include -I$(BOOST_ROOT)
+LDFLAGS =  -L../lib -lgtest -ltestclient -L${APPDIR}/lib -lbps
+BINS = BPSTest 
+TARGET = $(BINS)
+
+OBJS = src/BPSTest.o
+
+all:$(TARGET)
+
+BPSTest:$(OBJS)
+	$(CC) $(CFLAGS)  -o $@ src/BPSTest.o $(LDFLAGS)
+
+.SUFFIXES:.o .h
+.SUFFIXES:.cpp .o
+.cpp.o:
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+clean:
+	rm -f $(TARGET) src/*.o
+
+remake:
+	make clean all

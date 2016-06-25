@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xs:element name="repositories">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="repository" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation><![CDATA[
+配置仓库节点。
+						]]></xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:group ref="repository"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:group name="repository">
+		<xs:all>
+			<xs:element name="key">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+配置文件关键字，客户端查询的标识。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="config">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+配置文件全路径。该配置文件是不带版本的，当客户端查询特定版本时，将查询配置文件全路径.版本号对应配置文件。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:all>
+	</xs:group>
+</xs:schema>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resource>
+	<ipckey>1</ipckey>
+	<uid>423</uid>
+	<gid>421</gid>
+	<perm>0660</perm>
+	<options>MIGALLOWED</options>
+	<master>M1,M2</master>
+	<curent>0</curent>
+	<maxpes>100</maxpes>
+	<maxnodes>100</maxnodes>
+	<maxaccsrs>10000</maxaccsrs>
+	<maxques>10000</maxques>
+	<maxsgt>1000</maxsgt>
+	<maxsvrs>10000</maxsvrs>
+	<maxsvcs>10000</maxsvcs>
+	<quebkts>10000</quebkts>
+	<sgtbkts>10000</sgtbkts>
+	<svrbkts>10000</svrbkts>
+	<svcbkts>10000</svcbkts>
+	<scan_unit>60</scan_unit>
+	<sanity_scan>10</sanity_scan>
+	<stack_size>33554432</stack_size>
+	<max_num_msg>1000</max_num_msg>
+	<max_msg_size>4096</max_msg_size>
+	<block_time>60</block_time>
+	<dbbm_wait>10</dbbm_wait>
+	<bbm_query>10</bbm_query>
+</resource>
+<machines>
+	<machine>
+		<pmid>dlxel01</pmid>
+		<lmid>M1</lmid>
+		<sgdir>/unibss/devusers/xugq/ServiceGalaxy/debug</sgdir>
+		<appdir>/unibss/devusers/xugq/nbf/ServiceGalaxy/cmd</appdir>
+		<sgconfig>/unibss/devusers/xugq/nbf/ServiceGalaxy/cmd/SGPROFILE</sgconfig>
+		<envfile/>
+		<ulogpfx/>
+		<maxaccsrs>10000</maxaccsrs>
+		<perm>0660</perm>
+		<uid>423</uid>
+		<gid>421</gid>
+		<netload>1000</netload>
+	</machine>
+	<machine>
+		<pmid>hpbl10</pmid>
+		<lmid>M2</lmid>
+		<sgdir>/unibss/devusers/xugq/ServiceGalaxy/debug</sgdir>
+		<appdir>/unibss/devusers/xugq/ServiceGalaxy/debug/bin</appdir>
+		<sgconfig>/unibss/devusers/xugq/ServiceGalaxy/debug/bin/SGCONFIG2</sgconfig>
+		<envfile/>
+		<ulogpfx/>
+		<maxaccsrs>10000</maxaccsrs>
+		<perm>0660</perm>
+		<uid>423</uid>
+		<gid>421</gid>
+		<netload>1000</netload>
+	</machine>
+</machines>
+<networks>
+	<network>
+		<lmid>M1</lmid>
+		<naddr>//10.1.247.2:30001</naddr>
+		<nlsaddr>//10.1.247.2:20001</nlsaddr>
+		<netgroup>DEFAULTNET</netgroup>
+		<tcpkeepalive>Y</tcpkeepalive>
+	</network>
+	<network>
+		<lmid>M2</lmid>
+		<naddr>//hpbl10:30002</naddr>
+		<nlsaddr>//hpbl10:20002</nlsaddr>
+		<netgroup>DEFAULTNET</netgroup>
+		<tcpkeepalive>Y</tcpkeepalive>
+	</network>
+</networks>
+<sgroups>
+	<sgroup>
+		<sgname>GRP1</sgname>
+		<curmid>0</curmid>
+		<lmid>M1</lmid>
+		<grpid>1</grpid>
+		<envfile/>
+	</sgroup>
+	<sgroup>
+		<sgname>GRP2</sgname>
+		<curmid>0</curmid>
+		<lmid>M2</lmid>
+		<grpid>2</grpid>
+		<envfile/>
+	</sgroup>
+</sgroups>
+<servers>
+	<server>
+		<restart>Y</restart>
+		<grace>60</grace>
+		<maxgen>100</maxgen>
+		<sqname/>
+		<rcmd/>
+		<filename>server</filename>
+		<svrid>101</svrid>
+		<rqperm>0660</rqperm>
+		<rpperm>0660</rpperm>
+		<min>100</min>
+		<max>110</max>
+		<max_num_msg>1000</max_num_msg>
+		<max_msg_size>4096</max_msg_size>
+		<sgname>GRP1</sgname>
+		<replyq>N</replyq>
+		<clopt>-A</clopt>
+		<envfile/>
+	</server>
+	<server>
+		<restart>Y</restart>
+		<grace>60</grace>
+		<maxgen>100</maxgen>
+		<sqname/>
+		<rcmd/>
+		<filename>server</filename>
+		<svrid>101</svrid>
+		<rqperm>0660</rqperm>
+		<rpperm>0660</rpperm>
+		<min>100</min>
+		<max>110</max>
+		<max_num_msg>1000</max_num_msg>
+		<max_msg_size>4096</max_msg_size>
+		<sgname>GRP2</sgname>
+		<replyq>N</replyq>
+		<clopt>-A</clopt>
+		<envfile/>
+	</server>
+</servers>
+<services>
+	<service>
+		<sgname>GRP1</sgname>
+		<priority>100</priority>
+		<svc_name>SERVICE</svc_name>
+		<svc_load>100</svc_load>
+		<load_limit>10000</load_limit>
+		<svctimeout>60</svctimeout>
+		<svcblktime>60</svcblktime>
+	</service>
+</services>

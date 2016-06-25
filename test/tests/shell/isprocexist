@@ -1,0 +1,1 @@
+exit `ps -ef|grep $LOGNAME|grep $1|grep -v grep|grep -v $0|wc -l`

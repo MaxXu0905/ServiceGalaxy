@@ -1,0 +1,11 @@
+<repositories>
+	<repository>
+		<key>DUPCHK</key>
+		<config></config>
+	</repository>
+	<repository>
+		<key>BPS</key>
+		<config>/unibss/devusers/wanghp/ServiceGalaxy/debug/bps.xml</config>
+	</repository>
+</repositories>
+</repositories>

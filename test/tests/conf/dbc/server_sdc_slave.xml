@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<servicegalaxy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:noNamespaceSchemaLocation="server.xsd">
+<resource>
+	<ipckey>${sg_ipckey}</ipckey>
+<!--	<uid>423</uid>
+	<gid>421</gid>-->
+	<perm>0660</perm>
+	<options>MIGALLOWED</options>
+	<master>M1</master>
+	<curent>0</curent>
+	<maxpes>100</maxpes>
+	<maxnodes>100</maxnodes>
+	<maxaccsrs>10000</maxaccsrs>
+	<maxques>10000</maxques>
+	<maxsgt>1000</maxsgt>
+	<maxsvrs>10000</maxsvrs>
+	<maxsvcs>10000</maxsvcs>
+	<quebkts>10000</quebkts>
+	<sgtbkts>10000</sgtbkts>
+	<svrbkts>10000</svrbkts>
+	<svcbkts>10000</svcbkts>
+	<scan_unit>6</scan_unit>
+	<sanity_scan>10</sanity_scan>
+	<stack_size>33554432</stack_size>
+	<max_num_msg>1000</max_num_msg>
+	<max_msg_size>4096</max_msg_size>
+	<block_time>1</block_time>
+	<dbbm_wait>10</dbbm_wait>
+	<bbm_query>10</bbm_query>
+</resource>
+<machines>
+	<machine>
+		<pmid>${PMID1}</pmid>
+		<lmid>M1</lmid>
+		<sgdir>${SGROOT}</sgdir>
+		<appdir>${APPROOT}</appdir>
+		<sgconfig>${SGPROFILE}</sgconfig>
+		<envfile>${APPROOT}/envfile</envfile>
+		<ulogpfx/>
+		<maxaccsrs>10000</maxaccsrs>
+		<perm>0660</perm>
+		<netload>1000</netload>
+	</machine>
+	<machine>
+            <pmid>${PMID2}</pmid>
+            <lmid>M2</lmid>
+            <sgdir>${SGROOT}</sgdir>
+            <appdir>${APPROOT}</appdir>
+            <sgconfig>${SGPROFILE}</sgconfig>
+            <envfile>${APPROOT}/envfile</envfile>
+            <ulogpfx/>
+            <maxaccsrs>10000</maxaccsrs>
+            <netload>1000</netload>
+     </machine>
+</machines>
+<networks>
+	<network>
+		<lmid>M1</lmid>
+		<naddr>${PMID1_naddr}</naddr>
+		<nlsaddr>${PMID1_nlsaddr}</nlsaddr>
+		<netgroup>DEFAULTNET</netgroup>
+		<tcpkeepalive>Y</tcpkeepalive>
+	</network>
+    <network>
+        <lmid>M2</lmid>
+        <naddr>${PMID2_naddr}</naddr>
+        <nlsaddr>${PMID2_nlsaddr}</nlsaddr>
+        <netgroup>DEFAULTNET</netgroup>
+        <tcpkeepalive>Y</tcpkeepalive>
+    </network>
+</networks>
+<sgroups>
+	<sgroup>
+		<sgname>GRP1</sgname>
+		<curmid>0</curmid>
+		<lmid>M1</lmid>
+		<grpid>1</grpid>
+		<envfile/>
+	</sgroup>
+	<sgroup>
+        <sgname>GRP2</sgname>
+        <curmid>0</curmid>
+        <lmid>M2</lmid>
+        <grpid>2</grpid>
+        <envfile/>
+    </sgroup>
+</sgroups>
+<servers>
+		<server>
+                <filename>METAREP</filename>
+                <svrid>100</svrid>
+                <sequence>10</sequence>
+                <sgname>GRP1</sgname>
+                <clopt>-A -- --conf=metarep.xml</clopt>
+        </server>
+        <server>
+                <filename>DBC</filename>
+                <svrid>200</svrid>
+                <sequence>20</sequence>
+                <sgname>GRP1</sgname>
+                <clopt>-A -- --dbckey=DBC --sdckey=SDC</clopt>
+        </server>
+        <server>
+                <filename>SDC</filename>
+                <svrid>300</svrid>
+                <sequence>30</sequence>
+                <sgname>GRP1</sgname>
+                <min>1</min>
+                <max>5</max>
+                <clopt>-A -- --dbckey=DBC --sdckey=SDC</clopt>
+        </server>
+         <server>
+                <filename>DBC</filename>
+                <svrid>200</svrid>
+                <sequence>20</sequence>
+                <sgname>GRP2</sgname>
+                <clopt>-A -- --dbckey=DBC --sdckey=SDC</clopt>
+        </server>
+        <server>
+                <filename>SDC</filename>
+                <svrid>300</svrid>
+                <sequence>30</sequence>
+                <sgname>GRP2</sgname>
+                <min>1</min>
+                <max>5</max>
+                <clopt>-A -- --dbckey=DBC --sdckey=SDC</clopt>
+        </server>
+</servers>
+
+<services>
+	<service>
+		<sgname>GRP1</sgname>
+		<priority>100</priority>
+		<svc_name>SERVICE</svc_name>
+		<svc_load>100</svc_load>
+		<load_limit>10000</load_limit>
+		<svctimeout>60</svctimeout>
+		<svcblktime>60</svcblktime>
+	</service>
+</services>
+</servicegalaxy>

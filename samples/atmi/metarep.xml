@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repositories>
+	<repository>
+		<key>DBC</key>
+		<config>/unibss/devusers/xugq/ServiceGalaxy/debug/dbc.xml</config>
+	</repository>
+	<repository>
+		<key>SDC</key>
+		<config>/unibss/devusers/xugq/ServiceGalaxy/debug/sdc.xml</config>
+	</repository>
+</repositories>

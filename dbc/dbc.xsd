@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xs:element name="dbc">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="resource">
+					<xs:annotation>
+						<xs:documentation><![CDATA[
+公共参数定义。
+						]]></xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:group ref="resource"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="users">
+					<xs:annotation>
+						<xs:documentation><![CDATA[
+所有用户定义。
+						]]></xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:group ref="user"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="tables">
+					<xs:annotation>
+						<xs:documentation><![CDATA[
+所有表定义。
+						]]></xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:group ref="table"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="indexes">
+					<xs:annotation>
+						<xs:documentation><![CDATA[
+所有索引定义。
+						]]></xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:group ref="index"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="functions" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation><![CDATA[
+所有函数定义。
+						]]></xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:group ref="function"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:group name="resource">
+		<xs:all>
+			<xs:element name="ipckey">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+唯一标识DBC平台实例的ID，不同的DBC实例要求该值不同。可配置环境变量，如${ipckey}。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="uid" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建系统资源（共享内存、消息队列）时的用户ID。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="gid" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建系统资源（共享内存、消息队列）时的组ID。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="perm" default="0660" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建系统资源（共享内存、消息队列）时的权限。支持10进制和8进制两种写法。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[0-9]+"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="polltime" default="60" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+BBM对资源进行检查的时间间隔，单位秒。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="robustint" default="10" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+BBM对某些特定资源进行健壮性检查的间隔，单位次，即经过多少个scan_unit进行一次健壮性检查。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="stacksize" default="33554432" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+在多线程模式下，新创建的线程栈大小。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="statlevel" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+<=0：关闭统计
+1-9：统计处理时间
+>=10：同时记录最大、最小时间
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="sysdir">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+系统文件目录，如序列号等。可配置环境变量，如${sysdir}。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="1023"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="syncdir">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+同步文件目录位置。可配置环境变量，如${syncdir}。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="1023"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="datadir">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+数据加载与保存的目录。可配置环境变量，如${datadir}。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="1023"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="shmsize" default="1073741824" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+每块共享内存的字节数。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="shmcount" default="2" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+系统启动时创建的共享内存块数。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="reservecount" default="10" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+系统在不重启的情况下可以扩展的最大共享内存块数，在64位平台下，该值可以设置很大。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="postsigno" default="14" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+当有系统变更需要通知客户端时，发送的信号。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxusers" default="100" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+单节点上可以创建的最大用户数。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxtes" default="100" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+系统最大允许的表数量。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxies" default="10" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+一个表中最大允许的索引数。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxses" default="100" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+系统最大允许的序列数量。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxclts" default="1000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+单节点上最大允许的客户端数量。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="sebkts" default="100" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+序列号按名称哈希查找时的表大小。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="segredos" default="1000000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+单节点上允许重做的记录数，该值的大小影响未提交的记录数。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="libs" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+DBC启动时动态加载的库文件列表，以空格分隔。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="1023"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:all>
+	</xs:group>
+	<xs:group name="user">
+		<xs:sequence>
+			<xs:element name="user" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+用户定义。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="usrname">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+DBC的登录用户名。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="password">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+DBC的登录密码，用md5sum加密。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="dbname" default="ORACLE" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+从表加载数据时的数据库名称。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="ORACLE"/>
+									<xs:enumeration value="ALTIBASE"/>
+									<xs:enumeration value="DBC"/>
+									<xs:enumeration value="GP"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="openinfo" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+连接数据库时的参数。其格式如下：
+[@](param_name=param_value) [; [@](param_name=param_value)]…
+如果在参数前加了@符，表示其值是加密的，需要预先通过sgpasswd命令加密；如果有特殊字符，可通过双引号或反斜杠转义。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="perm">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+该用户可以操作的权限。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:list>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="INSERT"/>
+											<xs:enumeration value="UPDATE"/>
+											<xs:enumeration value="DELETE"/>
+											<xs:enumeration value="SELECT"/>
+											<xs:enumeration value="CREATE"/>
+											<xs:enumeration value="DROP"/>
+											<xs:enumeration value="ALTER"/>
+											<xs:enumeration value="TRUNCATE"/>
+											<xs:enumeration value="RELOAD"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:list>
+							</xs:simpleType>
+						</xs:element>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="table">
+		<xs:sequence>
+			<xs:element name="table" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+表结构定义。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="table_id">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+表ID，API调用时作为表ID进行访问。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="table_name">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+表名称，可通过dbc_admin进行查看。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="127"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="dbtable_name" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+从数据库加载的表名。可配置环境变量，如：${DBTABLE_NAME}。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="127"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="conditions" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+从数据库加载时的限定条件。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:maxLength value="1023"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="dbname" default="ORACLE" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+从表加载数据时的数据库名称。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="ORACLE"/>
+									<xs:enumeration value="ALTIBASE"/>
+									<xs:enumeration value="DBC"/>
+									<xs:enumeration value="GP"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="openinfo" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+连接数据库时的参数。其格式如下：
+[@](param_name=param_value) [; [@](param_name=param_value)]…
+如果在参数前加了@符，表示其值是加密的，需要预先通过sgpasswd命令加密；如果有特殊字符，可通过双引号或反斜杠转义。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="escape" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+从文件加载时，如果非0，则为变长格式时的分隔符转义字符，ASCII格式。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="delimiter" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+从文件加载时，如果非0，则为变长格式，并表示记录的分隔符，ASCII格式。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="segment_rows" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+表一次扩展的记录数。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="options" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+DB：从数据库中获取
+FILE：从文件中获取
+BFILE：从二进制文件获取
+INCREMENT：增量加载
+IN_MEM：内存表，不需同步
+NO_LOAD：暂不加载
+AGG：记录冲突时合并
+DISCARD：记录冲突时丢弃
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:list>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="DB"/>
+											<xs:enumeration value="FILE"/>
+											<xs:enumeration value="BFILE"/>
+											<xs:enumeration value="INCREMENT"/>
+											<xs:enumeration value="IN_MEM"/>
+											<xs:enumeration value="NO_LOAD"/>
+											<xs:enumeration value="AGG"/>
+											<xs:enumeration value="DISCARD"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:list>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="partition_type" default="STRING" minOccurs="0">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="STRING">
+										<xs:annotation>
+											<xs:documentation><![CDATA[
+字符串型
+											]]></xs:documentation>
+										</xs:annotation>
+									</xs:enumeration>
+									<xs:enumeration value="NUMBER"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="partitions" default="1" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+表需要分区的个数。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="fields">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+该节点为复合节点，由多个field节点构成。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:group ref="table_field"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="table_field">
+		<xs:sequence>
+			<xs:element name="field" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+表字段定义。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="field_name">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+生成的结构中的字段名称。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="31"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="fetch_name" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+从数据库加载时的字段名称。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="255"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="update_name" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+更新数据到数据库时的字段名称。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="255"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="column_name" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+表中的列名称，可通过dbc_admin查看。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="31"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="field_size" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+只有当field_type为string/vstring时，才有效，表示字段的最大长度，不包括结尾的’\0’。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="0"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="field_type">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+字段类型。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="CHAR"/>
+									<xs:enumeration value="UCHAR"/>
+									<xs:enumeration value="SHORT"/>
+									<xs:enumeration value="USHORT"/>
+									<xs:enumeration value="INT"/>
+									<xs:enumeration value="UINT"/>
+									<xs:enumeration value="LONG"/>
+									<xs:enumeration value="ULONG"/>
+									<xs:enumeration value="FLOAT"/>
+									<xs:enumeration value="DOUBLE"/>
+									<xs:enumeration value="STRING"/>
+									<xs:enumeration value="VSTRING"/>
+									<xs:enumeration value="DATE"/>
+									<xs:enumeration value="TIME"/>
+									<xs:enumeration value="DATETIME"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="is_primary" default="N" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+该字段是否为主键。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="Y"/>
+									<xs:enumeration value="N"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="agg_type" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+如果指定了AGG，则需要指定该值，其值为：
+sum：累加
+min：取最小值
+max：取最大值
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="SUM"/>
+									<xs:enumeration value="MIN"/>
+									<xs:enumeration value="MAX"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="is_partition" default="N" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+该字段是否为分区字段，如果分区数大于1，则至少有一个字段要设置该值。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="Y"/>
+									<xs:enumeration value="N"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="partition_format" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+参与分区的字段格式。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:maxLength value="255"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="load_size" default="0" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+从文件文件加载时的长度。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="0"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="index">
+		<xs:sequence>
+			<xs:element name="index" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+索引结构定义。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="table_id">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+表ID，API调用时作为表ID进行访问。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="index_id">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+索引ID，API调用时作为索引ID进行访问。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="0"/>
+									<xs:maxExclusive value="100"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="index_name">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+索引名称，可通过dbc_admin进行查看。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="127"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="index_type">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+PRIMARY：主键
+UNIQUE：唯一索引
+NORMAL：普通索引
+RANGE：范围索引
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:list>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="PRIMARY"/>
+											<xs:enumeration value="UNIQUE"/>
+											<xs:enumeration value="NORMAL"/>
+											<xs:enumeration value="RANGE"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:list>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="method_type">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+SEQ：顺序查找
+BINRARY：二进制查找
+HASH：哈希查找
+STRING：字符串类型HASH
+NUMBER：数字类型HASH
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:list>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="SEQ"/>
+											<xs:enumeration value="BINARY"/>
+											<xs:enumeration value="HASH"/>
+											<xs:enumeration value="STRING"/>
+											<xs:enumeration value="NUMBER"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:list>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="buckets" default="100000" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+在HASH查找方式下，HASH数组的大小。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="segment_rows" default="100000" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+索引一次扩展的记录数。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="fields">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+该节点为复合节点，由多个field节点构成。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:group ref="index_field"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="index_field">
+		<xs:sequence>
+			<xs:element name="field" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+索引字段定义。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="field_name">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+生成的结构中的字段名称。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="31"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="is_hash" default="N" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+是否属于哈希字段。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="Y"/>
+									<xs:enumeration value="N"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="hash_format" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+参与哈希的字段格式。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:maxLength value="255"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="search_type" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+EQUAL：相等
+STRCHR：指定字符在字符串中
+STRSTR：指定字符串在字符串中
+WILDCARD：任意匹配
+LESS：小于
+MORE：大于
+IGNORE_CASE：忽略大消息
+MATCH_N：最长匹配
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:list>
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="EQUAL"/>
+											<xs:enumeration value="="/>
+											<xs:enumeration value="STRCHR"/>
+											<xs:enumeration value="STRSTR"/>
+											<xs:enumeration value="WILDCARD"/>
+											<xs:enumeration value="*"/>
+											<xs:enumeration value="LESS"/>
+											<xs:enumeration value="&lt;"/>
+											<xs:enumeration value="MORE"/>
+											<xs:enumeration value=">&gt;"/>
+											<xs:enumeration value="IGNORE_CASE"/>
+											<xs:enumeration value="MATCH_N"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:list>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="special_type" type="xs:integer" default="0" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+特殊类型，兼容性要求，由具体程序解释。
+								]]></xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="range_group" type="xs:integer" default="0" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+范围开始字段为负值，范围结束字段为正值，绝对值相同的范围为一组，为0表示不是范围分组。
+								]]></xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						<xs:element name="range_offset" type="xs:integer" default="0" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+在范围比较时的调整量。
+								]]></xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="function">
+		<xs:sequence>
+			<xs:element name="function" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+函数定义。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="table_id">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+表ID，API调用时作为表ID进行访问。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="index_id">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+索引ID，API调用时作为索引ID进行访问。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="0"/>
+									<xs:maxExclusive value="100"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="fields">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+该节点为复合节点，由多个field节点构成。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:group ref="function_field"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="function_field">
+		<xs:sequence>
+			<xs:element name="field" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+函数字段定义。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="field_name">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+生成的结构中的字段名称。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="31"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="nullable" default="N" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+字段是否允许为空。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="Y"/>
+									<xs:enumeration value="N"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="field_ref" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+如果指定了参考字段，则生成的函数中，该字段与参考字段使用同一个变量。
+								]]></xs:documentation>
+							</xs:annotation>
+						</xs:element>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+</xs:schema>

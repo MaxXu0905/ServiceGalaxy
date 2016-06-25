@@ -1,0 +1,7527 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-26 15:53+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=GBK\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "ERROR: Must call build() first before put()."
+msgstr "错误：调用put()前需要先调用build()。"
+
+msgid "ERROR: Lib name length too long"
+msgstr "错误：库名超长"
+
+msgid ""
+"Usage: {1} -k key [-b block_size] [-c block_count] [-m monitor_seconds] [-"
+"v]\n"
+msgstr ""
+"用法：{1} -k key [-b block_size] [-c block_count] [-m monitor_seconds] [-v]\n"
+
+msgid "ERROR: Invalid option: {1}"
+msgstr "错误：无效的选项：{1}"
+
+msgid "ERROR: Invalid argument: {1}"
+msgstr "错误：无效的参数：{1}"
+
+msgid "Can't attach to shared memory, key = {1}"
+msgstr "不能登录到共享内存，key = {1}"
+
+msgid "ERROR: Error executing {1}"
+msgstr "错误：执行{1}错误"
+
+msgid "ERROR: malloc() failed, error_code = {1}"
+msgstr "错误：malloc()失败，错误编码 = {1}"
+
+msgid "INFO: Memory allocated, address = 0x"
+msgstr "信息：内存已分配，地址 = 0x"
+
+msgid "ERROR: Address provided is not correct."
+msgstr "错误：提供的地址不正确。"
+
+msgid "ERROR: free() failed, error_code = {1}"
+msgstr "错误：free()失败，错误编码 = {1}"
+
+msgid "INFO: Memory freed successfully"
+msgstr "信息：内存释放成功"
+
+msgid "INFO: Memory reallocated, address = 0x"
+msgstr "信息：内存重新分配，地址 = 0x"
+
+msgid "INFO: Component key created successfully."
+msgstr "信息：组件关键字创建成功。"
+
+msgid "ERROR: Invalid parameter provided."
+msgstr "错误：提供的参数无效。"
+
+msgid "ERROR: Component key destroy failed, error_code = {1}"
+msgstr "错误：组件关键字销毁失败，错误编码 = {1}"
+
+msgid "INFO: Component key destroyed successfully."
+msgstr "信息：组件关键字销毁成功。"
+
+msgid "Shared Memory Parameters:"
+msgstr "共享内存参数："
+
+msgid "          SHM COUNT:  {1}"
+msgstr "       共享内存块数：{1}"
+
+msgid "        BLOCK COUNT:  {1}"
+msgstr "               块数：{1}"
+
+msgid "         BLOCK SIZE:  {1}"
+msgstr "             块大小：{1}"
+
+msgid "       BUCKET INDEX:  {1}"
+msgstr "             桶索引：{1}"
+
+msgid "          IPCKEY[{1}]:  "
+msgstr "       IPC关键字[{1}]："
+
+msgid "Shared Memory ID[{1}]:  "
+msgstr "     共享内存标识[{1}："
+
+msgid "     SHM Address[{1}]:  "
+msgstr "    共享内存地址[{1}]："
+
+msgid "          SYSLOCK(spin, pid, time): ({1}, {2}, {3})"
+msgstr "          SYSLOCK(spin, pid, time)：({1}, {2}, {3})"
+
+msgid "    FREE SPINLOCK(spin, pid, time): ({1}, {2}, {3})"
+msgstr "    空闲 SPINLOCK(spin, pid, time)：({1}, {2}, {3})"
+
+msgid "    USED SPINLOCK(spin, pid, time): ({1}, {2}, {3})"
+msgstr "    在用 SPINLOCK(spin, pid, time)：({1}, {2}, {3})"
+
+msgid "                         FREE LINK: ("
+msgstr "                         空闲 Link：("
+
+msgid "                         USED LINK: ("
+msgstr "                         在用 Link：("
+
+msgid "BUCKET {1}"
+msgstr "桶 {1}"
+
+msgid "        USED LINK[{1}]:     ("
+msgstr "        在用 Link[{1}]：   ("
+
+msgid "        FREE LINK[{1}]:     ("
+msgstr "        空闲 Link[{1}]：   ("
+
+msgid "Shared Memory Pair Parameters:"
+msgstr "共享内存参数："
+
+msgid "-----------------------------------:"
+msgstr "-----------------------------------："
+
+msgid "                  KEY:  {1}"
+msgstr "               关键字： {1}"
+
+msgid "LOCK(spin, pid, time):  ({1}, {2}, {3})"
+msgstr "LOCK(spin, pid, time)：({1}, {2}, {3})"
+
+msgid "                MAGIC:  0x"
+msgstr "                 魔数： 0x"
+
+msgid "            REF COUNT:  {1}"
+msgstr "               引用数： {1}"
+
+msgid "           TOTAL SIZE:  {1}"
+msgstr "               总大小： {1}"
+
+msgid "            HASH SIZE:  {1}"
+msgstr "             哈希大小： {1}"
+
+msgid "            DATA SIZE:  {1}"
+msgstr "           数据块大小： {1}"
+
+msgid "             DATA LEN:  {1}"
+msgstr "             数据长度： {1}"
+
+msgid "            FREE LINK:  {1}"
+msgstr "            空闲 Link： {1}"
+
+msgid "ERROR: Component key provided doesn't exist."
+msgstr "错误：组件关键字不存在。"
+
+msgid "ERROR: Componenet key is null."
+msgstr "错误：组件关键字为空。"
+
+msgid "Shared Memory Operation Data Information:"
+msgstr "共享内存操作数据信息："
+
+msgid "                FLAGS:  0x"
+msgstr "                 标志： 0x"
+
+msgid "                 PREV:  {1}"
+msgstr "                   前： {1}"
+
+msgid "                 NEXT:  {1}"
+msgstr "                   后： {1}"
+
+msgid "             KEY NAME:  {1}"
+msgstr "             关键字名： {1}"
+
+msgid "ERROR: COM_KEY provided doesn't exist."
+msgstr "错误：COM_KEY不存在。"
+
+msgid "INFO: Can't find entry for Operation Key."
+msgstr "信息：找不到操作关键字入口。"
+
+msgid "-----------------------------------"
+msgstr "-----------------------------------"
+
+msgid "                 DATA:  "
+msgstr "                 数据： "
+
+msgid "ERROR: Operation key provided doesn't exist."
+msgstr "错误：操作关键字不存在。"
+
+msgid "INFO: Operation key invalidated successfully."
+msgstr "信息：操作关键字失效成功。"
+
+msgid "ERROR: Block index out of range"
+msgstr "信息：块索引超出有效范围"
+
+msgid "ERROR: Lock type not corrrect"
+msgstr "错误：锁类型错误"
+
+msgid "ERROR: offset out of bound"
+msgstr "错误：偏移量超出有效范围"
+
+msgid "{1} now on."
+msgstr "{1} 开启。"
+
+msgid "{1} now off."
+msgstr "{1} 关闭。"
+
+msgid "ERROR: -s option: argument must be numeric\n"
+msgstr "错误：-s选项：参数必须是数字型\n"
+
+msgid "ERROR: -a option: argument must be hex numeric\n"
+msgstr "错误：-a选项：参数必须是十六进制数字型\n"
+
+msgid "ERROR: -i option: argument must be numeric\n"
+msgstr "错误：-i选项：参数必须是数字型\n"
+
+msgid "ERROR: -O option: argument must be numeric\n"
+msgstr "错误：-O选项：参数必须是数字型\n"
+
+msgid "ERROR: -o option: argument must be numeric\n"
+msgstr "错误：-o选项：参数必须是数字型\n"
+
+msgid "ERROR: -T option: argument must be sys|free|used\n"
+msgstr "错误：-T选项：参数必须是sys、free或used\n"
+
+msgid "ERROR: -h option: argument must be numeric\n"
+msgstr "错误：-h选项：参数必须是数字型\n"
+
+msgid "ERROR: -d option: argument must be numeric\n"
+msgstr "错误：-d选项：参数必须是数字型\n"
+
+msgid "ERROR: Process got spinlock but died, clean lock"
+msgstr "错误：进程带自旋锁死掉，清除锁"
+
+msgid "ERROR: hash_size, data_size or data_len is 0"
+msgstr "错误：哈希大小, 数据大小或数据长度是0"
+
+msgid "ERROR: malloc() failed"
+msgstr "错误：malloc()失败"
+
+msgid "ERROR: shared memory insane"
+msgstr "错误：共享内存不一致"
+
+msgid "ERROR: svc_key size must be not bigger than {1}"
+msgstr "错误：操作关键字大小必须不大于{1}"
+
+msgid "ERROR: data_len given to create SDC is too small"
+msgstr "错误：创建SDC所指定的数据长度太小"
+
+msgid "ERROR: No free slot available."
+msgstr "错误：无可用空槽。"
+
+msgid "ERROR: Invalid address provided."
+msgstr "错误：提供的地址无效。"
+
+msgid "ERROR: shmget() fail"
+msgstr "错误：shmget()失败"
+
+msgid "ERROR: shmat() fail"
+msgstr "错误：shmat()失败"
+
+msgid "ERROR: block_size should be expontential value of 2."
+msgstr "错误：块大小必须是2的指数。"
+
+msgid "ERROR: Not attached to manage shared memory, call attach() first."
+msgstr "错误：未连接到管理共享内存，请先调用attach()。"
+
+msgid "ERROR: Size too big for malloc"
+msgstr "错误：malloc尺寸过大"
+
+msgid "ERROR: Shared memory not available"
+msgstr "错误：共享内存不可用"
+
+msgid "ERROR: Out of memory"
+msgstr "错误：内存溢出"
+
+msgid "ERROR: Given wrong address or memory corrupted"
+msgstr "错误：地址错误或内存已崩溃"
+
+msgid "ERROR: Memory already freed"
+msgstr "错误：内存已释放"
+
+msgid "ERROR: Too many shared memory blocks"
+msgstr "错误：共享内存块过多"
+
+msgid "ERROR: Shared memory must be created in order"
+msgstr "错误：必须按次序创建共享内存"
+
+msgid "ERROR: out of range"
+msgstr "错误：超出有效范围"
+
+msgid "shm_vector::shm_vector"
+msgstr "shm_vector：:shm_vector"
+
+msgid "shm_tree::shm_tree"
+msgstr "shm_tree：:shm_tree"
+
+msgid "ERROR: failed to execute command PWD"
+msgstr "错误：执行PWD命令失败"
+
+msgid "ERROR: failed to execute command SIZE"
+msgstr "错误：执行SIZE命令失败"
+
+msgid "ERROR: Invalid mode"
+msgstr "错误：无效模式"
+
+msgid "ERROR: Invalid response"
+msgstr "错误：无效响应"
+
+msgid "ERROR: Invalid to read line"
+msgstr "错误：读取行无效"
+
+msgid "ERROR: Invalid direction"
+msgstr "错误：direction无效"
+
+msgid "ERROR: cmd token with return character"
+msgstr "错误：cmd令牌返回字符"
+
+msgid "ERROR: read_resp: {1}"
+msgstr "错误：读取返回：{1}"
+
+msgid "ERROR: open_port"
+msgstr "错误：打开端口"
+
+msgid "ERROR: failed to execute command PASV"
+msgstr "错误：执行PASV命令失败"
+
+msgid "ERROR: Can't call socket()"
+msgstr "错误：无法调用socket()"
+
+msgid "ERROR: socket timeout"
+msgstr "错误：socket超时"
+
+msgid "ERROR: FD_ISSET"
+msgstr "错误：FD_ISSET"
+
+msgid "ERROR: write"
+msgstr "错误：写"
+
+msgid "ERROR: Missing path argument"
+msgstr "错误：缺少路径参数"
+
+msgid "ERROR: Invalid open type"
+msgstr "错误：无效的打开类型"
+
+msgid "ERROR: file not open."
+msgstr "错误：文件未打开。"
+
+msgid "ERROR: file end reached."
+msgstr "错误：到达文件末尾。"
+
+msgid "ERROR: indefinite length"
+msgstr "错误：无限的长度"
+
+msgid "ERROR: length overflow"
+msgstr "错误：长度越界"
+
+msgid "ERROR: wrong tag of integer"
+msgstr "错误：整形标识错误"
+
+msgid "ERROR: integer too big"
+msgstr "错误：整形太大"
+
+msgid "ERROR: unsigned integer too big"
+msgstr "错误：无符号整形太大"
+
+msgid "ERROR: wrong tag of real"
+msgstr "错误：实形标识错误"
+
+msgid "ERROR: unrecognized real number of length 1 octet"
+msgstr "错误：不认识的实形1字节长数字"
+
+msgid "ERROR: unsupported base for a binary real number"
+msgstr "错误：不支持的实数基数"
+
+msgid "ERROR: decimal REAL form is not supported"
+msgstr "错误：十进制实数格式不支持"
+
+msgid "ERROR, file limit."
+msgstr "错误：文件限制。"
+
+msgid "ERROR: Can't open file, {1}."
+msgstr "错误：无法打开文件，{1}"
+
+msgid "ERROR: localaddr is null or localaddr length must be more than 16"
+msgstr "错误：本地地址为空或本地地址长度必须大于16"
+
+msgid "ERROR: remoteaddr is null or remoteaddr length must be more than 16"
+msgstr "错误：远程地址为空或远程地址长度必须大于16"
+
+msgid "ERROR: recieve buffer is too small."
+msgstr "错误：接收缓冲区太小。"
+
+msgid "ERROR: create_function() can't be called after build()"
+msgstr "错误：调用create_function()函数前必须先调用build()函数"
+
+msgid "ERROR: index out of bound"
+msgstr "错误：索引超出有效范围"
+
+msgid "ERROR: get_function() can't be called before build()"
+msgstr "错误：调用get_funtion()前必须先调用build()函数"
+
+msgid "ERROR: No function provided"
+msgstr "错误：没有提供函数"
+
+msgid "ERROR: built() already done"
+msgstr "错误：build()函数已完成"
+
+msgid "ERROR: command={1}, status={2}, {3}"
+msgstr "错误：command={1}, status={2}, {3}"
+
+msgid "ERROR: tempnam() failure, {1}"
+msgstr "错误：调用tempnam()失败，{1}"
+
+msgid "ERROR: Input variable {1} not found in map."
+msgstr "错误：map中没有输入变量{1}"
+
+msgid "ERROR: Output variable {1} not found in map."
+msgstr "错误：map中没有输出变量{1}"
+
+msgid "ERROR: SGROOT environment not set"
+msgstr "错误：SGROOT环境变量未设置"
+
+msgid ""
+"perf_name = [{1}] loop count = [{2}] clock seconds elapsed = [{3}] seconds "
+"elapsed = [{4}s {5}us]"
+msgstr "指标名 = [{1}] 循环次数 = [{2}] 时钟秒数 = [{3}] 秒数 = [{4}s {5}us]"
+
+msgid "ERROR: Can't open file .passwd"
+msgstr "错误：无法打开文件.passwd"
+
+msgid "ERROR: Invalid stream_type {1}"
+msgstr "错误：无效的数据流类型 {1}"
+
+msgid "ERROR: environment variable LOGNAME not set"
+msgstr "错误：LOGNAME环境变量没有设置"
+
+msgid "ERROR: Invalid dir_name {1} given"
+msgstr "错误：提供的 dir_name {1} 无效"
+
+msgid "ERROR: Can't open file"
+msgstr "错误：无法打开文件"
+
+msgid "ERROR: In file {1}:{2}: error code: {3}, object: {4}"
+msgstr "错误：文件{1}：{2}：错误代码：{3}，对象：{4}"
+
+msgid "ERROR: In file {1}:{2}: error code: {3}"
+msgstr "错误：文件{1}：{2}：错误代码：{3}"
+
+msgid "ERROR: In file {1}:{2}: error code: {3}, cause: {4}"
+msgstr "错误：文件{1}：{2}：错误代码：{3}，原因：{4}"
+
+msgid "ERROR: In file {1}:{2}"
+msgstr "错误：文件{1}：{2}"
+
+msgid "ERROR: In file {1}:{2}: cause: {3}"
+msgstr "错误：文件{1}：{2}：原因：{3}"
+
+msgid "ERROR: In file {1}:{2}: message: {3}"
+msgstr "错误：文件{1}：{2}：信息：{3}"
+
+msgid "ERROR: Can't remove message queue {1}."
+msgstr "错误：无法删除消息队列{1}。"
+
+msgid "ERROR: create message queue failed."
+msgstr "错误：创建消息队列失败。"
+
+msgid "ERROR: get message queue failed."
+msgstr "错误：获取消息队列失败。"
+
+msgid "ERROR: send message queue failed."
+msgstr "错误：发送消息队列失败。"
+
+msgid "ERROR: recieve message queue failed."
+msgstr "错误：接收消息队列失败。"
+
+msgid "ERROR: semget failed."
+msgstr "错误：semget失败。"
+
+msgid "ERROR: semctl failed."
+msgstr "错误：semctl失败。"
+
+msgid "ERROR: semop failed."
+msgstr "错误：semop失败。"
+
+msgid "ERROR: Can't connect to remote host {1} via ssh"
+msgstr "错误：无法通过ssh连接到远程主机 {1}"
+
+msgid "ERROR: Failed to initialize ssh session"
+msgstr "错误：初始化ssh会话失败"
+
+msgid "ERROR: Failed to establish ssh session for {1}, {2}"
+msgstr "错误：为 {1} 建立ssh会话失败：{2}"
+
+msgid "ERROR: Can't get environment HOME"
+msgstr "错误：不能获取HOME环境变量"
+
+msgid "ERROR: Authentication by public key failed for {1}, {2}"
+msgstr "错误：为 {1} 公钥鉴权失败，{2}"
+
+msgid "INFO: ssh session disconnect normally"
+msgstr "信息：ssh会话正常断开连接"
+
+msgid "ERROR: Failed to initialize sftp session, {1}"
+msgstr "错误：初始化sftp会话失败，{1}"
+
+msgid "ERROR: Failed to initialize ssh library"
+msgstr "错误：初始化ssh库失败"
+
+msgid "ERROR: Open file {1} error, [{2}] : {3}\n"
+msgstr "错误：打开文件{1}错误，[{2}] ：{3}\n"
+
+msgid ""
+"perf_name = [{1}] loop count = [{2}] clock seconds elapsed = [{3}] seconds "
+"elapsed = [{4}s]\n"
+msgstr ""
+"指标名 = [{1}] 循环次数 = [{2}] 时钟秒数 = [{3}]秒 "
+"经历 = [{4}秒]\n"
+
+msgid "ERROR: Can't open file {1}, {2}"
+msgstr "错误：不能打开文件 {1}，{2}"
+
+msgid "ERROR: Can't stat file {1}, {2}"
+msgstr "错误：无法获取文件 {1} 的状态 - {2}"
+
+msgid "ERROR: index = {1} exceed hash size = {2}"
+msgstr "错误：索引 = {1} 超过哈希大小 = {2}"
+
+msgid "ERROR: block number < 1."
+msgstr "错误：块数小于1。"
+
+msgid "ERROR: index exceed block range."
+msgstr "错误：索引超出块有效范围。"
+
+msgid "ERROR: key is null."
+msgstr "错误：关键字为空。"
+
+msgid "ERROR: In file {1}:{2}: exception: {3}, message: {4}"
+msgstr "错误：文件{1}：{2}: exception: {3}, 信息：{4}"
+
+msgid "ERROR: In file {1}:{2}: error_code: {3}, message: {4}"
+msgstr "错误：文件{1}：{2}: 错误代码：{3}, 信息：{4}"
+
+msgid "ERROR: No record in view v_sys_proc_para"
+msgstr "错误：视图v_sys_proc_para无记录"
+
+msgid "ERROR: remove semphore failed."
+msgstr "错误：删除信号量失败。"
+
+msgid "ERROR: semget failed, key = {1}"
+msgstr "错误：semget失败，关键字 = {1}"
+
+msgid "ERROR: semctl failed, key = {1}"
+msgstr "错误：semctl失败，关键字 = {1}"
+
+msgid "ERROR: invalid semid."
+msgstr "错误：无效semid。"
+
+msgid "ERROR: invalid semno."
+msgstr "错误：无效semno。"
+
+msgid "{1},{2} lock failed.\n"
+msgstr "{1}，{2}锁失败。\n"
+
+msgid "ERROR: semop failed, nSemNo = {3}"
+msgstr "错误：semop失败，nSemNo = {3}"
+
+msgid "ERROR: invalid sem no."
+msgstr "错误：无效sem no。"
+
+msgid "ERROR: semop failed, semno = {1}"
+msgstr "错误：semop失败，semno = {1}"
+
+msgid "{1},{2} get_value failed."
+msgstr "{1},{2} 获取值失败。"
+
+msgid "ERROR: semctl failed, semno = {1}"
+msgstr "错误：semno失败，semno = {1}"
+
+msgid "read_lock: writers = {1}: readers = {2}"
+msgstr "read_lock：写入者 = {1}: 读取者 = {2}"
+
+msgid "write_lock: reades = {1}: writer = {2}"
+msgstr "write_lock：读取者 = {1}: 写入者 = {2}"
+
+msgid "ERROR: shmdt failed."
+msgstr "错误：shmdt失败。"
+
+msgid "ERROR: shmctl failed."
+msgstr "错误：shmctl失败。"
+
+msgid "dump object memory..."
+msgstr "输出对象内存..."
+
+msgid "dump hash memory..."
+msgstr "输出哈希内存..."
+
+msgid "ERROR: create super block share memory failed."
+msgstr "错误：创建超级块共享内存失败。"
+
+msgid "ERROR: attach super block share memory failed."
+msgstr "错误：连接超级块共享内存失败。"
+
+msgid "ERROR: MAX_MEM_BLKS too small,[{1}] > [{2}]"
+msgstr "错误：MAX_MEM_BLKS太小，[{1}] > [{2}]"
+
+msgid "ERROR: MAX_MEM_BLKS too small, {1} > {2}"
+msgstr "错误：MAX_MEM_BLKS太小，{1} > {2}"
+
+msgid "ERROR: create data share memory failed."
+msgstr "错误：创建数据共享内存失败。"
+
+msgid "ERROR: attach data share memory failed."
+msgstr "错误：连接数据共享内存失败。"
+
+msgid "ERROR: create index share memory failed."
+msgstr "错误：创建索引共享内存失败。"
+
+msgid "ERROR: attach index share memory failed."
+msgstr "错误：连接索引共享内存失败。"
+
+msgid "ERROR: hash_size must bigger than 0."
+msgstr "错误：hash_size必须大于0."
+
+msgid "ERROR: max_data_count must bigger than 0."
+msgstr "错误：max_data_count必须大于0。"
+
+msgid "ERROR: unit_size must bigger than 0."
+msgstr "错误：unit_size必须大于0。"
+
+msgid "ERROR: Can not change hashmode for curr_data_count is not zero."
+msgstr "错误：curr_data_count不为0，无法改变哈希模式。"
+
+msgid "ERROR: unknown hashmode."
+msgstr "错误：未知的哈希模式。"
+
+msgid "ERROR: max_data_count is too small."
+msgstr "错误：max_data_count太小。"
+
+msgid "ERROR: hash_key can not be a negative number."
+msgstr "错误：hash_key不能为负数。"
+
+msgid "ERROR: hash_key can not be null."
+msgstr "错误：hash_key不能为空。"
+
+msgid "ERROR: illegal index."
+msgstr "错误：非法索引。"
+
+msgid "ERROR: resultbuf can not be null."
+msgstr "错误：结果缓冲区不能为空。"
+
+msgid "ERROR: max_result_count is too small."
+msgstr "错误：max_result_count太小。"
+
+msgid "Error: Trying to create object which is not DECLARE_DYNCREATE "
+msgstr "错误：企图创建非DECLARE_DYNCREATE对象"
+
+msgid "ERROR: index = {1} exceed array size = {2}"
+msgstr "错误：索引 = {1} 超出数组大小 = {2}"
+
+msgid "ERROR: object block number < 1."
+msgstr "错误：对象块号小于1."
+
+msgid "ERROR: element count exceed array size."
+msgstr "错误：元素数量超出数组大小。"
+
+msgid "ERROR: pthread_rwlock_init error."
+msgstr "错误：pthread_rwlock_init错误。"
+
+msgid "ERROR: pthread_mutex_init error."
+msgstr "错误：pthread_mutex_init错误。"
+
+msgid "ERROR: pthread_cond_init error."
+msgstr "错误：pthread_cond_init错误。"
+
+msgid "ERROR: create thread failed."
+msgstr "错误：创建线程失败。"
+
+msgid "ERROR: shmget failed, key = %1"
+msgstr "错误：shmget失败，关键字 = %1"
+
+msgid "ERROR: shmget failed. key = {1}"
+msgstr "错误：shmget失败，关键字 = {1}"
+
+msgid ""
+"ERROR: Can't find overrided function void get_hash_key(char* hash_key) const"
+msgstr "错误：无法找到重载函数void get_hash_key(char* hash_key) const"
+
+msgid ""
+"ERROR: Can't find overrided function bool equal(const hash_unit_t* right) "
+"const"
+msgstr "错误：无法找到重载函数bool equal(const hash_unit_t* right) const"
+
+msgid "Out of memory"
+msgstr "内存溢出"
+
+msgid "key must only contains char 0-9"
+msgstr "关键字必须由0-9构成"
+
+msgid "Process exit with no thread running"
+msgstr "进程已无活跃线程，退出"
+
+msgid "Thread image not exist"
+msgstr "线程映像不存在"
+
+msgid "Thread started"
+msgstr "线程已启动"
+
+msgid "Thread stopped"
+msgstr "线程已停止"
+
+msgid "Thread start normally"
+msgstr "线程正常启动"
+
+msgid "Thread stop normally"
+msgstr "线程正常停止"
+
+msgid "ERRPR: Invalid thread_id {1}"
+msgstr "错误：无效线程编号 {1}"
+
+msgid "Invalid command received, packet type = [{1}]"
+msgstr "接受到无效命令，包类型 = [{1}]"
+
+msgid "ERROR: Can't get hostname"
+msgstr "错误：无法获取主机名"
+
+msgid "ERROR: Invalid host_id {1}"
+msgstr "错误：无效host_id {1}"
+
+msgid "ERROR: Invalid module_id {1}"
+msgstr "错误：无效module_id {1}"
+
+msgid "ERROR: Program is already started!"
+msgstr "错误：程序已启动！"
+
+msgid "ERROR: Can not change calc_hash_func for curr_data_count is not zero."
+msgstr "错误：由于curr_data_count不为0，calc_hash_func不能改变。"
+
+msgid "ERROR: Invalid arguments passed to buildsql\n"
+msgstr "错误：传递给buildsql的参数非法\n"
+
+msgid "ERROR: {1}: Parse failed\n"
+msgstr "错误：{1}：解析失败\n"
+
+msgid "ERROR: {1}: Severe error found. Stop syntax checking\n"
+msgstr "错误：{1}：发现严重错误，停止语法检查\n"
+
+msgid "ERROR: {1}: Above errors found during syntax checking\n"
+msgstr "错误：{1}：语法检查过程中发现以上错误\n"
+
+msgid "ERROR: {1}: Parse failed, see LOG for more information\n"
+msgstr "错误：{1}：解析失败，请检查日志获取详细信息\n"
+
+msgid "Parse finished successfully"
+msgstr "解析成功完成"
+
+msgid "usage: "
+msgstr "用法："
+
+msgid "ERROR: missing user_name"
+msgstr "错误：缺少user_name"
+
+msgid "ERROR: missing password"
+msgstr "错误：缺少password"
+
+msgid "ERROR: missing process"
+msgstr "错误：缺少process"
+
+msgid "ERROR: missing port"
+msgstr "错误：缺少port"
+
+msgid "ERROR: bind() should be called before executeQuery()"
+msgstr "错误：bind()调用前须先调用executeQuery()"
+
+msgid "ERROR: bind() should be called before executeUpdate()"
+msgstr "错误：bind()调用前须调用executeUpdate()"
+
+msgid "ERROR: bind() should be called before executeArrayUpdate()"
+msgstr "错误：bind()调用前须调用executeArrayUpdate()"
+
+msgid "ERROR: colIndex {1} out of range"
+msgstr "错误：colIndex {1}越界"
+
+msgid "ERROR: Field indicator is not defined"
+msgstr "错误：字段指示器未定义"
+
+msgid "ERROR: unknown field_type {1}"
+msgstr "错误：字段类型 {1} 未知"
+
+msgid "ERROR: unsupported function"
+msgstr "错误：不支持的函数"
+
+msgid ""
+"\n"
+"ERROR: end of input reached without terminating quote\n"
+msgstr ""
+"\n"
+"错误：达到输入末尾，但未找到终止引号\n"
+
+msgid ""
+"\n"
+"ERROR: end of input reached without terminating */\n"
+msgstr ""
+"\n"
+"错误：达到输入末尾，但未找到结束*/\n"
+
+msgid "ERROR: unsupported field type conversion"
+msgstr "错误：不支持的字段类型转换"
+
+msgid "ERROR: unknown field type provided"
+msgstr "错误：提供的字段类型未知"
+
+msgid "ERROR: paramIndex {1} out of range"
+msgstr "错误：paramIndex {1} 越界"
+
+msgid "ERROR: dbtype doesn't match, expected {1}, but struct_base is {2}"
+msgstr "错误：dbtype 不匹配，期望 {1}，但是struct_base对象中是 {2}"
+
+msgid "ERROR: Failed to create database class for {1}, {2}"
+msgstr "错误：创建数据库类 {1} 失败：{2}"
+
+msgid "ERROR: Can't find database class for {1}"
+msgstr "错误：无法找到数据库类 {1}"
+
+msgid "ERROR: Duplicate database creator for {1}"
+msgstr "错误：数据库创建者 {1} 重复"
+
+msgid "ERROR: empty SQL given."
+msgstr "错误：提供的SQL为空。"
+
+msgid "ERROR: mkstemp() failure, {1}"
+msgstr "错误：mkstemp()失败，{1}"
+
+msgid "ERROR: open temp file [{1}] failure, {2}"
+msgstr "错误：打开临时文件 [{1}]失败，{2}"
+
+msgid "ERROR: write sql to file [{1}] failure, {2}"
+msgstr "错误：将sql写入文件[{1}]失败，{2}"
+
+msgid "ERROR: Parse failed."
+msgstr "错误：解析失败。"
+
+msgid "ERROR: Severe error found. Stop syntax checking."
+msgstr "错误：发现严重错误。停止语法检查。"
+
+msgid "ERROR: Above errors found during syntax checking."
+msgstr "错误：语法检查过程中发现以上错误。"
+
+msgid "ERROR: Parse failed, see LOG for more information."
+msgstr "错误：语法检查失败，请查看日志文件获取详细信息。"
+
+msgid "ERROR: Bind array given doesn't match the size of bind fields."
+msgstr "错误：提供的绑定数组长度与目标绑定字段长度不匹配。"
+
+msgid "ERROR: Bind array should be provided for ANY type binding"
+msgstr "错误：应以ANY类型绑定数组"
+
+msgid "ERROR: Sql type unrecognized."
+msgstr "错误：无法识别的sql类型。"
+
+msgid "ERROR: Select item {1} missing field definition"
+msgstr "错误：选择项{1}缺少字段定义"
+
+msgid "ERROR: Only simple item can ignore alias name"
+msgstr "错误：只有简单项可以忽略别名"
+
+msgid "ERROR: field name not recognized"
+msgstr "错误：无法识别的字段名"
+
+msgid "ERROR: unknown type given."
+msgstr "错误：未知类型。"
+
+msgid "ERROR: wrong bind_fields given."
+msgstr "错误：错误的绑定字段bind_fields。"
+
+msgid "ERROR: Can't find field in bind_fields."
+msgstr "错误：无法从绑定字段bind_fields中找到字段。"
+
+msgid "ERROR: Unsupported operator"
+msgstr "错误：不支持的操作"
+
+msgid "ERROR: inner select SQL is not supported."
+msgstr "错误：不支持内连接SQL。"
+
+msgid "ERROR: unknown field name."
+msgstr "错误：未知字段名。"
+
+msgid "ERROR: nested aggregation functions are not supported."
+msgstr "错误：不支持嵌套聚合函数。"
+
+msgid "ERROR: aggregation function requires only one parameter."
+msgstr "错误：聚合函数只需要一个参数。"
+
+msgid "ERROR: Could not convert string to integer: {1}"
+msgstr "错误：无法将字符串转换为整数：{1}"
+
+msgid "ERROR: Integer too small to read: {1}"
+msgstr "错误：整数太小，无法读取：{1}"
+
+msgid "ERROR: Integer too large to read: {1}"
+msgstr "错误：整数太大，无法读取：{1}"
+
+msgid "ERROR: Unexpected text after integer: {1}"
+msgstr "错误：整数后发现非法字符：{1}"
+
+msgid "ERROR: Could not convert string to unsigned integer: {1}"
+msgstr "错误：无法将字符串转换为无符号整数：{1}"
+
+msgid "ERROR: Unsigned integer too large to read: {1}"
+msgstr "错误：过大的无符号整数，无法读取：{1}"
+
+msgid "ERROR: Unexpected text after integer: '{1}'"
+msgstr "错误：整数后发现非法字符：'{1}'"
+
+msgid "ERROR: Could not convert string to numeric value: '{1}"
+msgstr "错误：无法将字符串转换为数字值：'{1}'"
+
+msgid "ERROR: Attempt to convert null to {1}"
+msgstr "错误：企图将null转换为{1}"
+
+msgid "ERROR: Failed conversion to bool: '{1}'"
+msgstr "错误：无法转换为bool：'{1}'"
+
+msgid "ERROR: database not connected!"
+msgstr "错误：未连接数据库！"
+
+msgid "ERROR: not support!"
+msgstr "错误：不支持！"
+
+msgid "ERROR: bad param given, OCIEnv object is null"
+msgstr "错误：错误参数，OCIEnv对象为空"
+
+msgid "ERROR: bad param given, OCIError object is null"
+msgstr "错误：错误参数，OCIError对象为空"
+
+msgid "ERROR: bad param given, OCISvcCtx object is null"
+msgstr "错误：错误参数，OCISvcCtx对象为空"
+
+msgid "ERROR: missing connect_string"
+msgstr "错误：缺少连接字符串connect_string"
+
+msgid "ERROR: OCIServer object is null, functionality not supported"
+msgstr "错误：OCIServer对象为空，功能不支持"
+
+msgid "ERROR: unknown field_type"
+msgstr "错误：未知的字段类型"
+
+msgid "ERROR: Unsupported data type given"
+msgstr "错误：不支持的数据类型"
+
+msgid "ERROR: Memory allocation failure"
+msgstr "错误：内存分配失败"
+
+msgid "ERROR: alias name not given"
+msgstr "错误：未提供别名"
+
+msgid "ERROR: String length should be positive"
+msgstr "错误：字符串长度必须为正值"
+
+msgid "ERROR: VString length should be positive"
+msgstr "错误：VString长度必须为正值"
+
+msgid "ERROR: Unknown sql type"
+msgstr "错误：未知SQL类型"
+
+msgid "ERROR: column name [{1}] redefined with different type or length"
+msgstr "错误：使用不同类型或长度重定义了列名[{1}]"
+
+msgid "ERROR: Can't open file {1}"
+msgstr "错误：无法打开文件{1}"
+
+msgid "ERROR: unsupported dbtype"
+msgstr "错误：不支持的dbtype"
+
+msgid "ERROR: Attempt to read NULL string"
+msgstr "错误：企图读取空字符串"
+
+msgid "ERROR: Invalid arguments passed to "
+msgstr "错误：无效的参数传递给 "
+
+msgid "shm_link = ("
+msgstr "shm_link = ("
+
+msgid "size = "
+msgstr "size = "
+
+msgid "capacity = "
+msgstr "capacity = "
+
+msgid "ERROR: No data found.\n"
+msgstr "错误：无数据。\n"
+
+msgid "value1 = "
+msgstr "value1 = "
+
+msgid "value2 = "
+msgstr "value2 = "
+
+msgid "value3 = "
+msgstr "value3 = "
+
+msgid "Tree Status:\n"
+msgstr "树状态：\n"
+
+msgid "Error occurred in "
+msgstr "错误发生在 "
+
+msgid "data1 = "
+msgstr "data1 = "
+
+msgid "data2 = "
+msgstr "data2 = "
+
+msgid "Allowed options"
+msgstr "允许选项"
+
+msgid "produce help message"
+msgstr "生成帮助信息"
+
+msgid "execution count"
+msgstr "执行行数"
+
+msgid "channel_id index"
+msgstr "channel_id索引"
+
+msgid "ERROR: Failed to call init()\n"
+msgstr "错误：调用init()失败\n"
+
+msgid "ERROR: Failed to call fini()\n"
+msgstr "错误：调用fini()失败\n"
+
+msgid "ERROR: Can't find data in T_TF_CHL_CHANNEL - "
+msgstr "错误：在T_TF_CHL_CHANNEL表中无数据 - "
+
+msgid "clocks = {1}, elapsed = {2}"
+msgstr "时钟 = {1}，花费 = {2}"
+
+msgid "ERROR: failed to call login().\n"
+msgstr "错误：调用login()失败。\n"
+
+msgid "ERROR: failed to call connect().\n"
+msgstr "错误：调用connect()失败。\n"
+
+msgid "ERROR: Failed to call init() - "
+msgstr "错误：调用init()失败 - "
+
+msgid "ERROR: Call operation {1} failed - "
+msgstr "错误：调用操作 {1}失败 - "
+
+msgid "getrply failed for operation {1} - "
+msgstr "getrply()失败，操作 {1} - "
+
+msgid "ERROR: Failed to call fini() - "
+msgstr "错误：调用fini()失败 - "
+
+msgid "execute in sync/async mode"
+msgstr "以同步/异步模式执行"
+
+msgid "execution threads"
+msgstr "执行线程数"
+
+msgid "how many handles to run in parallel"
+msgstr "并行执行的句柄数"
+
+msgid "specify operation name"
+msgstr "指定操作名"
+
+msgid "argc={1}"
+msgstr "argc={1}"
+
+msgid "network address"
+msgstr "网路地址"
+
+msgid "name or number of user to run as"
+msgstr "运行的用户名或ID"
+
+msgid "Run in foreground rather than background"
+msgstr "在前台运行"
+
+msgid "ERROR: sgagent could not find entry for user {1}\n"
+msgstr "错误：sgagent找不到入口，用户{1}\n"
+
+msgid "ERROR: sgagent cannot run as root\n"
+msgstr "错误：sgagent不能以超级用户运行\n"
+
+msgid "ERROR: sgagent could not set group id to "
+msgstr "错误：sgagent不能设置组ID到"
+
+msgid "ERROR: sgagent could not set user id to "
+msgstr "错误：sgagent不能设置用户ID到"
+
+msgid "ERROR: sgagent invoked by non-root, can't change user id.\n"
+msgstr "错误：sgagent是以非超级用户调用的，不能更改用户ID。\n"
+
+msgid "ERROR: Could not become a background process"
+msgstr "错误：不能成为一个后台进程"
+
+msgid "INFO: sgagent started successfully"
+msgstr "信息：sgagent启动成功"
+
+msgid "error={1}"
+msgstr "error={1}"
+
+msgid "nlsaddr={1}"
+msgstr "nlsaddr={1}"
+
+msgid "ERROR: Invalid agtaddr parameter given, at least 5 characters long\n"
+msgstr "错误：无效的agtaddr参数，长度至少5个字符\n"
+
+msgid "ERROR: Invalid agtaddr parameter given, should start with \"//\"\n"
+msgstr "错误：无效的agtaddr参数，应以 \"//\" 开始\n"
+
+msgid "ERROR: Invalid agtaddr parameter given, missing ':'\n"
+msgstr "错误：无效的agtaddr参数，缺少 '：'\n"
+
+msgid "ERROR: Invalid hostname of agtaddr parameter given\n"
+msgstr "错误：agtaddr参数中主机名无效\n"
+
+msgid "INFO: Terminating sgagent process\n"
+msgstr "信息：终止sgagent进程\n"
+
+msgid "tcpkeepalive={1}, nodelay={2}"
+msgstr "tcpkeepalive={1}, nodelay={2}"
+
+msgid "remote_mid_={1}, ipaddr={2}, port={3}, tcpkeepalive={4}, nodelay={5}"
+msgstr "remote_mid_={1}, ipaddr={2}, port={3}, tcpkeepalive={4}, nodelay={5}"
+
+msgid "mtype={1}, size={2}"
+msgstr "mtype={1}, size={2}"
+
+msgid "ERROR: write error, {1}"
+msgstr "错误：写错误，{1}"
+
+msgid "sent_msgs={1}, sent_bytes={2}"
+msgstr "sent_msgs={1}, sent_bytes={2}"
+
+msgid "rcvd_msgs={1}, rcvd_bytes={2}"
+msgstr "rcvd_msgs={1}, rcvd_bytes={2}"
+
+msgid "ERROR: Unknown hostid {1}."
+msgstr "错误：未知节点ID {1}。"
+
+msgid "ERROR: Invalid remote hostid {1}"
+msgstr "错误：无效的远程hostid {1}"
+
+msgid "ERROR: negotiation error, {1}"
+msgstr "错误：握手错误，{1}"
+
+msgid "bytes_transferred={1}, error={2}"
+msgstr "bytes_transferred={1}, error={2}"
+
+msgid "ERROR: read error, {1}"
+msgstr "错误：读错误，{1}"
+
+msgid "ERROR: sggws failed to send message to target {1}"
+msgstr "错误：sggws发送消息到目标 {1} 失败"
+
+msgid "tcpkeepalive={1}, nodelay={2}, error={3}"
+msgstr "tcpkeepalive={1}, nodelay={2}, error={3}"
+
+msgid "ERROR: connect error, {1}"
+msgstr "错误：连接错误，{1}"
+
+msgid "line={1}"
+msgstr "line={1}"
+
+msgid "slot={1}"
+msgstr "slot={1}"
+
+msgid "nidx={1}, conn={2}"
+msgstr "nidx={1}, conn={2}"
+
+msgid "ERROR: internal error"
+msgstr "错误：内部错误"
+
+msgid "seconds={1}"
+msgstr "seconds={1}"
+
+msgid "WARN: Suspending communication with {1}"
+msgstr "警告：挂起与{1}的通信"
+
+msgid "set threads handling net requests"
+msgstr "设置处理网络请求的线程数"
+
+msgid "set threads handling message queue requests"
+msgstr "设置处理队列的线程数"
+
+msgid "set cached messages not free immediately"
+msgstr "设置不立即释放的缓存消息数"
+
+msgid "INFO: {1} exit normally in help mode."
+msgstr "信息：{1}正常退出帮助模式。"
+
+msgid "ERROR: {1} start failure, {2}."
+msgstr "错误：{1}启动失败。{2}"
+
+msgid "ERROR: Failed to get local host id"
+msgstr "错误：获取本地节点ID失败"
+
+msgid "ERROR: Can't send shutdown message to the sghgws"
+msgstr "错误：发送停止消息给sghgws失败"
+
+msgid "ERROR: Failed to stop the sghgws"
+msgstr "错误：停止sghgws失败"
+
+msgid "ERROR: Can't create wkid for sghgws/sggws"
+msgstr "错误：无法创建sghgws/sggws的wkid"
+
+msgid "ERROR: Can't find node entry in SGPROFILE"
+msgstr "错误：SGPROFILE中无节点入口"
+
+msgid "INFO: {1} started successfully."
+msgstr "信息：{1}启动成功。"
+
+msgid "INFO: {1} stopped successfully."
+msgstr "信息：{1}停止成功。"
+
+msgid "flags={1}"
+msgstr "flags={1}"
+
+msgid "FATAL: Internal error, sg_svr can only be called once per thread"
+msgstr "致命：内部错误，每线程只能调用一次sg_svr"
+
+msgid "WARN: Unable to resume process {1}"
+msgstr "警告：无法恢复进程 {1}"
+
+msgid ""
+"ERROR: sggws recovery: cannot find the sgmngr entry in the Bulletin Board"
+msgstr "错误：sggws恢复无法找到sgmngr入口"
+
+msgid ""
+"ERROR: sggws recovery cannot find queue entry for sgmngr in the Bulletin "
+"Board"
+msgstr "错误：sggws恢复无法找到sgmngr的队列入口"
+
+msgid "ERROR: sggws recovery cannot set sgmngr PSUSPEND"
+msgstr "错误：sggws恢复无法设置sgmngr的状态为PSUSPEND"
+
+msgid "ERROR: sggws recovery attempting to restart the sgmngr failed"
+msgstr "错误：sggws恢复尝试启动sgmngr失败"
+
+msgid "local_mid={1}"
+msgstr "local_mid={1}"
+
+msgid "mid={1}"
+msgstr "mid={1}"
+
+msgid "ERROR: Invalid gwsaddr parameter given, at least 5 characters long"
+msgstr "错误：无效的gwsaddr参数，长度至少为5个字符"
+
+msgid "ERROR: Invalid gwsaddr parameter given, should start with \"//\""
+msgstr "错误：无效gwsaddr参数，应以\"//\"开始"
+
+msgid "ERROR: Invalid gwsaddr parameter given, missing ':'"
+msgstr "错误：无效的gwsaddr参数，缺少'：'"
+
+msgid "ERROR: Invalid hostname of gwsaddr parameter given"
+msgstr "错误：gwsaddr参数的主机名无效"
+
+msgid "ERROR: No network available for remote node {1}"
+msgstr "错误：无远程节点的网络可用"
+
+msgid "arg={1}"
+msgstr "arg={1}"
+
+msgid "ERROR: Unknown command: "
+msgstr "错误：未知命令："
+
+msgid "ERROR: Misleading command: "
+msgstr "错误：混淆的命令："
+
+msgid "ERROR: No bulletin board attached\n"
+msgstr "错误：未连接上sgmngr\n"
+
+msgid "ERROR: Memory malloc failure\n"
+msgstr "错误：分配内存失败\n"
+
+msgid "ERROR: No queues exist\n"
+msgstr "错误：无队列存在\n"
+
+msgid "ERROR: No such queue\n"
+msgstr "错误：没有这个队列\n"
+
+msgid "ERROR: Queue retrieval error\n"
+msgstr "错误：队列检索错误\n"
+
+msgid "ERROR: No processes exist\n"
+msgstr "错误：无进程存在\n"
+
+msgid "ERROR: No such process\n"
+msgstr "错误：没有这个进程\n"
+
+msgid "ERROR: Process retrieval error\n"
+msgstr "错误：进程检索错误\n"
+
+msgid "ERROR: No operations exist\n"
+msgstr "错误：无操作存在\n"
+
+msgid "ERROR: No such operation\n"
+msgstr "错误：没有这个操作\n"
+
+msgid "ERROR: Operation retrieval error\n"
+msgstr "错误：操作检索错误\n"
+
+msgid "ERROR: No sgmngr exists for that node\n"
+msgstr "错误：节点无sgmngr\n"
+
+msgid "ERROR: Invalid combination of options\n"
+msgstr "错误：无效的选项组合\n"
+
+msgid "ERROR: Error suspending resources\n"
+msgstr "错误：挂起资源错误\n"
+
+msgid "ERROR: Group id is not set\n"
+msgstr "错误：未设置组ID\n"
+
+msgid "ERROR: Process id is not set\n"
+msgstr "错误：未设置进程ID\n"
+
+msgid "ERROR: Operation name is not set\n"
+msgstr "错误：未设置操作名\n"
+
+msgid "ERROR: No such node\n"
+msgstr "错误：无此节点\n"
+
+msgid "ERROR: Must be administrator to execute that command\n"
+msgstr "错误：必须以管理员执行命令\n"
+
+msgid "ERROR: Error resuming (un-suspending) resources\n"
+msgstr "错误：恢复资源（非挂起）错误\n"
+
+msgid "INFO: Reattaching to regular bulletin board.\n"
+msgstr "信息：重连接sgmngr。\n"
+
+msgid "ERROR: Command not allowed in private mode\n"
+msgstr "错误：私有模式下不允许该命令\n"
+
+msgid "ERROR: No sgmngr exists on this node\n"
+msgstr "错误：此节点无sgmngr存在\n"
+
+msgid "ERROR: sgmngr dead on requested node\n"
+msgstr "错误：请求的节点上sgmngr已死\n"
+
+msgid "ERROR: Queue suspended for sgmngr on requested node\n"
+msgstr "错误：请求的节点上，sgmngr队列已挂起\n"
+
+msgid "ERROR: No process is specified\n"
+msgstr "错误：无指定进程\n"
+
+msgid "ERROR: Error retrieving operation parms\n"
+msgstr "错误：检索操作参数失败\n"
+
+msgid "ERROR: Syntax error on command line\n"
+msgstr "错误：命令行语法错误\n"
+
+msgid "ERROR: Error accessing system semaphore\n"
+msgstr "错误：访问系统信号量错误\n"
+
+msgid "ERROR: Error accessing message queue\n"
+msgstr "错误：访问消息队列错误\n"
+
+msgid "ERROR: Error accessing shared memory\n"
+msgstr "错误：访问共享内存错误\n"
+
+msgid "ERROR: Error dumping bulletin board\n"
+msgstr "错误：输出sgmngr信息错误\n"
+
+msgid "ERROR: No resources are specified\n"
+msgstr "错误：未指定资源\n"
+
+msgid "ERROR: Incorrect release code\n"
+msgstr "错误：不正确的版本代码\n"
+
+msgid "ERROR: sgclst migration failure\n"
+msgstr "错误：sgclst迁移失败\n"
+
+msgid "ERROR: Can not create new sgclst\n"
+msgstr "错误：无法创建新的sgclst\n"
+
+msgid "ERROR: Backup node is not specified in SGPROFILE file\n"
+msgstr "错误：SGPROFILE中未指定备份节点\n"
+
+msgid "ERROR: sgadmin not running on backup node\n"
+msgstr "错误：备份节点上未运行sgadmin\n"
+
+msgid "ERROR: Can not clean up partitioned BB entries\n"
+msgstr "错误：不能清除分区的系统入口\n"
+
+msgid "ERROR: Network reconnection failure\n"
+msgstr "错误：网络重连接失败\n"
+
+msgid "ERROR: Invalid process group name\n"
+msgstr "错误：无效的进程组名称\n"
+
+msgid "ERROR: Should not pclean the current node\n"
+msgstr "错误：不能pclean当前节点\n"
+
+msgid "ERROR: "
+msgstr "错误："
+
+msgid "ERROR: Error while obtaining the Bulletin Board parameters\n"
+msgstr "错误：获取系统信息失败\n"
+
+msgid ""
+"ERROR: Reinitialization after boot failed to set the Bulletin Board Model\n"
+msgstr "错误：启动后重新初始化时，设置系统模式失败\n"
+
+msgid "ERROR: Error setting the Bulleting Board Model to MP\n"
+msgstr "错误：设置系统模式为多机失败\n"
+
+msgid "ERROR: Could not find entry for user "
+msgstr "错误：无法找到用户入口 "
+
+msgid "ERROR: can't become a client - init() failed - "
+msgstr "错误：不能成为客户端 - init()失败 - "
+
+msgid "ERROR: Could not setup internal tables to enter boot mode.\n"
+msgstr "错误：无法设置内部表以进入启动模式。\n"
+
+msgid "ERROR: Failure to obtain the Master Node identifier.\n"
+msgstr "错误：无法获取主节点ID。\n"
+
+msgid "ERROR: The boot mode is only available on the MASTER processor.\n"
+msgstr "错误：此启动模式仅在主节点可用。\n"
+
+msgid "No bulletin board exists. "
+msgstr "无系统共享内存存在。"
+
+msgid "Entering boot mode.\n"
+msgstr "进入启动模式。\n"
+
+msgid "WARN: Cannot become administrator."
+msgstr "警告：不能成为administrator。"
+
+msgid "Limited set of commands available.\n"
+msgstr "有限制的命令组可用。\n"
+
+msgid "Attaching to active bulletin board.\n"
+msgstr "连接并激活系统。\n"
+
+msgid "ERROR: Can not find sgclst on master and backup nodes.\n"
+msgstr "错误：主节点和备份节点上均无法找到sgclst。\n"
+
+msgid "Usage:\n"
+msgstr "用法：\n"
+
+msgid "cipher"
+msgstr "密文"
+
+msgid "op_name={1}, opcode={2}"
+msgstr "op_name={1}, opcode={2}"
+
+msgid "INFO: Message from partitioned sgmngr on node {1}"
+msgstr "信息：来自分区节点{1}上sgmngr的消息"
+
+msgid "INFO: Forcing check of all sgmngrs"
+msgstr "信息：强制检查所有的sgmngr"
+
+msgid ""
+"ERROR: Older release sites cannot join application in non-interoperability "
+"mode"
+msgstr "错误：在非兼容模式下，老版本的节点不能加入系统"
+
+msgid "ERROR: Cannot remove sggws on node {1}"
+msgstr "错误：无法删除节点{1}上的sggws"
+
+msgid "ERROR: Cannot unregister sgmngr on node {1}"
+msgstr "错误：无法注销节点{1}上的sgmngr"
+
+msgid "ERROR: Could not restore sgclst entry after temp change for shutdown"
+msgstr "错误：为了停止系统而临时改变sgclst节点后，不能恢复"
+
+msgid "ERROR: Could not create message queue for temporary sgclst"
+msgstr "错误：无法为临时sgclst创建消息队列"
+
+msgid "ERROR: Could not update bulletin board for temporary sgclst"
+msgstr "错误：无法为临时sgclst更新系统共享内存"
+
+msgid "ERROR: Failed to update status of restarting sggws"
+msgstr "错误：更新重启的sggws状态失败"
+
+msgid "ERROR: Invalid request data length"
+msgstr "错误：无效的请求数据长度"
+
+msgid "ERROR: sgclst can't handle this opcode"
+msgstr "错误：sgclst无法处理该代码"
+
+msgid "ERROR: Unknown opcode"
+msgstr "错误：未知代码"
+
+msgid "INFO: sgmngr started on {1} - Release {2}"
+msgstr "信息：sgmngr在{1}上启动 - 版本 {2}"
+
+msgid "mid={1}, sect={2}"
+msgstr "mid={1}, sect={2}"
+
+msgid "ERROR: bbclean failed, couldn't find sgclst"
+msgstr "错误：bbclean清除失败，无法找到sgclst"
+
+msgid "ERROR: bbclean failed, couldn't find sgmngr"
+msgstr "错误：bbclean清除失败，无法找到sgmngr"
+
+msgid "ERROR: bbclean failed, message send/receive error"
+msgstr "错误：bbclean清除失败，发送/接收消息错误"
+
+msgid "INFO: sgmngr now unpartitioned, node= {1}"
+msgstr "信息：sgmngr现在处于未分区，节点={1}"
+
+msgid "ERROR: Could not unsuspend reconnected node {1}"
+msgstr "错误：不能恢复重连接节点{1}"
+
+msgid "sgid={1}, opcode={2}"
+msgstr "sgid={1}, opcode={2}"
+
+msgid "err={1}, val={2}"
+msgstr "err={1}, val={2}"
+
+msgid "ERROR: Operation request from process {1} failed"
+msgstr "错误：来自进程{1}的操作请求失败"
+
+msgid "rval={1}"
+msgstr "rval={1}"
+
+msgid "ERROR: svc_fini() called more times"
+msgstr "错误：svc_fini()调用次数过多"
+
+msgid "sgid={1}"
+msgstr "sgid={1}"
+
+msgid "ERROR: Invalid table entry information given"
+msgstr "错误：无效的表项信息"
+
+msgid ""
+"ERROR: sgmngr svrinit: cannot find the sgclst entry in the Bulletin Board"
+msgstr "错误：sgmngr svrinit：系统共享内存中无法找到sgclst信息"
+
+msgid ""
+"ERROR: sgmngr svrinit: cannot update the sgclst entry in the Bulletin Board"
+msgstr "错误：sgmngr svrinit：系统共享内存中无法更新sgclst信息"
+
+msgid ""
+"ERROR: sgmngr svrinit: cannot find the sgmngr entry in the Bulletin Board"
+msgstr "错误：sgmngr svrinit：系统共享内存中无法找到sgmngr信息"
+
+msgid ""
+"ERROR: sgmngr svrinit: cannot update the sgmngr entry in the Bulletin Board"
+msgstr "错误：sgmngr svrinit：系统共享内存中无法更新sgmngr信息"
+
+msgid "INFO: sgmngr started successfully."
+msgstr "信息：sgmngr启动成功。"
+
+msgid "ERROR: The sgmngr could not bring down a paired sggws"
+msgstr "错误：sgmngr不能停止配对的sggws"
+
+msgid "INFO: sgmngr stopped successfully."
+msgstr "信息：sgmngr停止成功。"
+
+msgid ""
+"ERROR: Exceeds the maximum number of times for the sgmngr to get a new "
+"Bulletin Board"
+msgstr "错误：超过sgmngr获取系统共享内存的最大次数"
+
+msgid "WARN: SIGTERM was ignored while shutting down the sgmngr"
+msgstr "警告：停止sgmngr过程中，SIGTERM信号被忽略"
+
+msgid ""
+"ERROR: Administrative operation request {1} handled by sgmngr failed - {2}, "
+"{3}"
+msgstr "错误：sgmngr处理管理操作请求{1}失败 - {2}, {3}"
+
+msgid ""
+"ERROR: Administrative operation request {1} handled by sgmngr failed - {2}"
+msgstr "错误：sgmngr处理管理操作请求{1}失败 - {2}"
+
+msgid "flags={1}, timeout={2}"
+msgstr "flags={1}, timeout={2}"
+
+msgid "ERROR: Shutting down sgmngr due to removal of message queue"
+msgstr "错误：消息队列被删除导致停止sgmngr停止"
+
+msgid ""
+"WARN: sgmngr received stray reply from the sgmngr's reply queue - {1}, {2}"
+msgstr "警告：sgmngr从其应答队列中接收到过期的应答 - {1}, {2}"
+
+msgid ": {1}: {2}"
+msgstr "：{1}: {2}"
+
+msgid "ERROR: sgmngr requested {1} operation failed - {2}"
+msgstr "错误：sgmngr请求的{1}操作失败 - {2}"
+
+msgid "ERROR: sgmngr cannot find the sgclst"
+msgstr "错误：sgmngr无法找到sgclst"
+
+msgid "status={1}"
+msgstr "status={1}"
+
+msgid "produce information of specified topic, 1st positional parameter takes same effect."
+msgstr "生成指定主题的信息，第一个位置参数起相同的作用。"
+
+msgid "Allowed topics:\n"
+msgstr "允许主题：\n"
+
+msgid "ERROR: Can't find given topic {1}"
+msgstr "错误：无法找到主题{1}"
+
+msgid "ERROR: Misleading topic {1}"
+msgstr "错误：混淆的主题{1}"
+
+msgid "ERROR: Cannot stop processes from non-master node"
+msgstr "错误：无法从非主节点停止进程"
+
+msgid "ERROR: Can't execute {1} - status {2}, errno {3}"
+msgstr "错误：无法执行 {1} - 状态 {2}，错误码 {3}"
+
+msgid "Complete system shutdown."
+msgstr "停止系统完成。"
+
+msgid "Returning to boot mode.\n"
+msgstr "返回启动模式。\n"
+
+msgid "specify hostid to do pclean, 1st positional parameter takes same effect."
+msgstr "指定节点ID来执行pclean，第一个位置参数起相同的作用。"
+
+msgid "\tCleaning the sgclst.\n"
+msgstr "\t清除sgclst。\n"
+
+msgid "\tPausing {1} seconds waiting for system to stabilize.\n"
+msgstr "\t暂停{1}秒，等待系统稳定。\n"
+
+msgid " processes removed from bulletin board\n"
+msgstr " 进程从系统共享内存被移除\n"
+
+msgid "ERROR: Could not send message to sgagent"
+msgstr "错误：无法发送消息给sgagent"
+
+msgid "ERROR: Failed to stop sgagent"
+msgstr "错误：停止sgagent失败"
+
+msgid "sgagent will stop in a few seconds.\n"
+msgstr "sgagent将在数秒内停止。\n"
+
+msgid "operation name to advertise"
+msgstr "要发布的操作名"
+
+msgid "operation name to advertise, 1st positional parameter takes same effect."
+msgstr "要发布的操作名，第一个位置参数起相同的作用。"
+
+msgid "operation implementation to advertise"
+msgstr "要发布的操作实现"
+
+msgid "advertise operation on specified qname"
+msgstr "在指定qname中发布操作"
+
+msgid "advertise operation on specified pgname"
+msgstr "在指定pgname中发布操作"
+
+msgid "advertise operation on specified pgid"
+msgstr "在指定pgid中发布操作"
+
+msgid "advertise operation on specified prcid"
+msgstr "在指定prcid中发布操作"
+
+msgid "operation name to unadvertise, 1st positional parameter takes same effect."
+msgstr "要取消发布的操作名，第一个位置参数起相同的作用。"
+
+msgid "unadvertise operation on specified qname"
+msgstr "在指定qname中取消发布操作"
+
+msgid "unadvertise operation on specified pgname"
+msgstr "在指定pgname中取消发布操作"
+
+msgid "unadvertise operation on specified pgid"
+msgstr "在指定pgid中取消发布操作"
+
+msgid "unadvertise operation on specified prcid"
+msgstr "在指定prcid中取消发布操作"
+
+msgid "ERROR: Cannot advertise operations for administrative processes"
+msgstr "错误：不能为管理进程发布操作"
+
+msgid "WARN: {1} is already advertised on queue {2}"
+msgstr "警告：{1} 早已发布到队列 {2}"
+
+msgid "ERROR: Error advertising {1} on queue {2}"
+msgstr "错误：在队列{2}中发布{1}错误"
+
+msgid "ERROR: Error advertising {1} on pgroup {2} process id {3}"
+msgstr "错误：在pgroup {2} 进程ID {3} 中发布 {1} 错误"
+
+msgid "{1} advertised on {2} process on queue {3}."
+msgstr "在队列{3}的{2}个进程中发布{1} 。"
+
+msgid "{1} advertised on {2} processes on queue {3}."
+msgstr "在队列{3}的{2}个进程中发布{1} 。"
+
+msgid "{1} is not advertised on queue {2}"
+msgstr "{1}没在队列{2}中发布"
+
+msgid "{1} is not advertised on process {2}/{3}"
+msgstr "{1}没在进程{2}/{3}中发布"
+
+msgid "Error removing {1} from queue {2}"
+msgstr "从队列 {2} 删除 {1} 错误"
+
+msgid "Error removing {1} from process {2}/{3}"
+msgstr "从进程 {2}/{3} 删除 {1} 错误"
+
+msgid "{1} removed from {2} processes on queue {3}."
+msgstr "在队列{3}的{2}个进程中删除{1}。"
+
+msgid "{1} removed from {2} process on queue {3}."
+msgstr "在队列{3}的{2}个进程中删除{1}。"
+
+msgid "{1} removed from {2} processes."
+msgstr "{1} 从 {2} 个进程中删除 "
+
+msgid "{1} removed from {2} process."
+msgstr "{1} 从 {2} 个进程中删除 "
+
+msgid "change cost on specified hostid"
+msgstr "修改指定主机的开销值"
+
+msgid "change cost on specified operation name"
+msgstr "修改指定操作名的开销值"
+
+msgid "change cost on specified qname"
+msgstr "修改指定队列的开销值"
+
+msgid "change cost on specified pgname"
+msgstr "修改指定进程组名的开销值"
+
+msgid "change cost on specified pgid"
+msgstr "修改指定进程组ID的开销值"
+
+msgid "chang cost on specified prcid"
+msgstr "修改指定进程ID的开销值"
+
+msgid "cost value to be changed, 1st positional parameter takes same effect."
+msgstr "开销变化值，第一个位置参数起相同的作用。"
+
+msgid "change priority on specified hostid"
+msgstr "修改指定主机的优先级"
+
+msgid "change priority on specified operation name"
+msgstr "修改指定操作名的优先级"
+
+msgid "change priority on specified qname"
+msgstr "修改指定队列的优先级"
+
+msgid "change priority on specified pgname"
+msgstr "修改指定进程组名的优先级"
+
+msgid "change priority on specified pgid"
+msgstr "修改指定进程组ID的优先级"
+
+msgid "change priority on specified prcid"
+msgstr "修改指定进程ID的优先级"
+
+msgid "priority value to be changed, 1st positional parameter takes same effect."
+msgstr "优先级变化值，第一个位置参数起相同的作用。"
+
+msgid "ERROR: The new {1} is not within the range of {2}-{3}"
+msgstr "错误：新值 {1} 不在区间 {2}-{3} 内"
+
+msgid "ERROR: Error changing {1}"
+msgstr "错误：修改 {1} 错误"
+
+msgid "{1} entries changed.\n"
+msgstr "{1} 条记录变更。\n"
+
+msgid "{1} entry changed.\n"
+msgstr "{1} 条记录变更。\n"
+
+msgid "suspend specified operation name"
+msgstr "挂起指定的操作"
+
+msgid "suspend operation on specified qname"
+msgstr "挂起指定队列名称的操作"
+
+msgid "suspend operation on specified pgname"
+msgstr "挂起指定进程组名称的操作"
+
+msgid "suspend operation on specified pgid"
+msgstr "挂起指定进程组ID的操作"
+
+msgid "suspend operation on specified prcid"
+msgstr "挂起指定进程ID的操作"
+
+msgid "resume specified operation name"
+msgstr "恢复指定的操作"
+
+msgid "resume operation on specified qname"
+msgstr "恢复指定队列名称的操作"
+
+msgid "resume operation on specified pgname"
+msgstr "恢复指定进程组名称的操作"
+
+msgid "resume operation on specified pgid"
+msgstr "恢复指定进程组ID的操作"
+
+msgid "resume operation on specified prcid"
+msgstr "恢复指定进程ID的操作"
+
+msgid "Operations {1} {2} on {3} queues.\n"
+msgstr "在 {3} 个队列中操作 {1} {2}。\n"
+
+msgid "Operation {1} {2} on {3} queue.\n"
+msgstr "在 {3} 个队列中操作 {1} {2}。\n"
+
+msgid "All non-admin operations on {1} queues have been {2}."
+msgstr "{1}个队列上的所有非管理操作已经{2}"
+
+msgid "All non-admin operations on {1} queue have been {2}."
+msgstr "{1}个队列上的所有非管理操作已经{2}"
+
+msgid " admin operations have not been {1}."
+msgstr " 所有管理操作已经{1}"
+
+msgid " admin operation has not been {1}."
+msgstr " 所有管理操作已经{1}"
+
+msgid "All operations on {1} queues have been {2}."
+msgstr "{1}个队列上的所有操作已经{2}"
+
+msgid "All operations on {1} queue have been {2}."
+msgstr "{1}个队列中的所有操作已经{2}"
+
+msgid "override existing XML configuration file?"
+msgstr "覆盖存在的XML配置文件？"
+
+msgid "suppress prompting information"
+msgstr "压制提示信息"
+
+msgid "specify XML configuration file, 1st positional parameter takes same effect."
+msgstr "指定XML配置文件，第一个位置参数起相同的作用。"
+
+msgid "enable hidden options"
+msgstr "启用隐藏选项"
+
+msgid "ERROR: SGPROFILE environment is not set\n"
+msgstr "错误：SGPROFILE 环境没有设置\n"
+
+msgid "Override existing XML configuration file? (y/n): "
+msgstr "覆盖存在的XML配置文件? (y/n)："
+
+msgid "answer y or n: "
+msgstr "回答y或n："
+
+msgid "INFO: XML configuration file {1} has been created\n"
+msgstr "信息：创建XML配置文件{1}成功\n"
+
+msgid "Shutting down admin processes ..."
+msgstr "停止管理进程..."
+
+msgid "Shutting down server processes ..."
+msgstr "停止非管理进程..."
+
+msgid "ERROR: Cannot shutdown processes, memory allocation failure"
+msgstr "错误：内存分配失败，不能停止进程"
+
+msgid "WARN: Can't find Process Group = {1} Id = {2}"
+msgstr "警告：无法找到进程，进程组= {1} 进程Id = {2}"
+
+msgid "timeout\n"
+msgstr "超时\n"
+
+msgid "WARN: Bad Host ID, {1} in bulletin board"
+msgstr "警告：系统共享内存上主机ID {1} 错误"
+
+msgid "\tProcess Id = {1} Group Id = {2} Node = {3}:\t"
+msgstr "\t进程ID = {1} 进程组ID = {2} 节点 = {3}：\t"
+
+msgid "INFO: prcid = {1} pgid = {2} SIGTERM send failed - {3}"
+msgstr "信息：进程ID = {1} 进程组ID = {2} SIGTERM 信号发送失败 - {3}"
+
+msgid "INFO: prcid = {1} pgid = {2} SIGTERM sent"
+msgstr "信息：进程ID = {1} 进程组ID = {2} SIGTERM 信号已发送"
+
+msgid "SIGTERM\n"
+msgstr "SIGTERM信号\n"
+
+msgid "SIGTERM ... "
+msgstr "SIGTERM信号 ... "
+
+msgid "INFO: prcid = {1} pgid = {2} SIGKILL send failed {3}"
+msgstr "信息：进程ID = {1} 进程组ID = {2} SIGKILL 信号发送失败 {3}"
+
+msgid "INFO: prcid = {1} pgid = {2} SIGKILL sent"
+msgstr "信息：进程ID = {1} 进程组ID = {2} SIGKILL 信号已发送"
+
+msgid "SIGKILL\n"
+msgstr "SIGKILL信号 \n"
+
+msgid "INFO: System Shutdown Canceled\n"
+msgstr "信息：取消系统停止\n"
+
+msgid "ERROR: No sgclst exists"
+msgstr "错误：没有sgclst存在"
+
+msgid "proc_name={1}, mid={2}"
+msgstr "proc_name={1}, mid={2}"
+
+msgid "status={1}, flag={2}"
+msgstr "status={1}, flag={2}"
+
+msgid "scope={1}"
+msgstr "scope={1}"
+
+msgid "node {1}"
+msgstr "node {1}"
+
+msgid "INFO: Still running\n"
+msgstr "信息：仍在运行\n"
+
+msgid "WARN: No active alternate HOSTID for migration"
+msgstr "警告：没有活跃的备用主机用来迁移"
+
+msgid "shutdown succeeded"
+msgstr "停止成功"
+
+msgid "WARN: Can't shutdown process\n"
+msgstr "警告：不能停止进程\n"
+
+msgid "INFO: Process ({1}/{2}) was shutdown for migration"
+msgstr "信息：进程 ({1}/{2}) 停止，为了迁移"
+
+msgid "WARN: Can't shutdown process ({1}/{2})"
+msgstr "警告：不能停止进程 ({1}/{2})"
+
+msgid "INFO: PRCID={1} PGID={2} SIGTERM send failed - {3}"
+msgstr "信息：进程ID = {1} 进程组ID = {2} SIGTERM 信号发送失败 - {3}"
+
+msgid "INFO: PRCID={1} PGID={2} SIGTERM sent"
+msgstr "信息：进程ID = {1} 进程组ID = {2} SIGTERM 信号已发送"
+
+msgid "INFO: PRCID={1} PGID={2} SIGKILL send failed - {3}"
+msgstr "信息：进程ID = {1} 进程组ID = {2} SIGKILL 信号发送失败 - {3}"
+
+msgid "INFO: PRCID={1} PGID={2} SIGKILL sent"
+msgstr "信息：进程ID = {1} 进程组ID = {2} SIGKILL 信号已发送"
+
+msgid "shutdown failed"
+msgstr "停止失败"
+
+msgid "WARN: Process was shutdown for migration\n"
+msgstr "警告：为了迁移而停止进程\n"
+
+msgid ""
+"WARN: Cannot shutdown sgmngr on {1}. Clients and/or servers may be running\n"
+msgstr "警告：在{1} 不能停止 sgmngr, 客户端或服务端仍在运行\n"
+
+msgid "WARN: Shutdown failed"
+msgstr "警告：停止失败"
+
+msgid "ERROR: Cannot retrieve process information"
+msgstr "错误：不能检索进程信息"
+
+msgid ""
+"ERROR: Process ID {1} in group {2} not marked as restartable.  This process "
+"will not be restarted upon migration."
+msgstr ""
+"错误：进程组 {2} 上的进程ID {1} 没有设置为可重启，这个进程在迁移过程中不会被"
+"重启"
+
+msgid "ERROR: Can't shutdown sgmngr on node {1} causes partitioning"
+msgstr "错误：因为已分区，无法在节点{1} 上停止sgmngr"
+
+msgid "sgmngr on node {1}"
+msgstr "节点{1}的sgmngr"
+
+msgid "can't find sgclst"
+msgstr "无法找到 sgclst"
+
+msgid ""
+"ERROR: process {1} on slot {2} is alive, sgmngr should be recovered "
+"automatically"
+msgstr ""
+"错误：插槽 {2} 上的进程 {1} 还存活，sgmngr应当被自动恢复"
+
+msgid "argc={1}, argv={2}"
+msgstr "argc={1}, argv={2}"
+
+msgid "ERROR: SGROOT environment variable not set"
+msgstr "错误：SGROOT环境变量没有设置"
+
+msgid "boot all admin processes"
+msgstr "启动所有的管理进程"
+
+msgid "boot sgmngr on a particular host id"
+msgstr "在特定的主机上启动 sgmngr"
+
+msgid "boot all processes"
+msgstr "启动所有进程"
+
+msgid "boot the master node"
+msgstr "启动主节点"
+
+msgid "boot a particular process group"
+msgstr "启动一个特定的进程组"
+
+msgid "boot a particular process group id"
+msgstr "启动一个特定的进程组ID"
+
+msgid "boot a particular process id"
+msgstr "启动一个特定的进程ID"
+
+msgid "boot by process name"
+msgstr "通过进程名启动"
+
+msgid "boot processes on a particular host id"
+msgstr "在特定的主机上启动进程"
+
+msgid "min processes to be booted"
+msgstr "启动最小进程数"
+
+msgid "verify full boot"
+msgstr "验证整个启动"
+
+msgid "quiet mode"
+msgstr "静默模式"
+
+msgid "shutdown all admin processes"
+msgstr "停止所有管理进程"
+
+msgid "shutdown sgmngr on a particular host id"
+msgstr "在特定主机停止 sgmngr"
+
+msgid "shutdown all processes"
+msgstr "停止所有进程"
+
+msgid "shutdown the master node"
+msgstr "停止主节点"
+
+msgid "ignore client"
+msgstr "忽略客户端"
+
+msgid "do not shutdown sgtgws"
+msgstr "不要停止sgtgws"
+
+msgid "shutdown a particular process group"
+msgstr "停止一个特定的进程组"
+
+msgid "shutdown a particular process group id"
+msgstr "停止一个特定的进程组ID"
+
+msgid "shutdown a particular process id"
+msgstr "停止一个特定的进程ID"
+
+msgid "shutdown by process name"
+msgstr "通过进程名停止"
+
+msgid "shutdown processes on a particular host id"
+msgstr "停止一个特定主机的进程"
+
+msgid "wait time before kill"
+msgstr "杀死进程前等待时长"
+
+msgid "kill via SIGTERM or SIGKILL"
+msgstr "通过SIGTERM或SIGKILL信号杀死进程"
+
+msgid "sgclst response timeout"
+msgstr "sgclst应答超时"
+
+msgid "ERROR: -P option cannot specify remote HOSTID"
+msgstr "错误：-P 选项不能指定远程主机"
+
+msgid "Boot all admin and server processes? (y/n): "
+msgstr "启动所有管理和非管理进程？(y/n)："
+
+msgid "Shutdown all admin and server processes? (y/n): "
+msgstr "停止所有管理和非管理进程？(y/n)："
+
+msgid "Use more options to specify which processes to boot."
+msgstr "使用更多的选项来指定需要启动哪些进程"
+
+msgid "Use more options to specify which processes to shutdown."
+msgstr "使用更多的选项来指定需要停止哪些进程"
+
+msgid "ERROR: SGPROFILE environment variable must be an absolute pathname.\n"
+msgstr "错误：SGPROFILE 的环境变量必须是绝对路径。\n"
+
+msgid "Booting all admin and server processes in "
+msgstr "启动所有管理和非管理进程，配置文件为 "
+
+msgid "Shutting down all admin and server processes in "
+msgstr "停止所有管理和非管理进程，配置文件为 "
+
+msgid "ERROR: -P option not allowed on non-partitioned node"
+msgstr "错误：-P 选项在非分区节点不允许"
+
+msgid "ERROR: Could not reset model to MP for partitioned shutdown"
+msgstr "错误：分区停止时，无法重置模式为多机模式"
+
+msgid "ERROR: Could not find entry for user"
+msgstr "错误：无法找到用户记录"
+
+msgid "ERROR: Could not attach to local BB for partitioned shutdown"
+msgstr "错误：分区停止时，无法连接到本地共享内存"
+
+msgid "ERROR: Could not bring up temp sgclst for partitioned shutdown"
+msgstr "错误：分区停止时，无法启动临时sgclst"
+
+msgid "ERROR: Failed to suspend local sggws(s) for partitioned shutdown"
+msgstr "错误：分区停止时，挂起本地sggws失败"
+
+msgid "ERROR: Failed to attach to temp sgclst for partitioned shutdown"
+msgstr "错误：分区停止时，无法连接到临时sgclst"
+
+msgid "ERROR: Can't create queue"
+msgstr "错误：无法创建队列"
+
+msgid "ERROR: LAN mode not specified for multiple node application"
+msgstr "错误：多节点应用中，LAN模式没有指定"
+
+msgid "ERROR: cannot create internal BB tables"
+msgstr "错误：无法创建内部的系统共享内存表 "
+
+msgid "ERROR: cannot attach to BB"
+msgstr "错误：无法连接到系统共享内存"
+
+msgid "must run on master node"
+msgstr "必须运行在主节点"
+
+msgid "master node not booted"
+msgstr "主节点未启动"
+
+msgid "ERROR: Bad HOSTID ({1}) in command line option(s)"
+msgstr "错误：命令行选项中错误的主机ID ({1})"
+
+msgid "ERROR: Process group name ({1}) too long"
+msgstr "错误：进程组名 ({1}) 过长"
+
+msgid "ERROR: Invalid process group name ({1})"
+msgstr "错误：无效的进程组名 ({1})"
+
+msgid "ERROR: Bad command line options! Check the LOG file\n"
+msgstr "错误：错误的命令行选项！请检查日志文件\n"
+
+msgid "ERROR: can't get sgclst/sgmngr's table entry\n"
+msgstr "错误：无法获取sgclst/sgmngr的入口\n"
+
+msgid "WARN: can't contact local sgagent process\n"
+msgstr "错误：无法与本地sgagent进程通信\n"
+
+msgid "{1} process started.\n"
+msgstr "{1}个进程已启动。\n"
+
+msgid "{1} processes started.\n"
+msgstr "{1}个进程已启动。\n"
+
+msgid "{1} process stopped.\n"
+msgstr "{1}个进程已停止。\n"
+
+msgid "{1} processes stopped.\n"
+msgstr "{1}个进程已停止。\n"
+
+msgid "INFO: See LOG for complete process status\n"
+msgstr "信息：查看日志来获取完整的进程状态\n"
+
+msgid "value={1}"
+msgstr "value={1}"
+
+msgid "mid={1}, value={2}"
+msgstr "mid={1}, value={2}"
+
+msgid "ERROR: Illegal ctype"
+msgstr "错误：非法的 ctype"
+
+msgid "ERROR: Fatal error encountered"
+msgstr "错误：遇到致命错误"
+
+msgid "WARN: "
+msgstr "警告："
+
+msgid "WARN: {1}"
+msgstr "警告：{1}"
+
+msgid "FATAL: "
+msgstr "致命："
+
+msgid "FATAL: {1}"
+msgstr "致命：{1}"
+
+msgid "INFO: *Interrupt* Want to Continue? (y/n):"
+msgstr "信息：中断，希望继续? (y/n)："
+
+msgid "signo={1}"
+msgstr "signo={1}"
+
+msgid "files added before libraries"
+msgstr "库文件前增加的文件"
+
+msgid "files added after libraries"
+msgstr "库文件后增加的文件"
+
+msgid "header files which operation class defined"
+msgstr "操作类中定义的头文件"
+
+msgid "output filename"
+msgstr "输出文件名"
+
+msgid "namespaces where operation class resides"
+msgstr "操作类所在的命名空间"
+
+msgid "server class name"
+msgstr "服务类名称"
+
+msgid "operation name and its implementation, OPERATION:CLASS"
+msgstr "操作名称及其实现，操作：类"
+
+msgid "keep temp files"
+msgstr "保留临时文件"
+
+msgid "system used only"
+msgstr "只允许系统使用"
+
+msgid "specify to build server"
+msgstr "编译服务端"
+
+msgid "verbose mode"
+msgstr "详细模式"
+
+msgid "ERROR: duplicate operation name {1} given"
+msgstr "错误：给定的操作名称 {1} 重复"
+
+msgid "ERROR: wrong operation parameter given."
+msgstr "错误：给定的参数错误"
+
+msgid "specify to build client"
+msgstr "编译客户端"
+
+msgid "ERROR: sgcompile cannot open the temporary output file "
+msgstr "错误：sgcompile不能打开临时输出文件"
+
+msgid "ERROR: Can't execute {1} - {2}"
+msgstr "错误：无法执行 {1} - {2}"
+
+msgid "ERROR: Failed to determine uname"
+msgstr "错误：无法确定uname"
+
+msgid "ERROR: Can't find node entry for {1}"
+msgstr "错误：无法找到主机{1}的节点入口"
+
+msgid "ERROR: No directory exists in {1}"
+msgstr "错误：{1}中没有目录"
+
+msgid "ERROR: Can't change to directory {1}"
+msgstr "错误：无法改变路径到 {1}"
+
+msgid "ERROR: Can't open file deploy.gtar"
+msgstr "错误：无法打开文件 deploy.gtar"
+
+msgid "ERROR: Can't open file deploy.sh"
+msgstr "错误：无法打开文件 deploy.sh"
+
+msgid "ERROR: Can't append file to deploy.sh"
+msgstr "错误：无法追加文件到 deploy.sh"
+
+msgid "ERROR: Can't stat file deploy.sh"
+msgstr "错误：无法显示文件 deploy.sh 的状态"
+
+msgid "ERROR: Can't connect to {1}:{2}, {3}"
+msgstr "错误：不能连接到 {1}：{2}, {3} "
+
+msgid "ERROR: Can't write to {1}:{2}, {3}"
+msgstr "错误：无法写入{1}：{2}，{3}"
+
+msgid "ERROR: Can't read from {1}:{2}, {3}"
+msgstr "错误：无法从{1}读取：{2}，{3}接收信息"
+
+msgid "ERROR: Negative reply from {1}:{2}"
+msgstr "错误：从{1}得到否定答复：{2}"
+
+msgid "print sgdeploy version"
+msgstr "打印 sgdeploy的版本"
+
+msgid "remote deploy port"
+msgstr "远程部署端口"
+
+msgid "sgdeploy version "
+msgstr "sgdeploy 版本"
+
+msgid "Compiled on "
+msgstr "编译于"
+
+msgid "INFO: {1} exit normally in version mode."
+msgstr "信息：{1}在版本模式下正常退出 "
+
+msgid "print sgdaemon version"
+msgstr "打印sgdaemon版本"
+
+msgid "listening hostname"
+msgstr "监听主机名"
+
+msgid "listening port"
+msgstr "监听端口"
+
+msgid "sgdaemon version "
+msgstr "sgdaemon 版本"
+
+msgid "ERROR: accept failed, "
+msgstr "错误：accept 失败, "
+
+msgid "ERROR: Can't read from remote client, "
+msgstr "错误：无法从远程客户端读取信息, "
+
+msgid "ERROR: Invalid magic read from remote client.\n"
+msgstr "错误：从远程客户端读取到无效的魔数。\n"
+
+msgid "ERROR: Can't open file deploy.sh, "
+msgstr "错误：无法打开文件 deploy.sh, "
+
+msgid "ERROR: Can't write data to deploy.sh, "
+msgstr "错误：无法写数据到 deploy.sh, "
+
+msgid "ERROR: Can't chmod for deploy.sh, "
+msgstr "错误：无法对deploy.sh文件执行chmod命令, "
+
+msgid "ERROR: Can't execute command "
+msgstr "错误：无法执行命令"
+
+msgid "ERROR: Can't write to remote client, "
+msgstr "错误：无法向远程客户端发送信息, "
+
+msgid "mid={1}, sect={2}, spawn_flags={3}"
+msgstr "mid={1}, sect={2}, spawn_flags={3}"
+
+msgid "print current bbm version"
+msgstr "打印当前的sgmngr版本"
+
+msgid "run in conf mode"
+msgstr "以配置模式运行"
+
+msgid "run in read mode"
+msgstr "以只读模式运行"
+
+msgid "run in wizard mode"
+msgstr "以向导模式运行"
+
+msgid "run in SM mode"
+msgstr "以私有模式运行"
+
+msgid "sgmngr version "
+msgstr "sgmngr版本"
+
+msgid "ERROR: SGPROFILE environment variable not set.\n"
+msgstr "错误：SGPROFILE环境变量没有设置。\n"
+
+msgid "ERROR: SGPROFILE must be an absolute pathname.\n"
+msgstr "错误：SGPROFILE 必须是绝对路径。\n"
+
+msgid "metadata repository configuration file"
+msgstr "元数据存仓库储配置文件"
+
+msgid "ERROR: {1} start failure, see ULOG for more detail."
+msgstr "错误：{1} 启动失败, 请查看ULOG获取更多信息。"
+
+msgid "INFO: {1} -g {2} -p {3} started successfully."
+msgstr "信息：{1} -g {2} -p {3} 启动成功。"
+
+msgid "INFO: {1} -g {2} -p {3} stopped successfully."
+msgstr "信息：{1} -g {2} -p {3} 停止成功。"
+
+msgid "ERROR: Duplicate key {1} found"
+msgstr "错误：重复的键值 {1} "
+
+msgid "ERROR: No entry loaded."
+msgstr "错误：没有记录加载。"
+
+msgid "INFO: {1} entries loaded successfully."
+msgstr "信息：{1} 条记录加载成功。"
+
+msgid "INFO: {1} entry loaded successfully."
+msgstr "信息：{1} 条记录加载成功。"
+
+msgid "ERROR: Parse section repositories failure, {1}"
+msgstr "错误：解析repositories节失败, {1}"
+
+msgid ""
+"ERROR: sgmngr bbclean: cannot find the sgclst entry in the Bulletin Board"
+msgstr "错误：sgmngr bbclean：无法在系统共享内存找到sgclst入口"
+
+msgid "ERROR: sgmngr bbclean cannot find sgmngr entries in the Bulletin Board"
+msgstr "错误：sgmngr bbclean：无法在系统共享内存找到 sgmngr入口"
+
+msgid "ERROR: sgmngr bbclean cannot find sgclst entry in the Bulletin Board"
+msgstr "错误：sgmngr bbclean：无法在系统共享内存找到sgclst入口"
+
+msgid ""
+"ERROR: sgmngr bbclean cannot find queue entry for sgclst in the Bulletin "
+"Board"
+msgstr "错误：sgmngr bbclean：无法在系统共享内存找到sgclst的队列入口"
+
+msgid ""
+"ERROR: sgmngr bbclean cannot open Bulletin Board image, {1} while restarting "
+"the sgclst"
+msgstr "错误：sgmngr bbclean：重启sgclst过程中无法打开系统共享内存映像{1}"
+
+msgid ""
+"ERROR: sgmngr bbclean cannot write the Bulletin Board for restarting the "
+"sgclst"
+msgstr "错误：sgmngr bbclean：重启sgclst时，无法写入系统共享内存"
+
+msgid "ERROR: sgmngr bbclean attempting to restart the sgclst failed"
+msgstr "错误：sgmngr bbclean：重启sgclst失败"
+
+msgid ""
+"INFO: BB on node {1} corrupted--replacing BB;\n"
+"\t\tBB statistics will be lost (upload={2})."
+msgstr ""
+"信息：节点 {1} 的系统共享内存崩溃 － 替代之;\n"
+"\t\t 其上的统计信息将丢失 (upload={2})."
+
+msgid ""
+"INFO: BB on node {1} corrupted; recovery attempts have failed.\n"
+"\tPlease contact system administrator."
+msgstr ""
+"信息：节点 {1} 的系统共享内存崩溃; 尝试恢复失败。\n"
+"\t 请联系系统管理员."
+
+msgid ""
+"ERROR: sgmngr bbclean: cannot re-attach to the Bulletin Board for recovery"
+msgstr "错误：sgmngr bbclean：无法为恢复重新连接到系统共享内存"
+
+msgid "ERROR: sgmngr bbclean: BB insane"
+msgstr "错误：sgmngr bbclean：系统共享内存混乱"
+
+msgid "WARN: O_IMOK message could not be sent to sgclst - {1}"
+msgstr "警告：O_IMOK消息无法发送到sgclst - {1}"
+
+msgid "ERROR: Can't find master sgmngr"
+msgstr "错误：无法找到主节点 sgmngr"
+
+msgid "INFO: master node suspended."
+msgstr "信息：主节点挂起。"
+
+msgid "INFO: master node resumed."
+msgstr "信息：主节点恢复。"
+
+msgid "restart process's pgid"
+msgstr "重启进程组"
+
+msgid "restart process's prcid"
+msgstr "重启进程"
+
+msgid "ERROR: Unable to read CLUSTER section of SGPROFILE file"
+msgstr "错误：无法读取SGPROFIL文件的CLUSTER章节"
+
+msgid "ERROR: Execute permission denied, not application administrator"
+msgstr "错误：只有应用程序管理员才有权限执行"
+
+msgid "ERROR: Cannot be a sgrecover process - {1}, {2}\n"
+msgstr "错误：不能成为sgrecover进程 - {1}, {2}\n"
+
+msgid "ERROR: Cannot be a sgrecover process"
+msgstr "错误：不能成为sgrecover进程"
+
+msgid "ERROR: Getting process information from SGPROFILE"
+msgstr "错误：从SGPROFILE获取进程信息"
+
+msgid "ERROR: Reading process information from BB"
+msgstr "错误：从系统共享内存读取进程信息"
+
+msgid "ERROR: Sequencing processes to be restarted"
+msgstr "错误：对需要重启的进程排序失败"
+
+msgid "ERROR: Cannot restart a process"
+msgstr "错误：无法重启进程"
+
+msgid "ERROR: Process to be restarted, {1} is still running"
+msgstr "错误：准备重启的进程{1}一直在运行"
+
+msgid "ERROR: Cannot restart a process because the MAXGEN number reached"
+msgstr "错误：达到重启最大次数，无法重启进程"
+
+msgid "ERROR: Cannot restart the process"
+msgstr "错误：无法重启进程"
+
+msgid ""
+"INFO: Process process, {1} is still running; forcing termination via SIGIOT"
+msgstr "信息：进程{1}一直在运行中，通过SIGIOT强制停止"
+
+msgid "ERROR: Cannot kill the process, {1} {2}"
+msgstr "错误：无法杀掉进程 {1} {2}"
+
+msgid "ERROR: Cannot restart a process - cannot get information for node {1}"
+msgstr "错误：无法重启进程，无法获取节点{1}的信息"
+
+msgid "WARN: The message queue is removed. The process cannot be restarted"
+msgstr "警告：消息队列被删除，无法重启进程"
+
+msgid "ERROR: Cannot restart the process - fork error"
+msgstr "错误：无法重启进程 - fork()失败"
+
+msgid "ERROR: Cannot restart a process - exec() failed"
+msgstr "错误：无法重启进程 - exec()失败 "
+
+msgid "ERROR: Pipe error, assume failed"
+msgstr "错误：管道错误，假定失败"
+
+msgid "ERROR: On restart, process process ID {1} failed to initialize"
+msgstr "错误：重启过程中，进程ID为{1}的进程初始化失败 "
+
+msgid "ERROR: Cannot restart the process - no sgmngr"
+msgstr "错误：无法重启进程 - 没有sgmngr"
+
+msgid "ERROR: Cannot restart the process - no sgclst available"
+msgstr "错误：无法重启进程 - 没有可用的sgclst"
+
+msgid "ERROR: Application initialization failure"
+msgstr "错误：应用初始化失败"
+
+msgid "ERROR: Cannot restart a process - unknown process creation error: {1}"
+msgstr "错误：无法重启进程 - 未知的进程创建错误：{1}"
+
+msgid "INFO: A process has restarted: {1}"
+msgstr "信息：进程已经重启：{1}"
+
+msgid "cursor={1}"
+msgstr "cursor={1}"
+
+msgid "ERROR: Restart error - retrieving process parameters"
+msgstr "错误：重启失败 - 检索进程参数错误"
+
+msgid "ERROR: Failed to start sghgws"
+msgstr "错误：启动sghgws失败"
+
+msgid "ERROR: Command line option formation error for process {1}"
+msgstr "错误：进程{1}命令行选项格式化错误"
+
+msgid "ERROR: Too many arguments for process {1}"
+msgstr "错误：进程{1}的参数太多"
+
+msgid "errcode={1}"
+msgstr "errcode={1}"
+
+msgid "ERROR: Cannot retrieve information for restarting process"
+msgstr "错误：无法检索重启进程的信息"
+
+msgid "INFO: Cannot restart process, scheduling for cleanup"
+msgstr "信息：无法重启进程，安排清理"
+
+msgid "ERROR: Cannot find registry table entry for restarting process"
+msgstr "错误：无法找到重启进程的注册表记录"
+
+msgid "ERROR: failed to restart administrative process, rescheduling restart"
+msgstr "错误：重启管理进程失败，安排重启"
+
+msgid "ERROR: Cannot update process information for restarting process {1}/{2}"
+msgstr "错误：无法更新重启进程{1}/{2}的进程信息 "
+
+msgid "cmdsid={1}, cmdgid={2}"
+msgstr "cmdsid={1}, cmdgid={2}"
+
+msgid "ERROR: Could not identify sequence for pgid={1}, prcid={2}"
+msgstr "错误：无法识别进程组ID={1}, 进程ID={2}的顺序"
+
+msgid "ERROR: Cannot start the sgclear process: {1}"
+msgstr "错误：无法启动sgclear 进程：{1}"
+
+msgid "ERROR: Automatic process recovery failed, require manual intervention"
+msgstr "错误：自动进程恢复失败，需要手动干预"
+
+msgid ", process {1}/{2}"
+msgstr ", 进程{1}/{2}"
+
+msgid ""
+"ERROR: message was dropped since remote network is out of operation, hostid "
+"= {1}"
+msgstr "错误：远程网络无法操作，消息被丢弃，主机ID = {1}"
+
+msgid "ERROR: Fatal error receiving requests, shutting process down, {1}"
+msgstr "错误：接收请求时遇到致命错误，停止进程,{1}"
+
+msgid "ERROR: sgmngr broadcast reply timeout, node= {1} opcode= {2}"
+msgstr "错误：sgmngr 广播应答超时，节点 = {1} 代码= {2}"
+
+msgid "ERROR: sgmngr broadcast send timeout, node = {1} opcode = {2}"
+msgstr "错误：sgmngr 广播发送超时，节点 = {1} 代码 = {2}"
+
+msgid ""
+"ERROR: sgmngr broadcast send failure, node = {1} error = {2} opcode = {3}"
+msgstr "错误：sgmngr 广播发送失败，节点 = {1} 错误代码 = {2} 代码 = {3}"
+
+msgid "cnt={1}"
+msgstr "cnt={1}"
+
+msgid "ERROR: Cannot get sgmngr broadcast replies - {1}"
+msgstr "错误：无法获取sgmngr广播应答- {1}"
+
+msgid "WARN: Stray {1} received from process {2}"
+msgstr "警告：从{2}接收到迷失的{1}消息"
+
+msgid "WARN: Stale message received from sgmngr on node {1} opcode = {2}"
+msgstr "警告：从节点{1}接收到来自于sgmngr的过期消息，opcode = {2}"
+
+msgid "ERROR: sgmngr broadcast operation failure, node= {1} opcode= {2}"
+msgstr "错误：sgmngr广播操作失败，节点 {1} opcode = {2}"
+
+msgid "ERROR: sgmngr broadcast RPC failure, node= {1} opcode= {2}"
+msgstr "错误：sgmngr广播RPC消息失败，节点 ＝ {1} opcode = {2}"
+
+msgid "INFO: Sending new SGPROFILE file to node {1}"
+msgstr "信息：向节点{1}发送新的SGPROFILE文件"
+
+msgid "ERROR: Failed to find configuration information on node {1}"
+msgstr "错误：无法找到节点{1}的配置信息"
+
+msgid ""
+"ERROR: Failed to propagate updated configuration information to node {1}"
+msgstr "错误：无法向节点{1}传播更新的配置信息"
+
+msgid "INFO: Sending sgmngr on node {1} new version of bulletin board"
+msgstr "信息：向节点{1}的sgmngr发送系统共享内存新版本"
+
+msgid "ERROR: sgmngr upload request not sent, node = {1} - {2}"
+msgstr "错误：sgmngr上传请求未发送，节点 = {1} - {2}"
+
+msgid "ERROR: sgmngr partitioned, node= {1}"
+msgstr "错误：sgmngr分区了，节点= {1}"
+
+msgid "ERROR: Cannot retrieve sgmngr entry for pclean operation"
+msgstr "错误：pclean操作无法检索sgmngr入口"
+
+msgid "INFO: pclean - {1} now reachable and not removed from bulletin board"
+msgstr "信息：pclean - {1} 现在可达，不从系统共享内存删除"
+
+msgid "INFO: pclean - {1} not partitioned and not removed from bulletin board"
+msgstr "信息：pclean - {1} 不再分区，不从系统共享内存删除"
+
+msgid "ERROR: Could not remove process entry for sgid {1}"
+msgstr "错误：无法删除sgid {1}的进程记录"
+
+msgid "WARN: Could not update master site information"
+msgstr "警告：无法更新主节点信息"
+
+msgid "WARN: Could not update master site information completely"
+msgstr "警告：无法完整地更新主节点信息"
+
+msgid ""
+"ERROR: Unable to unregister - remote procedure call failure - can't send "
+"request - {1}"
+msgstr "错误：无法注销 - 远程调用失败 - 无法发送请求 - {1}"
+
+msgid "specify hostid to do bbclean"
+msgstr "指定执行bbclean的主机"
+
+msgid "specify section name to do bbclean, REGTAB/PROCTAB/OPTAB/PGTAB"
+msgstr "指定执行bbclean的章节名称, REGTAB/PROCTAB/OPTAB/PGTAB"
+
+msgid "do bbclean on all nodes"
+msgstr "在所有节点上执行bbclean"
+
+msgid "do bbclean on sgclst only"
+msgstr "只在sgclst执行bblean"
+
+msgid "Cleaning the bulletin board on node {1}"
+msgstr "清理节点{1}的系统共享内存"
+
+msgid "Cleaning the Distinguished Bulletin Board.\n"
+msgstr "清理混淆的系统共享内存\n"
+
+msgid "Bulletin Board Internals:\n"
+msgstr "系统共享内存内部：\n"
+
+msgid "             MAGIC: 0x"
+msgstr "              魔数：0x"
+
+msgid "      CLST RELEASE: "
+msgstr "          程序版本："
+
+msgid "      CLST VERSION: "
+msgstr "         CLST 版本："
+
+msgid "        SG VERSION: "
+msgstr "           SG 版本："
+
+msgid "        TOTAL SIZE: 0x"
+msgstr "            总大小：0x"
+
+msgid "            CLSTID: "
+msgstr "            集群ID："
+
+msgid "               UID: "
+msgstr "            用户ID："
+
+msgid "               GID: "
+msgstr "              组ID："
+
+msgid "              PERM: "
+msgstr "              权限："
+
+msgid "          QUESBKTS: "
+msgstr "          队列桶数："
+
+msgid "            PGBKTS: "
+msgstr "        进程组桶数："
+
+msgid "          PROCBKTS: "
+msgstr "          进程桶数："
+
+msgid "            OPBKTS: "
+msgstr "          操作桶数："
+
+msgid "Clients: Slot                    Process ID LOCK TYPE Queue Address\n"
+msgstr "客户端：插槽                     进程ID     锁类型    队列地址\n"
+
+msgid "ADMINISTRATIVE Clients: Slot     Process ID LOCK TYPE Queue Address\n"
+msgstr "管理客户端：插槽                 进程ID     锁类型    队列地址\n"
+
+msgid "produce information of queue section"
+msgstr "打印队列章节信息"
+
+msgid "produce information of process section"
+msgstr "打印进程章节信息"
+
+msgid "produce information of operation section"
+msgstr "打印操作章节信息"
+
+msgid "Bulletin Board Allocation Maps:\n"
+msgstr "系统共享内存分配映射：\n"
+
+msgid " Total Entries\n"
+msgstr " 总节点数\n"
+
+msgid "      Free List: 1 Entry Free\n"
+msgstr "       空闲列表：1 条空闲\n"
+
+msgid "      Free List: {1} Entries Free\n"
+msgstr "       空闲列表：{1} 条空闲\n"
+
+msgid "    In-Use List: 1 Entry Allocated, "
+msgstr "       在用列表：1 条已分配, "
+
+msgid "    In-Use List: {1} Entries Allocated, "
+msgstr "       在用列表：{1}  条已分配, "
+
+msgid "Longest Collision Chain: 1 Entry\n"
+msgstr "           最长的碰撞链：1 条\n"
+
+msgid "Longest Collision Chain: {1} Entries\n"
+msgstr "           最长的碰撞链：{1} 条\n"
+
+msgid ""
+" Hash Table:\n"
+"  "
+msgstr ""
+" 哈希表:\n"
+"  "
+
+msgid "        Backward Link   Entry   Forward Link\n"
+msgstr "             反向链接   记录    前向链接\n"
+
+msgid "Bulletin Board Parameters:\n"
+msgstr "系统共享内存参数：\n"
+
+msgid "           OPTIONS: "
+msgstr "              选项："
+
+msgid "             LDBAL: "
+msgstr "          负载均衡："
+
+msgid "            MASTER: "
+msgstr "            主节点："
+
+msgid "          MAXNODES: "
+msgstr "        最大节点数："
+
+msgid "           MAXNETS: "
+msgstr "        最大网络数："
+
+msgid "           MAXCLTS: "
+msgstr "      最大客户端数："
+
+msgid "           MAXQUES: "
+msgstr "        最大对列数："
+
+msgid "            MAXPGS: "
+msgstr "      最大进程组数："
+
+msgid "          MAXPROCS: "
+msgstr "        最大进程数："
+
+msgid "            MAXOPS: "
+msgstr "        最大操作数："
+
+msgid "           QUEBKTS: "
+msgstr "          队列桶数："
+
+msgid "          POLLTIME: "
+msgstr "          巡检时间："
+
+msgid "         ROBUSTINT: "
+msgstr "    健壮性检查间隔："
+
+msgid "         STACKSIZE: 0x"
+msgstr "        线程栈大小：0x"
+
+msgid "            MSGMNB: "
+msgstr "        最大消息数："
+
+msgid "            MSGMAX: "
+msgstr "        消息字节数："
+
+msgid "        CMPRSLIMIT: "
+msgstr "          压缩阀值："
+
+msgid "            NFILES: "
+msgstr "    最大打开文件数："
+
+msgid "           BLKTIME: "
+msgstr "          阻塞间隔："
+
+msgid "          CLSTWAIT: "
+msgstr "      集群等待间隔："
+
+msgid "         MNGRQUERY: "
+msgstr "  MNGR查询等待间隔："
+
+msgid "          INITWAIT: "
+msgstr "    初始化等待间隔："
+
+msgid "Bulletin Board Meters:\n"
+msgstr "系统共享内存标尺：\n"
+
+msgid "          Cur Cost: "
+msgstr "          当前开销："
+
+msgid "       Cur # Queue: "
+msgstr "        当前队列数："
+
+msgid "     Cur # Process: "
+msgstr "        当前进程数："
+
+msgid "   Cur # Operation: "
+msgstr "        当前操作数："
+
+msgid "      Cur # PGroup: "
+msgstr "      当前进程组数："
+
+msgid "      Cur # Client: "
+msgstr "      当前客户端数："
+
+msgid "        Max # Node: "
+msgstr "        最大节点数："
+
+msgid "       Max # Queue: "
+msgstr "        最大队列数："
+
+msgid "     Max # Process: "
+msgstr "        最大进程数："
+
+msgid "   Max # Operation: "
+msgstr "        最大操作数："
+
+msgid "      Max # PGroup: "
+msgstr "      最大进程组数："
+
+msgid "      Max # Client: "
+msgstr "      最大客户端数："
+
+msgid "    # Wk Initiated: "
+msgstr "      发起的开销数："
+
+msgid "    # Wk Completed: "
+msgstr "        完成开销值："
+
+msgid "       Lan Version: "
+msgstr "      网络连接版本："
+
+msgid "         # Request: "
+msgstr "            请求数："
+
+msgid "         Timestamp: "
+msgstr "            时间戳："
+
+msgid "Current Bulletin Board Status:\n"
+msgstr "当前的系统共享内存状态：\n"
+
+msgid "           Cur # Process: "
+msgstr "              当前进程数："
+
+msgid "         Cur # Operation: "
+msgstr "              当前操作数："
+
+msgid "     Cur # Request queue: "
+msgstr "          当前请求队列数："
+
+msgid "            Cur # SGroup: "
+msgstr "            当前进程组数："
+
+msgid "specify filename to dump, 1st positional parameter takes same effect."
+msgstr "指定导出的文件名，第一个位置参数起相同的作用。"
+
+msgid "Bulletin board dumped into "
+msgstr "系统共享内存导出到"
+
+msgid "ERROR: dump failed - can't find sgmngr"
+msgstr "错误：导出失败 - 无法找到 sgmngr"
+
+msgid "ERROR: dump failed - can't find sgclst"
+msgstr "错误：导出失败 - 无法找到 sgclst"
+
+msgid "ERROR: dump failed"
+msgstr "错误：导出失败 "
+
+msgid "ERROR: Can't find hostid for hostname {1}"
+msgstr "错误：无法找到主机名 {1} 的hostid"
+
+msgid "ERROR: Can't open shared memory, error_code = {1}, native_error = {2}"
+msgstr "错误：无法打开共享内存, 错误代码 = {1}, 本地代码 = {2}"
+
+msgid "ERROR: Can't open file {1} for dump"
+msgstr "错误：无法打开导出文件 {1}"
+
+msgid "ERROR: Can't write file {1} for dump"
+msgstr "错误：无法写入导出文件 {1}"
+
+msgid "specify filename to load, 1st positional parameter takes same effect."
+msgstr "指定加载文件名，第一个位置参数起相同的作用。"
+
+msgid "specify clstid to load"
+msgstr "指定需要加载的clstid"
+
+msgid "ERROR: Can't stat file {1} for load"
+msgstr "错误：无法获取需要加载文件{1}的状态"
+
+msgid ""
+"ERROR: Can't open/create shared memory, error_code = {1}, native_error = {2}"
+msgstr "错误：无法打开/创建共享内存，错误代码= {1}，本地代码={2}"
+
+msgid "ERROR: Can't open file {1} for load"
+msgstr "错误：无法打开需要加载的文件 {1}"
+
+msgid "ERROR: Can't read file {1} for load"
+msgstr "错误：无法读取需要加载的文件 {1}"
+
+msgid "Bulletin board loaded from "
+msgstr "加载系统共享内存于"
+
+msgid "specify default hostid to all nodes"
+msgstr "指定默认的hostid为所有节点"
+
+msgid "specify default hostid"
+msgstr "指定默认的hostid"
+
+msgid "specify default qname"
+msgstr "指定默认的队列名"
+
+msgid "specify default pgname"
+msgstr "指定默认的进程组名"
+
+msgid "specify default pgid"
+msgstr "指定默认的进程组ID"
+
+msgid "specify default prcid"
+msgstr "指定默认的进程ID"
+
+msgid "specify default operation name"
+msgstr "指定默认的操作名称"
+
+msgid "specify default user name"
+msgstr "指定默认的用户名"
+
+msgid "specify default client name"
+msgstr "指定默认的客户端名称"
+
+msgid "Default Settings:\n"
+msgstr "默认设置：\n"
+
+msgid "         Host ID: "
+msgstr "          主机ID："
+
+msgid "(not set)"
+msgstr "(未设置)"
+
+msgid "      Queue Name: "
+msgstr "          队列名："
+
+msgid "     PGroup Name: "
+msgstr "        进程组名："
+
+msgid "    Process Name: "
+msgstr "          进程名："
+
+msgid "  Operation Name: "
+msgstr "          操作名："
+
+msgid "       User Name: "
+msgstr "          用户名："
+
+msgid "     Client Name: "
+msgstr "        客户端名："
+
+msgid "turn {1} on/off, 1st positional parameter takes same effect."
+msgstr "设置 {1} 开/关 ，第一个位置参数起相同的作用。"
+
+msgid "ERROR: only on/off is allowed for option 'option'"
+msgstr "错误：选项option只允许on/off "
+
+msgid " now on\n"
+msgstr "打开\n"
+
+msgid " now off\n"
+msgstr "关闭\n"
+
+msgid "produce information of specified hostid"
+msgstr "打印指定主机ID的信息"
+
+msgid "produce information of specified user name"
+msgstr "打印指定用户名的信息"
+
+msgid "produce information of specified client name"
+msgstr "打印指定客户端名的信息"
+
+msgid "ERROR: Client information could not be retrieved from site {1}"
+msgstr "错误：无法检索节点{1}的客户端信息"
+
+msgid "ERROR: make msg failed - {1}"
+msgstr "错误：生成消息失败 - {1}"
+
+msgid "ERROR: error during send/receive of remote procedure call"
+msgstr "错误：远过程调用过程中，发送/接收遇到错误"
+
+msgid "ERROR: failure on remote procedure call"
+msgstr "错误：远程过程调用失败"
+
+msgid "    HOSTID        User Name       Client Name       Time       Status\n"
+msgstr "    主机ID        用户名          客户端名          时间       状态\n"
+
+msgid "           PID: "
+msgstr "        进程ID："
+
+msgid "        HOSTID: "
+msgstr "        主机ID："
+
+msgid "         QADDR: "
+msgstr "      队列地址："
+
+msgid "     LAST PGID: "
+msgstr "  最近进程组ID："
+
+msgid "       USRNAME: "
+msgstr "        用户名："
+
+msgid "       CLTNAME: "
+msgstr "      客户端名："
+
+msgid "        PGNAME: "
+msgstr "      进程组名："
+
+msgid "    RTIMESTAMP: "
+msgstr "    注册时间戳："
+
+msgid "       RSTATUS: "
+msgstr "      注册状态："
+
+msgid "      RREQMADE: "
+msgstr "    完成请求数："
+
+msgid "       TIMEOUT: "
+msgstr "          超时："
+
+msgid "     TIMESTAMP: "
+msgstr "        时间戳："
+
+msgid "       RELEASE: "
+msgstr "          版本："
+
+msgid "       BLKTIME: "
+msgstr "      阻塞时间："
+
+msgid "      EXECTIME: "
+msgstr "      执行时间："
+
+msgid "          PGID: "
+msgstr "      进程组ID："
+
+msgid "         PRCID: "
+msgstr "        进程ID："
+
+msgid "  GOOD HANDLES: "
+msgstr "      正常句柄："
+
+msgid " STALE HANDLES: "
+msgstr "      过时句柄："
+
+msgid "           GEN: "
+msgstr "      重起次数："
+
+msgid " READING QADDR: "
+msgstr "    读队列地址："
+
+msgid "         INDEX: "
+msgstr "          索引："
+
+msgid "        HANDLE: "
+msgstr "          句柄："
+
+msgid "      RPLYITER: "
+msgstr "    应答序列号："
+
+msgid "      TIMELEFT: "
+msgstr "      剩余时长："
+
+msgid "produce information of specified pgname"
+msgstr "打印指定进程组名的信息"
+
+msgid "produce information of specified pgid"
+msgstr "打印指定进程组ID的信息"
+
+msgid "WARN: No entries found"
+msgstr "警告：没发现记录"
+
+msgid "Process group parameters:\n"
+msgstr "进程组参数：\n"
+
+msgid "           PGroup Name: "
+msgstr "              进程组名："
+
+msgid "             PGroup Id: "
+msgstr "             进程组 Id："
+
+msgid "          Primary Node: "
+msgstr "                主节点："
+
+msgid "     Alternative Nodes: "
+msgstr "              备份节点："
+
+msgid "          Current Node: "
+msgstr "              当前节点："
+
+msgid "produce information of specified qname"
+msgstr "打印指定队列名的信息"
+
+msgid "            Prog Name: "
+msgstr "               程序名："
+
+msgid "           Queue Name: "
+msgstr "               队列名："
+
+msgid " # Processes on Queue: "
+msgstr "       队列中的进程数："
+
+msgid "      Process Options:"
+msgstr "             进程选项："
+
+msgid "          Cost Queued: "
+msgstr "           入队列开销："
+
+msgid "             # Queued: "
+msgstr "             入队列数："
+
+msgid "    Total Cost Queued: "
+msgstr "           队列总开销："
+
+msgid "       Total # Queued: "
+msgstr "          总数 # 队列："
+
+msgid "           Queue Type: ADMIN\n"
+msgstr "             队列类型：管理员\n"
+
+msgid "           Queue Type: USER\n"
+msgstr "             队列类型：用户\n"
+
+msgid "Proc Name "
+msgstr "进程名"
+
+msgid "Queue Name "
+msgstr "队列名"
+
+msgid "# Processes "
+msgstr "进程数"
+
+msgid "Cs Queued "
+msgstr "队列开销"
+
+msgid "# Queued "
+msgstr "入队列数"
+
+msgid "Ave. Len "
+msgstr "队列平均长度"
+
+msgid "Hostid "
+msgstr "主机ID"
+
+msgid " Queue Table Entries allocated for client processes.\n"
+msgstr " 为客户端进程分配的队列记录\n"
+
+msgid " Queue Table Entry allocated for client processes.\n"
+msgstr " 为客户端进程分配的队列记录\n"
+
+msgid "produce information of specified prcid"
+msgstr "打印指定进程ID的信息"
+
+msgid "Totals for all nodes:\n"
+msgstr "所有节点的总数：\n"
+
+msgid "Node "
+msgstr "节点"
+
+msgid "PGName "
+msgstr "进程组名"
+
+msgid "ID "
+msgstr "编号"
+
+msgid "RqDone "
+msgstr "请求完成数"
+
+msgid "Cost Done "
+msgstr "完成开销"
+
+msgid "Current Operation "
+msgstr "当前操作 "
+
+msgid "      PROCNAME: "
+msgstr "        进程名："
+
+msgid "    TOTAL_IDEL: "
+msgstr "      空闲总数："
+
+msgid "    TOTAL_BUSY: "
+msgstr "        忙总数："
+
+msgid "    NCOMPLETED: "
+msgstr "        完成数："
+
+msgid "  CSTCOMPLETED: "
+msgstr "      完成开销："
+
+msgid "        RQADDR: "
+msgstr "  请求队列地址："
+
+msgid "        RPADDR: "
+msgstr "  应答队列地址："
+
+msgid "         CTIME: "
+msgstr "      创建时间："
+
+msgid "        STATUS: "
+msgstr "          状态："
+
+msgid "         MTIME: "
+msgstr "      修改时间："
+
+msgid "      SRELEASE: "
+msgstr "          版本："
+
+msgid "produce information of specified operation"
+msgstr "打印指定操作的信息"
+
+msgid "Operation Name "
+msgstr "操作名"
+
+msgid "Class Name "
+msgstr "类名"
+
+msgid "# Done "
+msgstr "完成数 "
+
+msgid "Status "
+msgstr "状态"
+
+msgid "    Queue Name: "
+msgstr "        队列名："
+
+msgid "      PRIORITY: "
+msgstr "        优先级："
+
+msgid "       OP_NAME: "
+msgstr "      操作名称："
+
+msgid "      OP_CNAME: "
+msgstr "      操作类名："
+
+msgid "      OP_INDEX: "
+msgstr "      操作索引："
+
+msgid "        POLICY: "
+msgstr "          策略："
+
+msgid "          COST: "
+msgstr "          开销："
+
+msgid "     COSTLIMIT: "
+msgstr "      开销阀值："
+
+msgid "       NQUEUED: "
+msgstr "      入队列数："
+
+msgid "         Proc Name: "
+msgstr "            进程名："
+
+msgid "        Queue Name: "
+msgstr "            队列名："
+
+msgid "   Process Options: "
+msgstr "          进程选项："
+
+msgid "              PGID: "
+msgstr "          进程组ID："
+
+msgid "        Process ID: "
+msgstr "            进程ID："
+
+msgid "           HOST ID: "
+msgstr "            主机ID："
+
+msgid "produce information of specified opname"
+msgstr "打印指定操作名称的信息"
+
+msgid "      Class Name: "
+msgstr "            类名："
+
+msgid " Operation Index: "
+msgstr "        操作索引："
+
+msgid "        Priority: "
+msgstr "          优先级："
+
+msgid "            Cost: "
+msgstr "            开销："
+
+msgid "      Cost Limit: "
+msgstr "        开销阀值："
+
+msgid "         Timeout: "
+msgstr "            超时："
+
+msgid "      Block Time: "
+msgstr "        阻塞时长："
+
+msgid "clean all that need it"
+msgstr "清理所有需要它的入口"
+
+msgid "clean process's pgid"
+msgstr "清理进程的进程组ID"
+
+msgid "clean process's prcid"
+msgstr "清理进程的进程ID"
+
+msgid ""
+"ERROR: Invalid option given, option 'all' or 'pgid' and 'prcid' must given"
+msgstr "错误：给定的选项无效，必须指定 all、 pgid 或 prcid"
+
+msgid "ERROR: Cannot be a sgclear process - native_code = {1}, errno {2}\n"
+msgstr "错误：不能成为sgclear进程  - 本地代码 = {1}, 错误代码 {2}\n"
+
+msgid "ERROR: Cannot be a sgclear process"
+msgstr "错误：不能成为sgclear进程"
+
+msgid "ERROR: Could not retrieve process"
+msgstr "错误：无法检索进程"
+
+msgid "ERROR: Process to be cleaned up is still running"
+msgstr "错误：被清理的进程仍在运行中"
+
+msgid "ERROR: Failed to update process"
+msgstr "错误：更新进程失败"
+
+msgid "INFO: Process {1} still running - forcing termination (via SIGIOT)"
+msgstr "信息：进程{1} 仍在运行中 - 通过SIGIOT强行终止 "
+
+msgid "ERROR: Failed to kill process {1} - {2}"
+msgstr "错误：停止进程{1}失败 - {2}"
+
+msgid "ERROR: Cannot find Queue Table Entry"
+msgstr "错误：找不到队列入口"
+
+msgid "ERROR: Cannot find operation to which to forward request"
+msgstr "错误：找不到转发请求的操作"
+
+msgid "ERROR: Cannot forward message, sending it back"
+msgstr "错误：不能转发消息，现在进行回传"
+
+msgid "ERROR: Cannot remove process"
+msgstr "错误：不能清除进程"
+
+msgid "INFO: process removed"
+msgstr "信息：进程被清除"
+
+msgid "WARN: Process cleanup - process vanished"
+msgstr "警告：进程清理 - 已经清空"
+
+msgid ""
+"WARN: Client process {1} - dropped message because process died, OPERATION="
+"{2}\n"
+msgstr "警告：客户端进程 {1} - 进程已死，消息被丢弃，操作={2}\n"
+
+msgid ""
+"WARN: Client process {1} - dropped message because process and client died, "
+"OPERATION={2}\n"
+msgstr "警告：客户端进程 {1} - 进程已死，消息被丢弃，操作={2}\n"
+
+msgid "ERROR: Unable to reply to {1}"
+msgstr "错误：不能应答给{1}"
+
+msgid "ERROR: Unable to reset process table entry"
+msgstr "错误：不能重置进程表入口"
+
+msgid ""
+"ERROR: Automatic Process Recovery failure; \n"
+"\t\tProcess processes require manual intervention."
+msgstr ""
+"错误：进程自动恢复失败；\n"
+"\t\t进程处理需要人工干预。"
+
+msgid "INFO: Rejecting EXIT Message not sent from local sgmngr or sggws"
+msgstr "信息：拒绝的退出消息没有从本地sgmngr或sggws发出"
+
+msgid "INFO: Rejecting EXIT Message not sent from local sgmngr"
+msgstr "信息：拒绝的退出消息没有从本地sgmngr发出"
+
+msgid "opcode={1}, datasize={2}"
+msgstr "操作码={1}, 数据大小={2}"
+
+msgid "Booting admin processes ..."
+msgstr "启动管理进程..."
+
+msgid "ERROR: Cannot continue booting without sgclst"
+msgstr "错误：缺少 sgclst 不能继续启动"
+
+msgid "ERROR: No sgmngr available for boot of sggws on {1}"
+msgstr "错误：在 {1} 上没有启动sggws时需要的sgmngr"
+
+msgid ""
+"ERROR: Cannot boot remote sgmngr({1}), no sggws available on master node(s)"
+"({2})"
+msgstr "错误：不能启动远程 sgmngr({1})，原因是主节点({2})上没有可用的sggws "
+
+msgid "ERROR: Cannot boot remote sgmngr({1}), node inaccessible"
+msgstr "错误：不能启动远程 sgmngr({1})，原因是节点不可访问"
+
+msgid ""
+"WARN: No sgmngr available on site {1}.\n"
+"\tWill not attempt to boot process processes on that site."
+msgstr ""
+"警告：节点{1}上没有可用的sgmngr。\n"
+"\t不会再尝试启动进程。"
+
+msgid ""
+"WARN: No sggws available on site {1}.\n"
+"\tWill not attempt to boot process processes on that site."
+msgstr ""
+"警告：节点 {1}上没有可用的 sggws。\n"
+"\t不会再尝试启动进程。"
+
+msgid ""
+"WARN: No sgclst available on site {1}.\n"
+"\tWill not attempt to boot process processes."
+msgstr ""
+"警告：节点 {1}上没有可用的 sgclst 。\n"
+"\t不会再尝试启动进程。"
+
+msgid "Booting process processes ..."
+msgstr "启动非管理进程..."
+
+msgid "ERROR: Cannot start processes, memory allocation failure"
+msgstr "错误：不能启动进程，内存分配失败"
+
+msgid ""
+"INFO: No sgmngr available on site {1}.\n"
+"\tWill not attempt to boot processes on that site."
+msgstr ""
+"信息：在介蒂纳{1}上没有可用的 sgmngr 。\n"
+"\t不会再尝试启动进程。"
+
+msgid "WARN: aout = {1} loc = {2}"
+msgstr "警告：进程名 = {1} 位置 = {2}"
+
+msgid "who={1}"
+msgstr "who={1}"
+
+msgid "ptype={1}"
+msgstr "ptype={1}"
+
+msgid "ERROR: Skipping aout={1}, LOC={2} - illegal HOSTID specification.\n"
+msgstr "错误：跳过 aout={1}, LOC={2} - 非法的HOSTID。\n"
+
+msgid "ERROR: Argument vector formation error"
+msgstr "错误：构造参数向量错误"
+
+msgid "ERROR: Aout={1} - too many arguments"
+msgstr "错误：Aout={1} - 参数太多"
+
+msgid "exec "
+msgstr "执行 "
+
+msgid "on "
+msgstr "在节点 "
+
+msgid "ERROR: Illegal host id value\n"
+msgstr "错误：非法的主机 ID 值\n"
+
+msgid "ERROR: Illegal host id value, {1}, for {2}"
+msgstr "错误：对{2} ，{1} 是非法的主机 ID 值 "
+
+msgid "ERROR: Cannot propagate SGPROFILE file\n"
+msgstr "错误：不能传播SGPROFILE 文件\n"
+
+msgid ""
+"No sgmngr available on site {1}.\n"
+"\tWill not attempt to boot processes on that site."
+msgstr ""
+"节点{1}上没有可用的 sgmngr 。\n"
+"\t不会再尝试启动进程。"
+
+msgid "ERROR: Cannot fork\n"
+msgstr "错误：不能fork()\n"
+
+msgid "ERROR: Cannot exec, executable file not found\n"
+msgstr "错误：不能exec() ，找不到可执行文件\n"
+
+msgid "ERROR: Cannot exec, network send error\n"
+msgstr "错误：不能exec()，执行网络发送操作出错\n"
+
+msgid "ERROR: Application initialization failure\n"
+msgstr "错误：应用程序初始化失败\n"
+
+msgid "WARN: Process id={1} Assume started (network).\n"
+msgstr "警告：进程id={1} 假定启动（网络）。\n"
+
+msgid "INFO: Process id={1} Assume started (pipe).\n"
+msgstr "信息：进程id={1} 假定启动（管道）。\n"
+
+msgid ""
+"ERROR: Process process ID {1} on site {2} failed to initialize within "
+"BOOTTIMEOUT seconds"
+msgstr "错误：在位置{2}上的进程ID {1} 未能在 BOOTTIMEOUT 秒内初始化完毕"
+
+msgid "ERROR: Process process ID {1} failed to initialize within {2} seconds"
+msgstr "错误：进程 ID {1} 未能在 {2} 秒内初始化完毕 "
+
+msgid "INFO: Process ID={1} Assume started (timeout).\n"
+msgstr "信息：进程ID={1} 假定启动（超时）。\n"
+
+msgid "ERROR: Remote sgmngr boot failed. Try running pclean before booting\n"
+msgstr "错误：远程 sgmngr 启动失败。在启动之前请先尝试运行pclean\n"
+
+msgid "process id={1} ... Started.\n"
+msgstr "进程pid={1} ... 已启动。\n"
+
+msgid "INFO: Duplicate process.\n"
+msgstr "信息：进程重复。\n"
+
+msgid "ERROR: No sgmngr available, cannot boot\n"
+msgstr "错误：不能启动，没有可用的 sgmngr\n"
+
+msgid "ERROR: No sgclst available, cannot boot\n"
+msgstr "错误：不能启动，没有可用的 sgclst \n"
+
+msgid "Failed.\n"
+msgstr "失败。\n"
+
+msgid "ERROR: Process {1} ON {2} failed with error_code ({3})"
+msgstr "错误：在{2}上的进程{1} 失败，错误代码 ({3})"
+
+msgid "ptype={1}, mid={2}, value={3}"
+msgstr "ptype={1}, mid={2}, value={3}"
+
+msgid "mid={1}, pgid={2}"
+msgstr "mid={1}, pgid={2}"
+
+msgid "ERROR: Host id mismatch for pgid {1}"
+msgstr "错误：主机ID与 pgid {1} 不匹配"
+
+msgid "pgid={1}"
+msgstr "pgid={1}"
+
+msgid "No sgmngr on hostid = {1}"
+msgstr "在主机{1}上没有sgmngr"
+
+msgid ""
+"ERROR: sgclst svrinit - cannot find the sgclst entry in the Bulletin Board"
+msgstr "错误：sgclst svrinit - 在系统共享内存找不到 sgclst 的入口"
+
+msgid ""
+"ERROR: sgclst svrinit - cannot update the sgclst entry in the Bulletin Board"
+msgstr "错误：sgclst svrinit - 不能更新系统共享内存中 sgclst 的入口"
+
+msgid ""
+"WARN: CLSTWAIT * 2 is greater than BLKTIME.  CLSTWAIT = {1},\tBLKTIME = "
+"{2}\n"
+msgstr ""
+"警告：CLSTWAIT * 2 超过了 BLKTIME 的大小。CLSTWAIT = {1},\tBLKTIME = "
+"{2}\n"
+
+msgid ""
+"WARN: CLSTWAIT * 2 is not greater than ROBOSTINT.  CLSTWAIT = {1},\tROBOSTINT = "
+"{2}\n"
+msgstr ""
+"警告：CLSTWAIT * 2 不超过ROBOSTINT 的大小。CLSTWAIT = {1},\tROBOSTINT = "
+"{2}\n"
+
+msgid ""
+"ERROR: sgclst svrinit - cannot open Bulletin Board image file, {1} while "
+"restarting the sgclst, errno {2}"
+msgstr ""
+"错误：sgclst svrinit - 在重新启动 sgclst 的时候，不能打开系统共享内存镜像文件"
+"{1}，错误号是 {2}"
+
+msgid ""
+"ERROR: sgclst svrinit: cannot get file system information of the Bulletin "
+"Board image file, {1} while restarting the sgclst, errno {2}"
+msgstr ""
+"错误：sgclst svrinit: 在重新启动 sgclst 的时候，不能获取系统共享内存镜像文件"
+"的文件系统信息，错误号是{2}"
+
+msgid ""
+"ERROR: sgclst svrinit - the size of the Bulletin Board image file, {1} "
+"inconsistent with the SGPROFILE file"
+msgstr ""
+"错误：sgclst svrinit - 系统共享内存镜像文件的大小{1}与 SGPROFILE 文件不一致"
+
+msgid ""
+"ERROR: sgclst svrinit: error in reading the Bulletin Board image file, {1} "
+"errno {2}"
+msgstr "错误：sgclst svrinit：读取系统共享内存镜像文件{1}时出错，错误号 {2}"
+
+msgid "ERROR: sgclst svrinit - cannot find sgclst entry in the Bulletin Board"
+msgstr "错误：sgclst svrinit - 在系统共享内存中没有找到 sgclst 的入口"
+
+msgid "ERROR: sgclst svrinit - system standard init function failed"
+msgstr "错误：sgclst svrinit - 系统标准初始化函数失败"
+
+msgid ""
+"ERROR: sgclst svrinit - cannot find the current sgmngr entry in the Bulletin "
+"Board"
+msgstr "错误：sgclst svrinit - 在系统共享内存中没有找到当前的 sgmngr 的入口"
+
+msgid ""
+"ERROR: sgclst svrinit - exceeds maximum number of sgmngr on all the "
+"application nodes"
+msgstr "错误：sgclst svrinit - 超过了所有应用节点上sgmngr总和的最大值"
+
+msgid "ERROR: svrinit: can't retrieve own table entry"
+msgstr "错误：svrinit：不能取回自己的表入口"
+
+msgid "INFO: sgclst started successfully."
+msgstr "信息：sgclst启动成功。"
+
+msgid "INFO: temporary sgclst stopped successfully."
+msgstr "信息：临时sgclst停止成功。"
+
+msgid "INFO: sgclst stopped successfully."
+msgstr "信息：sgclst停止成功。"
+
+msgid "WARN: SIGTERM was ignored while shutting down the sgclst"
+msgstr "警告：停止sgclst时，SIGTERM 信号会被忽略"
+
+msgid "ERROR: Administrative operation request failed"
+msgstr "错误：管理操作请求失败"
+
+msgid "ERROR: System unstable - reboot recommended"
+msgstr "错误：系统不稳定 - 建议重新启动"
+
+msgid ""
+"ERROR: Administrative operation request {1} handled by sgclst failed - {2}, "
+"{3}"
+msgstr "错误：sgclst 处理的管理操作请求 {1} 失败 -  {2}，{3}"
+
+msgid ""
+"ERROR: Administrative operation request {1} handled by sgclst failed - {2}"
+msgstr "错误：sgclst 处理的管理操作请求 {1} 失败 -  {2}"
+
+msgid "INFO: sgmngr on {1} - Release {2}"
+msgstr "信息：在 {1} 上的 sgmngr - 版本 {2}"
+
+msgid "WARN: BB out of date, node={1}"
+msgstr "警告：系统共享内存过时，节点={1}"
+
+msgid "WARN: SGPROFILE out of date, node={1}"
+msgstr "警告：SGPROFILE 过时，节点={1}"
+
+msgid "WARN: Slow sgmngr response, node= {1}"
+msgstr "警告：sgmngr 响应速度慢，节点= {1}"
+
+msgid "sect={1}, spawn_flags={2}"
+msgstr "sect={1}，spawn_flags={2}"
+
+msgid "WARN: Process {1} on slot {2} died; removing from BB"
+msgstr "警告：在插槽 {2} 上的进程 {1} 僵死；将从系统中清除"
+
+msgid "spawn_flags={1}"
+msgstr "spawn_flags={1}"
+
+msgid "deadpe={1}"
+msgstr "deadpe={1}"
+
+msgid "WARN: Could not terminate process({1}) processing after SVCTIMEOUT"
+msgstr "警告：不能终止进程({1})，将在超时后处理"
+
+msgid "WARN: Process({1}) processing terminated with SIGKILL after SVCTIMEOUT"
+msgstr "警告：超时后，使用SIGKILL信号停止进程{1}"
+
+msgid "WARN: Process({1}) processing terminated with SIGTERM after SVCTIMEOUT"
+msgstr "警告：超时后，使用SIGTERM信号停止进程{1}"
+
+msgid "WARN: sgmngr failed to wake up the blocking process - {1}"
+msgstr "警告：sgmngr 未能唤醒正被阻塞的进程 - {1}"
+
+msgid "ERROR: Unable to register - another sgclst already exists on {1}"
+msgstr "错误：不能注册 - 在{1}上已经存在sgclst "
+
+msgid "override existing SGPROFILE file?"
+msgstr "是否覆盖现有的SGPROFILE文件？"
+
+msgid "encrypted password to verify"
+msgstr "要验证的加密密码"
+
+msgid "Override existing SGPROFILE file? (y/n): "
+msgstr "是否覆盖现有的 SGPROFILE 文件？（y/n）："
+
+msgid "ERROR: maxsvrs * 2 + maxaccsrs + {1} must be not greater than {2}"
+msgstr "错误：maxsvrs * 2 + maxaccsrs + {1} 不能超过 {2}"
+
+msgid "ERROR: Failed to initialize SGPROFILE\n"
+msgstr "错误：初始化 SGPROFILE 失败\n"
+
+msgid "ERROR: Failed to open SGPROFILE\n"
+msgstr "错误：打开 SGPROFILE 失败\n"
+
+msgid "ERROR: Can't add node to SGPROFILE file "
+msgstr "错误：不能向 SGPROFILE 中增加节点"
+
+msgid "ERROR: Can't add node entry to SGPROFILE file "
+msgstr "错误：不能向 SGPROFILE 中增加节点入口"
+
+msgid "ERROR: Can't add process group to SGPROFILE file "
+msgstr "错误：不能向 SGPROFILE 中增加进程组"
+
+msgid "ERROR: Can't add process entry to SGPROFILE file "
+msgstr "错误：不能向 SGPROFILE 中增加进程入口"
+
+msgid "ERROR: Can't add operation entry to SGPROFILE file "
+msgstr "错误：不能向 SGPROFILE 中增加操作入口"
+
+msgid "ERROR: Can't flush SGPROFILE file "
+msgstr "错误：不能刷新 SGPROFILE 文件"
+
+msgid "INFO: SGPROFILE file {1} has been created\n"
+msgstr "信息：SGPROFILE 文件 {1} 创建成功\n"
+
+msgid "amdbbm={1}"
+msgstr "amdbbm={1}"
+
+msgid "mid={1}, qaddr={2}, max_num_msg={3}, max_msg_size={4}, perm={5}"
+msgstr "mid={1}, qaddr={2}, max_num_msg={3}, max_msg_size={4}, perm={5}"
+
+msgid "ERROR: Failure to open message queue {1}"
+msgstr "错误：打开消息队列 {1} 失败"
+
+msgid "ERROR: No more queue is allowed"
+msgstr "错误：不允许再增加队列"
+
+msgid "ERROR: Failure to create message queue {1}"
+msgstr "错误：创建消息队列 {1} 失败"
+
+msgid "qaddr={1}, pid={2}"
+msgstr "qaddr={1}, pid={2}"
+
+msgid "ERROR: internal error."
+msgstr "错误：内部错误。"
+
+msgid "rqaddr={1}, rpaddr={2}, pid={3}"
+msgstr "rqaddr={1}, rpaddr={2}, pid={3}"
+
+msgid "ERROR: Invalid qaddr {1}."
+msgstr "错误：无效的 qaddr {1}。"
+
+msgid "ERROR: internal error, rlink={1}"
+msgstr "错误：内部错误，rlink={1}"
+
+msgid "qaddr={1}"
+msgstr "qaddr={1}"
+
+msgid "wka={1}"
+msgstr "wka={1}"
+
+msgid "signo={1}, timeout={2}"
+msgstr "signo={1}, timeout={2}"
+
+msgid "ERROR: Remote nwkill timed out {1} secs"
+msgstr "错误：远程 nwkill() 超时 {1} 秒 "
+
+msgid "cmd={1}"
+msgstr "cmd={1}"
+
+msgid "ERROR: Send to sggws failed"
+msgstr "错误：向 sggws 发送消息失败"
+
+msgid "flags={1}, pid={2}"
+msgstr "flags={1}, pid={2}"
+
+msgid "ERROR: Restart sync error {1}"
+msgstr "错误：重新启动 sync() 错误 {1}"
+
+msgid "WARN: Unable to open NODE PROFILE {1} for reading"
+msgstr "警告：不能打开节点PROFILE {1} "
+
+msgid "ERROR: Not attached to a Bulletin Board"
+msgstr "错误：没有连接到系统共享内存"
+
+msgid "ERROR: Internal system error"
+msgstr "错误：内部系统错误"
+
+msgid "init_info={1}"
+msgstr "init_info={1}"
+
+msgid "ERROR: Cannot join application in multi-context mode"
+msgstr "错误：不能把应用加入到多上下文模式"
+
+msgid "ERROR: Failed to set context to newly created context"
+msgstr "错误：不能设置到新创建的上下文"
+
+msgid "ERROR: Cannot join application in single-context mode"
+msgstr "错误：不能把应用加入到单上下文模式"
+
+msgid "context={1}"
+msgstr "context={1}"
+
+msgid "ERROR: SGNOTHREADS set to yes but multiple threads detected"
+msgstr "错误：SGNOTHREADS环境变量设置为yes，但检测到了多线程"
+
+msgid "blktime={1}, flags={2}"
+msgstr "blktime={1}, flags={2}"
+
+msgid "operation={1}, flags={2}"
+msgstr "operation={1}, flags={2}"
+
+msgid "ERROR: Process should set REPLYQ to invoke other operation."
+msgstr "错误：在调用其他操作的时候，需要先设置进程的REPLYQ"
+
+msgid "ERROR: Suspended client attempting to generate new request"
+msgstr "错误：已经挂起的客户端企图产生新请求"
+
+msgid ""
+"ERROR: Cannot receive reply because MSSQ is specified but REPLYQ is not set"
+msgstr "错误：不能接收应答，原因是指定了MSSQ ，但未设置REPLYQ"
+
+msgid "handle={1}, flags={2}"
+msgstr "handle={1}, flags={2}"
+
+msgid ""
+"ERROR: An application association may not issue getrply(SGGETANY) "
+"concurrently with getrply for a specific cd"
+msgstr "错误：相关应用不能并发地对指定描述符调用getrply(SGGETANY)"
+
+msgid ""
+"ERROR: An application association may not issue multiple concurrent getrply"
+"(SGGETANY) calls"
+msgstr "错误：相关应用不能发起多个并行的getrply(SGGETANY)调用"
+
+msgid ""
+"ERROR: An application association may not issue getrply for a specific cd "
+"concurrently with getrply(SGETANY)"
+msgstr "错误：相关应用不能并发地对指定描述符调用getrply(SGGETANY)"
+
+msgid "svc_name={1}, class_name={2}"
+msgstr "svc_name={1}, class_name={2}"
+
+msgid "ERROR: Could not advertise {1}. Specify all classes at sgcompile time."
+msgstr "错误：不能发布 {1}。在执行 sgcompile 时，请指定所有的类。"
+
+msgid "svc_name={1}"
+msgstr "svc_name={1}"
+
+msgid "sgid={1}, flags={2}"
+msgstr "sgid={1}, flags={2}"
+
+msgid "ERROR: Invalid operation information given"
+msgstr "错误：提供的操作信息无效"
+
+msgid "cd={1}"
+msgstr "cd={1}"
+
+msgid "prio={1}, flags={2}"
+msgstr "prio={1}, flags={2}"
+
+msgid "key={1}, version={2}"
+msgstr "key={1}, version={2}"
+
+msgid "ERROR: Call operation failed, {1} - {2}"
+msgstr "错误：调用操作失败，{1} - {2}"
+
+msgid "proc_type={1}, slot={2}, init_info={3}"
+msgstr "proc_type={1}, slot={2}, init_info={3}"
+
+msgid "ERROR: Another thread is in init."
+msgstr "错误：另一个线程正在初始化。"
+
+msgid "proc_type={1}"
+msgstr "proc_type={1}"
+
+msgid "ERROR: Cannot join application - permission denied"
+msgstr "错误：不能加入应用 - 权限不足"
+
+msgid "ERROR: Cannot join application - accesser limit exceeded"
+msgstr "错误：不能加入应用 - 超过了访问数限额"
+
+msgid "ERROR: System init function failed - {1}, {2}"
+msgstr "错误：系统初始化功能失败 - {1}， {2}"
+
+msgid "ERROR: svrinit() failed, {1}"
+msgstr "错误：svrinit()失败，{1} "
+
+msgid "ERROR: svrinit() failed with outstanding message handles"
+msgstr "错误：正常消息句柄存在，svrinit()失败"
+
+msgid "print ServiceGalaxy version"
+msgstr "打印 ServiceGalaxy 版本"
+
+msgid "set process group id"
+msgstr "设置进程组ID"
+
+msgid "set process id"
+msgstr "设置进程ID"
+
+msgid "set host id"
+msgstr "设置主机ID"
+
+msgid "advertise all operations"
+msgstr "发布所有操作"
+
+msgid "spawn process"
+msgstr "复制进程"
+
+msgid "migrate process"
+msgstr "迁移进程"
+
+msgid "origial process pid to restart"
+msgstr "需要重新启动的进程pid"
+
+msgid "boot process in suspended mode, and make it available after svrinit"
+msgstr "以挂起模式启动进程，在 svrinit 之后使其可用"
+
+msgid "set the fake uname"
+msgstr "设置假的 uname "
+
+msgid "user log name"
+msgstr "用户日志名称"
+
+msgid "fd to synchronize with sgboot/sgshut"
+msgstr "与sgboot/sgshut同步的文件句柄"
+
+msgid "redirect stdout to given file"
+msgstr "重定向标准输出到给定文件中"
+
+msgid "redirect stderr to given file"
+msgstr "重定向标准错误输出到给定文件中"
+
+msgid "set nice value"
+msgstr "设置进程优先级值"
+
+msgid "advertised operation list"
+msgstr "发布的操作列表"
+
+msgid "threads to handle queue message"
+msgstr "处理队列消息的线程数"
+
+msgid "ServiceGalaxy version "
+msgstr "ServiceGalaxy 版本"
+
+msgid "WARN: nice() failed"
+msgstr "警告：设置进程优先级失败"
+
+msgid "WARN: Cannot open {1} as stdout: Uunixerr = {2}"
+msgstr "警告：不能把文件{1} 作为标准输出打开：操作系统错误 = {2}"
+
+msgid "ERROR: Fatal error receiving requests, shutting process down"
+msgstr "错误：接收请求时发现致命错误，开始停止进程"
+
+msgid "aout={1}"
+msgstr "aout={1}"
+
+msgid "ERROR: Cannot advertise operation names beginning with '.'"
+msgstr "错误：不能发布以‘.’开头的操作名称"
+
+msgid "ERROR: Can't find process entry for pgid {1}, prcid {2}"
+msgstr "错误：找不到pgid {1} 的进程入口，进程ID {2}"
+
+msgid "ERROR: Error getting Group Environment filename"
+msgstr "错误：获取组环境文件名时出现错误"
+
+msgid "ERROR: Error putting PROFILE {1} into environment"
+msgstr "错误：把PROFILE {1} 设置到环境中时出现错误"
+
+msgid "ERROR: Cannot get operation parms for {1}"
+msgstr "错误：不能获取操作 {1} 的参数"
+
+msgid "WARN: Duplicate process"
+msgstr "警告：进程重复"
+
+msgid "WARN: Cannot retrieve own process group table entry"
+msgstr "警告：不能取回自己的进程组入口"
+
+msgid "ERROR: Process group active on primary location"
+msgstr "错误：进程组在主节点被激活"
+
+msgid "ERROR: current host id not in pgroup's node list"
+msgstr "错误：当前主机ID在进程组的节点列表中不存在"
+
+msgid "INFO: Boot process migrating location of group {1} to node {2}"
+msgstr "信息：启动迁移到节点 {2} 上的组 {1} 的进程"
+
+msgid "WARN: Cannot update process group location as listed in bulletin board"
+msgstr "警告：不能更新在系统共享内存上列出的进程组位置"
+
+msgid "ERROR: Failed to stop serving"
+msgstr "错误：停止服务失败"
+
+msgid "ERROR: Cannot find own process entry"
+msgstr "错误：找不到自己的进程的入口"
+
+msgid "WARN: Process {1}/{2}: client process {3}: lost message"
+msgstr "警告：进程 {1}/{2}：客户端进程 {3} ：消息丢失"
+
+msgid "WARN: OPERATION={1}    MSG_ID={2}    REASON=process died\n"
+msgstr "警告：操作={1}    消息ID={2}    REASON=进程已死\n"
+
+msgid "WARN: OPERATION={1}    MSG_ID={2}    REASON=process and client died\n"
+msgstr "警告：操作={1}    消息ID={2}    REASON=进程和客户端已死\n"
+
+msgid "ERROR: No room to create a new QTE."
+msgstr "错误：没有空间来创建一个新的QTE。"
+
+msgid "cnt={1}, flags={2}"
+msgstr "cnt={1}, flags={2}"
+
+msgid "ERROR: Invalid queue information given"
+msgstr "错误：提供的队列消息无效"
+
+msgid "ERROR: [Queue parameter error in internal routine]"
+msgstr "错误：[在内部函数中队列参数错误]"
+
+msgid "curr_load={1}, best_load={2}"
+msgstr "curr_load={1}, best_load={2}"
+
+msgid "rt={1}"
+msgstr "rt={1}"
+
+msgid "WARN: Client aborting processing"
+msgstr "警告：客户端终止处理"
+
+msgid "ERROR: Unable to create request queue"
+msgstr "错误：不能创建请求队列"
+
+msgid "ERROR: Unable to create reply queue"
+msgstr "错误：不能创建应答队列"
+
+msgid "ERROR: Can't create wkid for sgclst"
+msgstr "错误：不能为 sgclst 创建 wkid"
+
+msgid "name={1}"
+msgstr "name={1}"
+
+msgid "ERROR: Can't attach shared memory, BB changed"
+msgstr "错误：不能连接共享内存，系统已经发生了变化"
+
+msgid "ERROR: Can't create shared memory, BB owner {1} alives"
+msgstr "错误：不能创建共享内存，系统所有者{1}处于活动状态"
+
+msgid "ERROR: Can't open shared memory, BB changed"
+msgstr "错误：不能打开共享内存，系统已经发生了变化"
+
+msgid "ERROR: Can't open shared memory, BB removed"
+msgstr "错误：不能打开共享内存，系统已经被清除了"
+
+msgid "ERROR: Can't create shared memory, BB owner {1} died"
+msgstr "错误：不能创建共享内存，系统所有者 {1} 已死"
+
+msgid "ERROR: Can't create shared memory, error_code = {1}, native_error = {2}"
+msgstr "错误：不能创建共享内存，错误代码 = {1}， 本地错误码 = {2}"
+
+msgid ""
+"ERROR: Configuration file parameters do not match existing bulletin board."
+msgstr "错误：配置文件参数与现有的系统共享内存不匹配。"
+
+msgid "ERROR: Error building node tables"
+msgstr "错误：构建节点表错误"
+
+msgid "ERROR: Can't find node entry for hostid {1}"
+msgstr "错误：到不到主机ID{1}的入口"
+
+msgid "WARN: Error changing directory to approot {1} for hostid {2}"
+msgstr "警告：对主机 {2} 更改目录到 approot {1} 时出现错误 "
+
+msgid "ERROR: Failure to create register"
+msgstr "错误：不能创建注册节点"
+
+msgid "ERROR: No sgmngr on this node"
+msgstr "错误：在当前节点上没有 sgmngr "
+
+msgid "ERROR: Unable to read the SGPROFILE file, version type mismatch"
+msgstr "错误：不能读取 SGPROFILE 文件，版本号类型不匹配"
+
+msgid "ERROR: Unable to read the SGPROFILE file, release mismatch"
+msgstr "错误：不能读取 SGPROFILE 文件，版本不匹配"
+
+msgid "ERROR: Cannot find master without BB"
+msgstr "错误：没有系统共享内存，找不到主节点"
+
+msgid "name={1}, scope={2}"
+msgstr "name={1}, scope={2}"
+
+msgid "ERROR: Unable to locate node entry in the Bulletin Board"
+msgstr "错误：在系统共享内存中不能定位节点的入口"
+
+msgid "ERROR: Unable to map ID of a node to ipckey"
+msgstr "错误：节点的ID不能映射到ipckey "
+
+msgid "ssgid={1}, flags={2}"
+msgstr "ssgid={1}, flags={2}"
+
+msgid "ERROR: Operation information invalid"
+msgstr "错误：操作信息无效"
+
+msgid "ERROR: Operation information invalid, does not exist"
+msgstr "错误：操作信息无效，原因是不存在"
+
+msgid "ERROR: No room to create a new scte."
+msgstr "错误：没有空间来创一个新的操作节点。"
+
+msgid "ERROR: Operation information invalid, does not exist."
+msgstr "错误：操作信息无效，原因是不存在。"
+
+msgid "ERROR: [Parameter error in internal routine]"
+msgstr "错误：[在内部函数中发生了参数错误]"
+
+msgid "ERROR: [Operation parameter error in internal routine]"
+msgstr "错误：[在内部函数中发生了操作参数错误]"
+
+msgid "ERROR: [Invalid operation information passed to internal routine]"
+msgstr "错误：[无效的操作信息传递到了内部函数中]"
+
+msgid "ssgid={1}"
+msgstr "ssgid={1}"
+
+msgid "ERROR: No bulletin board"
+msgstr "错误：没有系统共享内存"
+
+msgid "ERROR: Invalid operation information given, NULL name"
+msgstr "错误：提供的操作信息无效，原因是名称为空"
+
+msgid "ERROR: Invalid operation information given, bad class name"
+msgstr "错误：提供的操作信息无效，原因是类名称错误"
+
+msgid "ERROR: In file {1}:{2}: {3}, {4}"
+msgstr "错误：文件 {1}：{2}: {3}, {4}"
+
+msgid ""
+"ERROR: BB exclusive locked by dead process {1}, reset by sgmngr, system may "
+"be corrupted"
+msgstr "错误：共享内存排它锁被已死进程 {1} 占用，由sgmngr重置，系统可能会崩溃"
+
+msgid "ERROR: BB exclusive locked by process {1}"
+msgstr "错误：共享内存排他锁被进程 {1} 占用"
+
+msgid ""
+"ERROR: SYSTEM exclusive locked by dead process {1}, reset by sgmngr, system "
+"may be corrupted"
+msgstr "错误：系统排它锁被已死进程 {1} 占用，由sgmngr重置，系统可能会崩溃"
+
+msgid "ERROR: SYSTEM exclusive locked by process {1}"
+msgstr "错误：系统排他锁被进程 {1} 占用"
+
+msgid "ERROR: SGPROFILE is not set"
+msgstr "错误：SGPROFILE环境变量没有设置"
+
+msgid ""
+"ERROR: Can't open SGPROFILE file {1}, error_code = {2}, native_error = {3}"
+msgstr "错误：不能打开 SGPROFILE 文件 {1}，错误代码 = {2}，本地错误码 = {3} "
+
+msgid "pes={1}, nodes={2}, sgt={3}, svrs={4}, svcs={5}, perm={6}"
+msgstr "pes={1}, nodes={2}, sgt={3}, svrs={4}, svcs={5}, perm={6}"
+
+msgid "ERROR: Can't create SGPROFILE file {1}"
+msgstr "错误：不能创建 SGPROFILE 文件 {1}"
+
+msgid "ERROR: Can't truncate SGPROFILE file {1}"
+msgstr "错误：不能清空 SGPROFILE 文件 {1}"
+
+msgid ""
+"ERROR: Can't create SGPROFILE file {1}, error_code = {2}, native_error = {3}"
+msgstr "错误：不能创建 SGPROFILE 文件 {1}， 错误代码 = {2}，本地错误码 = {3}"
+
+msgid "ERROR: Cannot send message to sgagent on {1}"
+msgstr "错误：不能向节点 {1} 的sgagent 发送消息"
+
+msgid ""
+"ERROR: Could not sgunpack config file for propagation to remote site {1}"
+msgstr "错误：不能调用sgunpack处理配置文件以传播到远程节点 {1}"
+
+msgid "ERROR: Could not access unloaded configuration file for propagation"
+msgstr "错误：不能访问卸载的配置文件用于传播"
+
+msgid "ERROR: Send failure on SGPROFILE propagation to {1}"
+msgstr "错误：把SGPROFILE传播到 {1} 时，发送失败"
+
+msgid "ERROR: Receive failure on SGPROFILE propagation to {1}"
+msgstr "错误：把SGPROFILE传播到 {1} 时，接收失败"
+
+msgid "ERROR: Could not create remote tmp file on {1} for {2} creation"
+msgstr "错误：在{1}上创建 {2} 时，不能创建临时文件"
+
+msgid "ERROR: sgpack error on {1} for SGPROFILE file {2} creation"
+msgstr "错误：执行sgpack 时，在{1}上创建 SGPROFILE 文件 {2} 出现错误"
+
+msgid "ERROR: sgpack error on {1} sgpack output:\n"
+msgstr "错误：在{1}上执行 sgpack 出错，sgpack 输出：\n"
+
+msgid "ERROR: Unknown error propagating SGPROFILE file to {1}"
+msgstr "错误：向 {1} 传播SGPROFILE文件时出现未知错误"
+
+msgid "WARN: queue cache too small."
+msgstr "警告：队列缓冲区太小。"
+
+msgid "SGEABORT - transaction can not commit"
+msgstr "SGEABORT - 事务不能提交"
+
+msgid "SGEBADDESC - bad communication descriptor"
+msgstr "SGEBADDESC - 错误的通讯描述符"
+
+msgid "SGEBLOCK - blocking condition found"
+msgstr "SGEBLOCK - 被阻塞"
+
+msgid "SGEINVAL - invalid arguments given"
+msgstr "SGEINVAL - 提供的参数无效"
+
+msgid "SGELIMIT - a system limit has been reached"
+msgstr "SGELIMIT - 已经到达系统极限"
+
+msgid "SGENOENT - no entry found"
+msgstr "SGENOENT - 没有入口"
+
+msgid "SGEOS - operating system error"
+msgstr "SGEOS - 操作系统错误"
+
+msgid "SGEPERM - bad permissions"
+msgstr "SGEPERM - 错误的权限"
+
+msgid "SGEPROTO - protocol error"
+msgstr "SGEPROTO - 协议错误"
+
+msgid "SGESVCERR - process error while handling request"
+msgstr "SGESVCERR - 处理请求时发生错误"
+
+msgid "SGESVCFAIL - application level operation failure"
+msgstr "SGESVCFAIL - 应用级操作失败"
+
+msgid "SGESYSTEM - internal system error"
+msgstr "SGESYSTEM - 内部系统错误"
+
+msgid "SGETIME - timeout occured"
+msgstr "SGETIME - 已经超时"
+
+msgid "SGETRAN - error starting transaction"
+msgstr "SGETRAN - 开始事务时发生错误"
+
+msgid "SGGOTSIG - signal received and SGSIGRSTRT not specified"
+msgstr "SGGOTSIG - 收到信号并且SGSIGRSTRT未指定"
+
+msgid "SGERMERR - resource manager error"
+msgstr "SGERMERR - 资源管理器错误"
+
+msgid "SGERELEASE - invalid release"
+msgstr "SGERELEASE - 无效的版本"
+
+msgid "SGEMATCH - operation name cannot be advertised due to matching conflict"
+msgstr "SGEMATCH - 操作的名称不能发布，原因是名称匹配冲突"
+
+msgid "SGEDIAGNOSTIC - function failed - check diagnostic value"
+msgstr "SGEDIAGNOSTIC - 功能执行失败 - 请检查诊断数值"
+
+msgid "SGESVRSTAT - bad process status"
+msgstr "SGESVRSTAT - 错误的进程状态"
+
+msgid "SGEBBINSANE - BB is insane"
+msgstr "SGEBBINSANE - 系统共享内存混乱"
+
+msgid "SGEDUPENT - duplicate table entry"
+msgstr "SGEDUPENT - 重复入口"
+
+msgid "SGECHILD - child start problem"
+msgstr "SGECHILD - 子进程启动有问题"
+
+msgid "SGENOMSG - no message"
+msgstr "SGENOMSG - 没有消息"
+
+msgid "SGENOMNGR - no sgmngr"
+msgstr "SGENOMNGR - 没有 sgmngr "
+
+msgid "SGENOCLST - no sgclst"
+msgstr "SGENOCLST - 没有 sgclst "
+
+msgid "SGENOGWS - no sggws available"
+msgstr "SGENOGWS - 没有可用的 sggws "
+
+msgid "SGEAPPINIT - svrinit() failure"
+msgstr "SGEAPPINIT - svrinit()失败"
+
+msgid "SGENEEDPCLEAN - sgmngr failed to boot.. pclean may help"
+msgstr "SGENEEDPCLEAN - sgmngr 启动失败.. 执行pclean可能能恢复"
+
+msgid "SGENOFUNC - unknown function address"
+msgstr "SGENOFUNC - 未知的函数地址"
+
+msgid "where={1}, flags={2}"
+msgstr "where={1}, flags={2}"
+
+msgid "ERROR: Send/receive error on remote procedure call"
+msgstr "错误：远程过程调用的发送/接收错误"
+
+msgid "ERROR: Cannot find own BB entry"
+msgstr "错误：找不到自己的系统共享内存入口"
+
+msgid "ERROR: [Cannot update own queue]"
+msgstr "错误：[不能更新自己的队列]"
+
+msgid "ERROR: Cannot re-queue msg"
+msgstr "错误：不能把消息重新入队列"
+
+msgid "ERROR: [Operation receive: unknown meta-msg type: {1}]"
+msgstr "错误：[操作接收：未知的元消息类型：{1}]"
+
+msgid "ERROR: [Operation receive: cannot send meta-msg reply]"
+msgstr "错误：[操作接收：不能发送元消息应答]"
+
+msgid "ERROR: [Cannot find own BB entry]"
+msgstr "错误：[找不到自己的系统操作系统入口]"
+
+msgid "ERROR: Unable to shutdown, clients/processes still attached"
+msgstr "错误：不能停止，仍有客户端/进程在连接"
+
+msgid "ERROR: Cannot perform shutdown at this time"
+msgstr "错误：现在不能执行停止命令"
+
+msgid "ERROR: Application rejects shutdown request"
+msgstr "错误：应用拒绝停止请求"
+
+msgid "meta-message: {1}"
+msgstr "元消息：{1}"
+
+msgid "ERROR: Operation receive: cannot send meta-msg reply"
+msgstr "错误：操作接收：不能发送元消息应答"
+
+msgid "ERROR: No room to create a new sgte."
+msgstr "错误：没有空间创建一个新的进程组节点。"
+
+msgid "ERROR: [Process Group parameter error in internal routine]"
+msgstr "错误：[在内部函数中发生进程组参数错误]"
+
+msgid "ERROR: Invalid logical node name - {1}"
+msgstr "错误：无效的逻辑节点名称 - {1}"
+
+msgid "ERROR: Invalid host id for process group"
+msgstr "错误：进程组的主机ID无效"
+
+msgid "ERROR: Duplicate process group entry"
+msgstr "错误：重复的进程组入口"
+
+msgid "data_size={1}"
+msgstr "data_size={1}"
+
+msgid "ERROR: Message send/receive failure for remote procedure call"
+msgstr "错误：远程过程调用的消息发送/接收命令失败"
+
+msgid "ERROR: Cannot find sgclst"
+msgstr "错误：找不到 sgclst "
+
+msgid "WARN:sgclst busy or suspended."
+msgstr "警告：sgclst 忙或着挂起。"
+
+msgid "WARN:Cannot get reply message, timeout."
+msgstr "警告：不能获取应答消息，超时。"
+
+msgid "type={1}, sgids={2}, cnt={3}"
+msgstr "type={1}, sgids={2}, cnt={3}"
+
+msgid "sgids={1}, cnt={2}, status={3}, flag={4}"
+msgstr "sgids={1}, cnt={2}, status={3}, flag={4}"
+
+msgid "ERROR: Invalid entry information given"
+msgstr "错误：提供的入口信息无效"
+
+msgid "ERROR: Send/receive error for remote procedure call"
+msgstr "错误：远程过程调用的发送/接收命令错误"
+
+msgid "ERROR: Invalid status given"
+msgstr "错误：提供的状态无效"
+
+msgid "mid={1}, flags={2}"
+msgstr "mid={1}, flags={2}"
+
+msgid "count={1}"
+msgstr "count={1}"
+
+msgid "opcode={1}, count={2}"
+msgstr "opcode={1}, count={2}"
+
+msgid "ERROR: Retrieved too many entries"
+msgstr "错误：检索出太多的节点"
+
+msgid "opcode={1}, mid={2}"
+msgstr "opcode={1}, mid={2}"
+
+msgid "flag={1}"
+msgstr "flag={1}"
+
+msgid "WARN: Bulletin Board update error - {1}"
+msgstr "警告：系统共享内存更新错误 - {1}"
+
+msgid "WARN: Process {1}/{2} terminated"
+msgstr "警告：进程 {1}/{2} 已终止"
+
+msgid "ERROR: {1}, group {2}, id {3} process exceeded MAXGEN LIMIT"
+msgstr "错误：{1}，组{2}，ID {3} 进程超过 MAXGEN 限制"
+
+msgid "ERROR: Unable to delete process {1}/{2}"
+msgstr "错误：不能删除进程 {1}/{2} "
+
+msgid "ERROR: Unable to update Bulletin Board - {1}"
+msgstr "错误：不能更新系统共享内存 - {1}"
+
+msgid "ERROR: Unable to determine ID of process to be removed"
+msgstr "错误：不能确定被清除的进程ID"
+
+msgid "ERROR: Unable to clean up sgmngr processes"
+msgstr "错误：不能清除 sgmngr 进程"
+
+msgid "ERROR: Unable to clean up sggws processes"
+msgstr "错误：不能清除sggws 进程"
+
+msgid "ERROR: Unable to clean up processes on remote node(s)"
+msgstr "错误：不能清除远程节点上的进程"
+
+msgid "WARN: Cleaning up restartable process {1}/{2}"
+msgstr "警告：正在清除可重新启动的进程 {1}/{2}"
+
+msgid "WARN: Cleaning up process {1}/{2}"
+msgstr "警告：正在清除进程 {1}/{2}"
+
+msgid "WARN: SGROOT environment variable not set"
+msgstr "警告：SGROOT 环境变量没有设置"
+
+msgid "ERROR: Unable to exec {1} - errno={2}"
+msgstr "错误：不能执行 {1} - 错误代码={2} "
+
+msgid "INFO: Process {1}/{2} being restarted"
+msgstr "信息：进程 {1}/{2} 正重启"
+
+msgid "ERROR: Restarting a remote process not permitted"
+msgstr "错误：不允许重启远程进程"
+
+msgid "WARN: SGROOT environment variable not set for sgrecover process"
+msgstr "警告：没有为 sgrecover 进程设置 SGROOT 环境变量"
+
+msgid "ERROR: Unable to exec {1} application RCMD command - errno={2}"
+msgstr "错误：不能执行 {1} 的应用 RCMD 命令 - 错误代码={2}"
+
+msgid "WARN: Forcing deletion of table entries for process {1}/{2}"
+msgstr "警告：强制删除进程{1}/{2}的表入口"
+
+msgid "ERROR: cluster.clstid invalid, {1}."
+msgstr "错误：cluster.clstid无效，{1}。"
+
+msgid "ERROR: cluster.clstid is invalid, should be positive but less than {1}."
+msgstr "错误：cluster.clstid无效，必须是正数，而且小于{1}。"
+
+msgid "ERROR: cluster.master too long for master node."
+msgstr "错误：cluster.master名称对主节点太长。"
+
+msgid "ERROR: cluster.master too many masters."
+msgstr "错误：cluster.master有太多主节点。"
+
+msgid "ERROR: cluster.curid must be zero or positive."
+msgstr "错误：cluster.curid必须是0或者正数。"
+
+msgid "ERROR: cluster.maxnodes must be positive."
+msgstr "错误：cluster.maxnodes必须是正数"
+
+msgid "ERROR: cluster.maxnets must be positive."
+msgstr "错误：cluster.maxnets必须是正数"
+
+msgid "ERROR: cluster.maxclts must be positive."
+msgstr "错误：cluster.maxclts必须是正数"
+
+msgid "ERROR: cluster.maxques must be positive."
+msgstr "错误：cluster.maxques必须是正数"
+
+msgid "ERROR: cluster.maxpgs must be positive."
+msgstr "错误：cluster.maxpgs必须是正数"
+
+msgid "ERROR: cluster.maxprocs must be positive."
+msgstr "错误：cluster.maxprocs必须是正数"
+
+msgid "ERROR: cluster.maxops must be positive."
+msgstr "错误：cluster.maxops必须是正数。"
+
+msgid "ERROR: cluster.quebkts must be positive."
+msgstr "错误：cluster.quebkts必须是正数。"
+
+msgid "ERROR: cluster.pgbkts must be positive."
+msgstr "错误：cluster.pgbkts必须是正数。"
+
+msgid "ERROR: cluster.procbkts must be positive."
+msgstr "错误：cluster.procbkts必须是正数。"
+
+msgid "ERROR: cluster.opbkts must be positive."
+msgstr "错误：cluster.opbkts必须是正数。"
+
+msgid "ERROR: cluster.polltime must be at least 6."
+msgstr "错误：cluster.polltime必须至少为6。"
+
+msgid "ERROR: cluster.robustint must be positive."
+msgstr "错误：cluster.robustint必须是正数。"
+
+msgid "ERROR: cluster.stacksize must be positive."
+msgstr "错误：cluster.stacksize必须是正数。"
+
+msgid "ERROR: cluster.msgmnb must be positive."
+msgstr "错误：cluster.msgmnb必须是正数。"
+
+msgid "ERROR: cluster.msgmax must be positive."
+msgstr "错误：cluster.msgmax必须是正数。"
+
+msgid "ERROR: cluster.cmprslimit must be zero or positive."
+msgstr "错误：cluster.cmprslimit必须是0或者正数。"
+
+msgid "ERROR: cluster.costfix must be zero or positive."
+msgstr "错误：cluster.costfix必须是0或者正数。"
+
+msgid "ERROR: cluster.nfiles must be positive."
+msgstr "错误：cluster.nfiles必须是正数。"
+
+msgid "ERROR: cluster.blktime must be positive."
+msgstr "错误：cluster.blktime必须是正数。"
+
+msgid "ERROR: cluster.clstwait must be positive."
+msgstr "错误：cluster.clstwait必须是正数。"
+
+msgid "ERROR: cluster.mngrquery must be no less than robustint."
+msgstr "错误：cluster.mngrquery必须不小于 robustint 的值。"
+
+msgid "ERROR: cluster.initwait must be positive."
+msgstr "错误：cluster.initwait必须是正数。"
+
+msgid "ERROR: Parse section cluster failure, {1} ({2})"
+msgstr "错误：解析cluster章节失败，{1} ({2})"
+
+msgid "ERROR: Parse section cluster failure, {1}"
+msgstr "错误：解析cluster章节失败，{1}"
+
+msgid "ERROR: nodes.node.hostname is too long."
+msgstr "错误：nodes.node.hostname太长。"
+
+msgid "ERROR: nodes.node.hostid is too long."
+msgstr "错误：nodes.node.hostid太长。"
+
+msgid "ERROR: nodes.node.sgroot is too long."
+msgstr "错误：nodes.node.sgroot太长。"
+
+msgid "ERROR: nodes.node.approot is too long."
+msgstr "错误：nodes.node.approot太长。"
+
+msgid "ERROR: nodes.node.sgprofile is too long."
+msgstr "错误：nodes.node.sgprofile太长。"
+
+msgid "ERROR: nodes.node.args is too long."
+msgstr "错误：nodes.node.args太长。"
+
+msgid "ERROR: nodes.node.profile is too long."
+msgstr "错误：nodes.node.profile太长。"
+
+msgid "ERROR: nodes.node.logname is too long."
+msgstr "错误：nodes.node.logname太长。"
+
+msgid "ERROR: nodes.node.maxclts must be zero or positive."
+msgstr "错误：nodes.node.maxclts必须是0或者正数。"
+
+msgid "ERROR: nodes.node.uid must be zero or positive."
+msgstr "错误：nodes.node.uid必须是0或者正数。"
+
+msgid "ERROR: nodes.node.gid must be zero or positive."
+msgstr "错误：nodes.node.gid必须是0或者正数。"
+
+msgid "ERROR: nodes.node.netcost must be positive."
+msgstr "错误：nodes.node.netcost必须是正数。"
+
+msgid "ERROR: nodes.node.maxconn must be positive."
+msgstr "错误：nodes.node.maxconn必须是正数。"
+
+msgid "ERROR: duplicate node entry."
+msgstr "错误：重复的节点入口。"
+
+msgid "ERROR: Parse section nodes failure, {1} ({2})"
+msgstr "错误：解析nodes章节失败，{1} ({2})"
+
+msgid "ERROR: Parse section nodes failure, {1}"
+msgstr "错误：解析nodes章节失败，{1}"
+
+msgid "ERROR: networks.network.hostid is too long."
+msgstr "错误：networks.network.hostid太长。"
+
+msgid "ERROR: networks.network.gwsaddr is too long."
+msgstr "错误：networks.network.gwsaddr太长。"
+
+msgid "ERROR: networks.network.agtaddr is too long."
+msgstr "错误：networks.network.agtaddr太长。"
+
+msgid "ERROR: networks.network.netname is too long."
+msgstr "错误：networks.network.netname太长。"
+
+msgid "ERROR: networks.network.tcpkeepalive value invalid."
+msgstr "错误：networks.network.tcpkeepalive值无效。"
+
+msgid "ERROR: networks.network.nodelay value invalid."
+msgstr "错误：networks.network.nodelay值无效。"
+
+msgid "ERROR: networks.network.netgroup must be unique on same node."
+msgstr "错误：networks.network.netgroup在同一个节点上取值必须唯一。"
+
+msgid "ERROR: Parse section networks failure, {1} ({2})"
+msgstr "错误：解析networks章节失败，{1} ({2})"
+
+msgid "ERROR: Parse section networks failure, {1}"
+msgstr "错误：解析network章节失败，{1}"
+
+msgid "ERROR: pgroups.pgroup.pgname is too long."
+msgstr "错误：pgroups.pgroup.pgname太长。"
+
+msgid "ERROR: pgroups.pgroup.curid must be zero or positive."
+msgstr "错误：pgroups的curid必须是0或者正数。"
+
+msgid "ERROR: pgroups.pgroup.hostid too long for master node."
+msgstr "错误：pgroups.pgroup.hostid的主节点太长。"
+
+msgid "ERROR: pgroups.pgroup.hostid too many hostids."
+msgstr "错误：pgroups.pgroup.hostid太多。"
+
+msgid "ERROR: pgroups.pgroup.pgid value must be between 0 and {1}"
+msgstr "错误：pgroups.pgroup.pgid的值必须是在0与{1}之间"
+
+msgid "ERROR: duplicate process group."
+msgstr "错误：重复的进程组。"
+
+msgid "ERROR: pgroups.pgroup.profile is too long."
+msgstr "错误：pgroups.pgroup.profile太长。"
+
+msgid "ERROR: Parse section pgroups failure, {1} ({2})"
+msgstr "错误：解析pgroups章节失败，{1} ({2})"
+
+msgid "ERROR: Parse section pgroups failure, {1}"
+msgstr "错误：解析pgroups章节失败，{1}"
+
+msgid "ERROR: processes.process.rstint must be positive."
+msgstr "错误：processes.process.rstint必须是正数。"
+
+msgid "ERROR: processes.process.maxrst must be positive."
+msgstr "错误：processes.process.maxrst必须是正数。"
+
+msgid "ERROR: processes.process.lqname is too long."
+msgstr "错误：processes.process.lqname太长。"
+
+msgid "ERROR: processes.process.exitcmd is too long."
+msgstr "错误：processes.process.exitcmd太长。"
+
+msgid "ERROR: processes.process.procname is empty or too long."
+msgstr "错误：processes.process.procname为空或者太长。"
+
+msgid "ERROR: processes.process.prcid must be no less than {1}."
+msgstr "错误：processes.process.prcid不能超过{1}。"
+
+msgid "ERROR: processes.process.priority must be zero or positive."
+msgstr "错误：processes.process.priority必须是0或者正数。"
+
+msgid "ERROR: processes.process.min must be between 0 and 1000."
+msgstr "错误：processes.process.min必须在0与1000之间。"
+
+msgid "ERROR: processes.process.max must be between 1 and 1000."
+msgstr "错误：processes.process.max必须在1与1000之间。"
+
+msgid "ERROR: processes.process.msgmnb must be zero or positive."
+msgstr "错误：processes.process.msgmnb必须是0或者正数。"
+
+msgid "ERROR: processes.process.msgmax must be zero or positive."
+msgstr "错误：processes.process.msgmax必须是0或者正数。"
+
+msgid "ERROR: processes.process.cmprslimit must be zero or positive."
+msgstr "错误：processes.process.cmprslimit必须是0或者正数。"
+
+msgid "ERROR: processes.process.costfix must be zero or positive."
+msgstr "错误：processes.process.costfix必须是0或者正数。"
+
+msgid "ERROR: processes.process.pgname is too long."
+msgstr "错误：processes.process.pgname太长。"
+
+msgid "ERROR: Can't find process group for {1}"
+msgstr "错误：找不到{1}的进程组"
+
+msgid "ERROR: processes.process.args is too long."
+msgstr "错误：processes.process.args太长。"
+
+msgid "ERROR: processes.process.profile is too long."
+msgstr "错误：processes.process.profile太长。"
+
+msgid "ERROR: duplicate process entry."
+msgstr "错误：重复的进程入口。"
+
+msgid "ERROR: Parse section processes failure, {1} ({2})"
+msgstr "错误：解析processes章节失败，{1} ({2})"
+
+msgid "ERROR: Parse section processes failure, {1}"
+msgstr "错误：解析processes章节失败，{1}"
+
+msgid "ERROR: operations.operation.pattern is too long."
+msgstr "错误：operations.operation.pattern太长。"
+
+msgid "ERROR: operations.operation.pgname is too long."
+msgstr "错误：operations.operation.pgname太长。"
+
+msgid "ERROR: operations.operation.priority must be between 0 and 100."
+msgstr "错误：operations.operation.priority必须在0与100之间。"
+
+msgid "ERROR: operations.operation.policy value invalid."
+msgstr "错误：operations.operation.policy取值无效。"
+
+msgid "ERROR: operations.operation.cost must be positive."
+msgstr "错误：operations.operation.cost必须是正数。"
+
+msgid "ERROR: operations.operation.costlimit must be zero or positive."
+msgstr "错误：operations.operation.costlimit必须是0或者正数。"
+
+msgid "ERROR: operations.operation.timeout must be positive."
+msgstr "错误：operations.operation.timeout必须是正数。"
+
+msgid "ERROR: operations.operation.blktime must be positive."
+msgstr "错误：operations.operation.blktime必须是正数。"
+
+msgid "ERROR: Parse section operations failure, {1} ({2})"
+msgstr "错误：解析operations章节失败，{1} ({2})"
+
+msgid "ERROR: Parse section operations failure, {1}"
+msgstr "错误：解析opertions章节失败，{1}"
+
+msgid "ERROR: Can't find pgid {1} in pgroups"
+msgstr "错误：在进程组中找不到进程ID {1} "
+
+msgid "ERROR: Invalid {1} {2} parameter given, at least 5 characters long"
+msgstr "错误：提供的参数 {1} {2} 无效，至少需要5个字符长"
+
+msgid "ERROR: Invalid {1} {2} parameter given, should start with \"//\""
+msgstr "错误：提供的参数 {1} {2} 无效，应该以\"//\"开头"
+
+msgid "ERROR: Invalid {1} {2} parameter given, missing ':'"
+msgstr "错误：提供的参数 {1} {2} 无效，缺少‘：’"
+
+msgid "ERROR: Invalid {1} {2} parameter given, missing hostname"
+msgstr "错误：无效的{1} {2}参数，缺少主机名"
+
+msgid "ERROR: Invalid {1} {2} parameter given, missing port"
+msgstr "错误：无效的{1} {2}参数，缺少端口"
+
+msgid "ERROR: Invalid {1} {2} parameter given, invalid port"
+msgstr "错误：无效的{1} {2}参数，无效的端口"
+
+msgid "ERROR: {1} must be numeric."
+msgstr "错误：{1} 必须是数字。"
+
+msgid "ERROR: {1} must be between 1 and 0777."
+msgstr "错误：{1} 必须在1与0777之间。"
+
+msgid "ERROR: {1} must have permission 0600."
+msgstr "错误：{1} 必须具有权限 0600。"
+
+msgid "ERROR: unknown BBA switch name {1}"
+msgstr "错误：未知的BBA开关名称{1}"
+
+msgid "ERROR: unknown LDB switch name {1}"
+msgstr "错误：未知的LDB开关名称{1}"
+
+msgid "ERROR: unknown AUTH switch name {1}"
+msgstr "错误：未知的AUTH开关名称{1}"
+
+msgid "ERROR: Could not find sgclst"
+msgstr "错误：找不到 sgclst"
+
+msgid "flags={1}, metahdr: flags={2}, mtype={3}, size={4}"
+msgstr "flags={1}, metahdr：flags={2}, mtype={3}, size={4}"
+
+msgid "ERROR: No sggws available for remote send"
+msgstr "错误：没有可用的 sggws 进行远程发送"
+
+msgid ""
+"ERROR: Can't create share memory to send large message, error_code = {1}, "
+"native_code = {2}"
+msgstr "错误：不能创建共享内存来发送大消息，错误代码 = {1}，本地代码 = {2}"
+
+msgid "qaddr={1}, mtype={2}, flags={3}, timeout={4}, save_msgs={5}"
+msgstr "qaddr={1}, mtype={2}, flags={3}, timeout={4}, save_msgs={5}"
+
+msgid "received cache message("
+msgstr "接收的消息缓存（"
+
+msgid "ERROR: Can't get message queue for qaddr {1} - {2}"
+msgstr "错误：不能获取 qaddr {1} 的消息队列 - {2}"
+
+msgid ""
+"ERROR: Can't receive message from qaddr {1}, error_code = {2}, native_code = "
+"{3}"
+msgstr "错误：不能从消息队列 {1} 接收消息，错误代码 = {2}，本地代码 = {3}"
+
+msgid "ERROR: wrong received size {1} given."
+msgstr "错误：提供的接收大小 {1} 错误。"
+
+msgid "ERROR: Can't read message from share memory {1}"
+msgstr "错误：不能从共享内存 {1} 读取消息"
+
+msgid "ERROR: Invalid length {1} of received message"
+msgstr "错误：接收的消息的长度 {1} 无效"
+
+msgid "ERROR: out of memory"
+msgstr "错误：内存溢出"
+
+msgid "ERROR: message corrupted"
+msgstr "错误：消息崩溃"
+
+msgid "ERROR: unknown return code"
+msgstr "错误：未知的返回代码"
+
+msgid "received message("
+msgstr "接收的消息（"
+
+msgid "mid={1}, qaddr={2}, remote={3}, mtype={4}, flags={5}"
+msgstr "mid={1}, qaddr={2}, remote={3}, mtype={4}, flags={5}"
+
+msgid "sent message("
+msgstr "发送的消息（"
+
+msgid "timed sent message("
+msgstr "超时方式发送消息("
+
+msgid ""
+"ERROR: Can't send message to qaddr {1}, error_code = {2}, native_code = {3}"
+msgstr "错误：不能向消息队列 {1} 发送消息，错误代码 = {2}，本地代码 = {3}"
+
+msgid "count_only={1}"
+msgstr "count_only={1}"
+
+msgid "ERROR: No space in Bulletin Board for NTE"
+msgstr "错误：在系统共享内存中没有创建网络表入口的空间"
+
+msgid "ERROR: No space in Bulletin Board for PTE"
+msgstr "错误：在系统共享内存中没有创建节点表入口的空间"
+
+msgid "qsgid={1}"
+msgstr "qsgid={1}"
+
+msgid "ERROR: [Process parameter error in internal routine]"
+msgstr "错误：[内部函数中进程参数错误]"
+
+msgid "ERROR: Queue parameter qsqid {1} error in internal routine."
+msgstr "错误：内部函数中队列参数 qsqid {1} 错误。"
+
+msgid "ERROR: No room to create a new STE."
+msgstr "错误：没有空间来创建一个新的进程表入口。"
+
+msgid "ERROR: Process not available, doing work."
+msgstr "错误：进程不可用，原因是进程正在进行处理。"
+
+msgid "ERROR: No space for another QTE, qsgid {1}"
+msgstr "错误：创建一个新的队列表如可空间不足，qsgid {1}"
+
+msgid "ERROR: sgmngr unstable or dead"
+msgstr "错误：sgmngr 不稳定或已死"
+
+msgid "ERROR: [Inconsistent operation/process associations in bulletin board]"
+msgstr "错误：[在系统共享内存中操作/进程不一致]"
+
+msgid "ERROR: Invalid process information given"
+msgstr "错误：提供的进程信息无效"
+
+msgid "ERROR: Operation does not match existing operations offered"
+msgstr "错误：操作与提供的现有操作不匹配"
+
+msgid "ERROR: Can't find process entry."
+msgstr "错误：找不到进程节点。"
+
+msgid "ERROR: Restarting process cannot delete queue"
+msgstr "错误：正在重启的进程不能删除队列"
+
+msgid "ERROR: Failure to set process stat."
+msgstr "错误：设置进程状态失败。"
+
+msgid "WARN: Unable to suspend process {1}"
+msgstr "警告：不能挂起进程 {1}"
+
+msgid "ERROR: Cannot find desired process to remove"
+msgstr "错误：找不到将期望的删除进程"
+
+msgid "ERROR: Cannot find queue entry for process that is to be removed"
+msgstr "错误：对将被清除的进程，找不到其队列节点"
+
+msgid "ERROR: Cannot get status for process files {1} and {2}"
+msgstr "错误：不能获取进程文件 {1} and {2} 的状态"
+
+msgid "mid={1}, opcode={2}, datasize={3}"
+msgstr "mid={1}, opcode={2}, datasize={3}"
+
+msgid "ERROR: Illegal arguments for send to AGENT on {1}"
+msgstr "错误：发送给 {1}上 AGENT 的参数非法"
+
+msgid "ERROR: No AGENT available for remote node {1}"
+msgstr "错误：远程节点 {1} 没有可用的代理"
+
+msgid "ERROR: Invalid agtaddr {1} given"
+msgstr "错误：提供的 agtaddr {1} 无效"
+
+msgid "ERROR: Error sending to AGENT on {1}"
+msgstr "错误：向 {1} 的 AGENT 执行发送时发生错误"
+
+msgid "error_code={1}, op={2}, rtn={3}"
+msgstr "error_code={1}, op={2}, rtn={3}"
+
+msgid "ERROR: Could not contact AGENT on {1}"
+msgstr "错误：不能连接到 {1} 上的代理"
+
+msgid "error={1}, xtra={2}"
+msgstr "error={1}, xtra={2}"
+
+msgid "ERROR: Memory allocation failure for receive buffer"
+msgstr "错误：接收缓存内存分配失败"
+
+msgid "ERROR: Network access error"
+msgstr "错误：网络访问错误"
+
+msgid "ERROR: Could not set uid/gid for request"
+msgstr "错误：不能为请求设置uid/gid"
+
+msgid "ERROR: Invalid version number for request"
+msgstr "错误：请求的版本数无效"
+
+msgid "ERROR: Illegal opcode ({1}) sent to agent"
+msgstr "错误：发送给代理的操作码({1})非法"
+
+msgid "ERROR: Invalid arguments for opcode"
+msgstr "错误：操作码的参数无效"
+
+msgid "ERROR: Could not creat temp file for SGPROFILE"
+msgstr "错误：不能为 SGPROFILE 创建临时文件"
+
+msgid "ERROR: sgpack failed when creating new configuration file"
+msgstr "错误：执行sgpack时，创建新的配置文件失败"
+
+msgid "ERROR: Could not set environment variable"
+msgstr "错误：不能设置环境变量"
+
+msgid "ERROR: Could not retrieve parameters from SGPROFILE file"
+msgstr "错误：不能从 SGPROFILE 文件中检索参数"
+
+msgid "ERROR: Unknown error, terminating"
+msgstr "错误：未知错误，正终止"
+
+msgid "error={1}, datasz={2}, taerror={3}, uerr={4}"
+msgstr "error={1}, datasz={2}, taerror={3}, uerr={4}"
+
+msgid "msg_size={1}"
+msgstr "msg_size={1}"
+
+msgid "WARN: Bad format for environment DEBUG_LEVEL, ignored"
+msgstr "警告：环境变量 DEBUG_LEVEL 的格式错误，被忽略"
+
+msgid "WARN: Bad format for environment SGMAXCACHEDMSGS, ignored"
+msgstr "警告：环境变量 SGMAXCACHEDMSGS 的格式错误，被忽略"
+
+msgid "WARN: Bad format for environment SGMAXKEEPSIZE, ignored"
+msgstr "警告：环境变量 SGMAXKEEPSIZE 的格式错误，被忽略"
+
+msgid ""
+"WARN: {1} value \"{2}\" in environment does not match configuration \"{3}\""
+msgstr "警告：环境变量 {1} 的值 \"{2}\" 与配置的值 \"{3}\" 不匹配"
+
+msgid "ERROR: HOME environment is not set\n"
+msgstr "错误：HOME 环境变量没有设置\n"
+
+msgid "ERROR: HOME environment is not set"
+msgstr "错误：HOME 环境变量没有设置"
+
+msgid "ERROR: Can't seek file position.\n"
+msgstr "错误：不能定位文件的位置。\n"
+
+msgid "ERROR: Can't write data to passwd file.\n"
+msgstr "错误：密码文件不能写入数据。\n"
+
+msgid "ERROR: file {1} does not exist"
+msgstr "错误：文件{1}不存在"
+
+msgid "Please input password: "
+msgstr "请输入密码："
+
+msgid "ERROR: Can't encrypt password"
+msgstr "错误：不能加密密码"
+
+msgid "invalid passwd, try again\n"
+msgstr "无效的密码，请重试\n"
+
+msgid "ERROR: Can't open pipe to execute command.\n"
+msgstr "错误：不能打开管道执行命令。\n"
+
+msgid "ERROR: Can't read data from pipe.\n"
+msgstr "错误：不能从管道读取数据。\n"
+
+msgid "ERROR: Migrating and given an old pid when none expected"
+msgstr "错误：迁移时提供了一个老的pid，但不应当提供"
+
+msgid "ERROR: Unable to register, registry table full"
+msgstr "错误：不能注册，注册表已满"
+
+msgid "ERROR: Invalid registry table slot index passed, unable to leave"
+msgstr "错误：传递了无效的注册表插槽索引，无法离开"
+
+msgid "pid={1}"
+msgstr "pid={1}"
+
+msgid "INFO: BB exclusive lock recovered."
+msgstr "信息：共享内存互斥锁已恢复"
+
+msgid "INFO: BB sharable lock recovered."
+msgstr "信息：共享内存共享锁已恢复"
+
+msgid "INFO: syslock recovered."
+msgstr "信息：系统锁已恢复"
+
+msgid "ERROR: Not a privileged user, incorrect permissions"
+msgstr "错误：非特许用户，权限错误"
+
+msgid "ERROR: Failed to change group via setgid()"
+msgstr "错误：通过setgid()函数改变群组失败"
+
+msgid "ERROR: Failed to change user via setuid()"
+msgstr "错误：通过setuid()函数改变用户失败"
+
+msgid "ERROR: Invalid registry table slot index passed, unable to register"
+msgstr "错误：通过setuid()函数改变用户失败，不能注册"
+
+msgid ""
+"ERROR: Unable to register because the slot is already owned by another "
+"process {1}"
+msgstr "错误：其他进程 {1} 已经注册了该插槽，不能注册"
+
+msgid "ERROR: Unable to obtain the registry slot owned by process"
+msgstr "错误：无法获取已被其他进程占用注册插槽"
+
+msgid ""
+"ERROR: Attempt to take over registry table entry of non-restarting process"
+msgstr "错误：企图接管非可重启进程的注册节点"
+
+msgid "ERROR: Tried to free non-alloced RTE"
+msgstr "错误：企图释放未分配的注册节点"
+
+msgid "ERROR: Cannot call ATMI routines until you have joined system"
+msgstr "错误：加入系统前，不能调用ATMI函数"
+
+msgid "WARN: forward called outside operation routine"
+msgstr "警告：操作之外调用forward()函数"
+
+msgid "WARN: forward called with invalid flags {1}"
+msgstr "警告：使用非法flags {1} 调用forward()函数"
+
+msgid "ERROR: Performed forward() with outstanding replies"
+msgstr "错误：存在正常应答时执行forward()函数"
+
+msgid "WARN: forward acall failure - {1}"
+msgstr "警告：异步调用forward()函数失败 - {1} "
+
+msgid "rval={1}, urcode={2}"
+msgstr "rval={1}, urcode={2}"
+
+msgid "ERROR: Invalid parameter given"
+msgstr "错误：给定的参数非法"
+
+msgid "ERROR: Unknown operation request {1}"
+msgstr "错误：未知的操作请求 {1}"
+
+msgid "ERROR: Failed sending reply"
+msgstr "错误：发送回复失败"
+
+msgid "ERROR: exception caught while doing operation, {1}"
+msgstr "错误：执行操作过程中捕捉到异常 ，{1}"
+
+msgid "ERROR: unknown exception caught while doing operation"
+msgstr "错误：执行操作过程中捕捉到未知异常"
+
+msgid "ERROR: Operation '{1}' failed to call fini or forward"
+msgstr "错误：操作 {1} 在调用fini() 或 forward() 时失败"
+
+msgid "ERROR: Failed to send message to sender"
+msgstr "错误：给发送者发送消息失败"
+
+msgid ""
+"ERROR: Cannot execute operation, address not known, hostid={1}, pgid={2}, "
+"prcid={3}, pid={4}, rqaddr={5}, rpaddr={6}"
+msgstr ""
+"错误：无法执行操作，地址不详，hostid={1}，pgid={2} ，prcid={3}， pid={4}， "
+"rqaddr={5}，rpaddr={6}"
+
+msgid "ERROR: Work completed, cannot stop twice"
+msgstr "错误：工作已完成，无法停止两次"
+
+msgid "ERROR: NULL operation name, cannot dispatch service request"
+msgstr "错误：空的操作名称，无法分发服务请求"
+
+msgid "ERROR: operation index out of range"
+msgstr "错误：操作索引超出范围"
+
+msgid "ERROR: Missing search key"
+msgstr "错误：缺失查找关键字"
+
+msgid "ERROR: Invalid search key"
+msgstr "错误：非法查找关键字"
+
+msgid "INFO: Thrift Monitor stopped successfully."
+msgstr "信息：Thrift监控程序停止成功"
+
+msgid "set thrift listen port default(40001)"
+msgstr "设置thrift监听端口默认值为（40001）"
+
+msgid "set transport_type framed, buffered default(buffered)"
+msgstr "设置transport_type为framed或buffered，默认为buffered"
+
+msgid "set protocol_type json, binary defalut(binary)"
+msgstr "设置protocol_type为json或binary，二进制选项默认值为binary"
+
+msgid ""
+"set process_type: simple, threaded, thread-pool, nonblocking default(simple)"
+msgstr ""
+"设置process_type：simple,threaded, thread-pool或nonblocking，默认为simple"
+
+msgid "set workers: default(16)"
+msgstr "设置workers：默认值为（16）"
+
+msgid "run command "
+msgstr "运行命令"
+
+msgid "INFO: run command "
+msgstr "信息：运行命令"
+
+msgid "ERROR: Can't login to BB, error_code = "
+msgstr "错误：无法登陆系统共享内存，错误代码 = "
+
+msgid "set fails"
+msgstr "设置失败"
+
+msgid "m return"
+msgstr "m 返回"
+
+msgid "started"
+msgstr "已开始"
+
+msgid "INFO: server_type={1}, protocol_type={2}, transport_type={3}, port={4}"
+msgstr ""
+"信息：server_type={1}， protocol_type={2}， transport_type={3}， port={4}"
+
+msgid ", workers={1}"
+msgstr ", workers={1}"
+
+msgid "INFO: ServeTask run operate task"
+msgstr "信息：ServeTask 执行操作任务"
+
+msgid "INFO: OperateType =Process operate task"
+msgstr "信息：OperateType = 处理操作任务"
+
+msgid "INFO: Startup thrift gatetway"
+msgstr "信息：启动thrift网关"
+
+msgid "INFO: Initialize start"
+msgstr "信息：初始化开始"
+
+msgid "INFO: Initialize finish"
+msgstr "信息：初始化完成"
+
+msgid "INFO: ready to stop"
+msgstr "信息：准备停止"
+
+msgid "called "
+msgstr "已调用 "
+
+msgid "specify DBC user name"
+msgstr "请指定DBC用户名"
+
+msgid "specify DBC password"
+msgstr "请指定DBC密码"
+
+msgid "run in background mode"
+msgstr "后台模式运行"
+
+msgid "run in select/insert/update/delete mode"
+msgstr "以select/insert/update/delete模式运行"
+
+msgid "specify source directory"
+msgstr "请指定数据源路径"
+
+msgid "specify temparary directory"
+msgstr "请指定临时目录路径"
+
+msgid "run in sdc mode"
+msgstr "以sdc模式运行"
+
+msgid "specify DBC/SDC user name"
+msgstr "请指定 DBC/SDC 用户名"
+
+msgid "specify DBC/SDC password"
+msgstr "请指定 DBC/SDC 密码"
+
+msgid "ERROR: Invalid mode given."
+msgstr "错误：给出的模式非法"
+
+msgid "ERROR: Can't login on DBC.\n"
+msgstr "错误：无法登陆DBC。\n"
+
+msgid "ERROR: Can't connect to DBC.\n"
+msgstr "错误：无法连接DBC。\n"
+
+msgid "ERROR: Can't login on SDC.\n"
+msgstr "错误：无法登陆SDC。\n"
+
+msgid "ERROR: Can't connect to SDC.\n"
+msgstr "错误：无法连接SDC。\n"
+
+msgid "ERROR: Can't get meta of SDC - "
+msgstr "错误：无法获取SDC的元数据 - "
+
+msgid "ERROR: Can't find table {1}"
+msgstr "错误：无法找到表 {1}"
+
+msgid "ERROR: Can't rename {1} to {2}"
+msgstr "错误：无法将 {1} 改名成 {2}"
+
+msgid "ERROR: Can't open file {1} - {2}"
+msgstr "错误：无法打开文件 {1} - {2}"
+
+msgid "ERROR: Can't read record from file {1} - {2}"
+msgstr "错误：无法从文件 {1} 读取记录 - {2}"
+
+msgid "rows = "
+msgstr "rows = "
+
+msgid "rows = {1}, clocks = {2}, elapsed = {3}"
+msgstr "rows = {1}, clocks = {2}, elapsed = {3}"
+
+msgid "rows per clocks = {1}, rows per elapsed = {2}"
+msgstr "rows per clocks = {1}, rows per elapsed = {2}"
+
+msgid "print current dbc_sync version"
+msgstr "打印当前dbc_sync版本号"
+
+msgid "run dbc_sync in background mode"
+msgstr "后台模式运行dbc_sync"
+
+msgid "dbc_sync version "
+msgstr "dbc_sync版本号"
+
+msgid "ERROR: shmctl failed - {1}"
+msgstr "错误：调用shmctl()函数失败 - {1}"
+
+msgid "ERROR: shmget failed, shm_size = {1}, error message - {2}"
+msgstr "错误：调用shmget()函数失败 ，shm_size = {1}, error message - {2}"
+
+msgid "ERROR: shmat failed - {1} "
+msgstr "错误：调用shmat()函数失败 - {1} "
+
+msgid "add_count={1}"
+msgstr "add_count={1}"
+
+msgid "ERROR: Function can only be called by dbc_server or dbc_admin."
+msgstr "错误：函数只能被dbc_server或dbc_admin调用。 "
+
+msgid "ERROR: invalid argument given"
+msgstr "错误：给定参数非法"
+
+msgid "ERROR: shm count exceeds {1}"
+msgstr "错误：共享内存块数超过 {1}"
+
+msgid "ERROR: shmget failed - {1}"
+msgstr "错误：调用shmget()函数失败 - {1}"
+
+msgid "ERROR: munmap failed - {1}"
+msgstr "错误：调用munmap()函数失败 - {1}"
+
+msgid "ERROR: shmat failed - {1}"
+msgstr "错误：调用shmat()函数失败 - {1}"
+
+msgid "INFO: Waiting for all clients to reattach, sleep 5s."
+msgstr "信息：等待所有客户端重连接，休眠5秒。"
+
+msgid "ERROR: shared memory is not available or ipckey given is not correct"
+msgstr "错误：共享内存不可用或给定的ipckey不正确 - {1}"
+
+msgid "ERROR: shared memory not sane"
+msgstr "错误：共享内存不健全"
+
+msgid "ERROR: shmdt failed - {1}"
+msgstr "错误：调用shmdt()函数失败 - {1}"
+
+msgid "auto_close={1}"
+msgstr "auto_close={1}"
+
+msgid "src_buf={1}, dst_buf={2}, table_name={3}"
+msgstr "src_buf={1}, dst_buf={2}, table_name={3}"
+
+msgid "ERROR: dbc_server died, client exit."
+msgstr "错误：dbc_server已死，客户端退出。"
+
+msgid "ERROR: Open /dev/zero failed - {1}"
+msgstr "错误：打开/dev/zero 失败 - {1}"
+
+msgid "ERROR: mmap failed - {1}"
+msgstr "错误：调用mmap()函数失败 - {1}"
+
+msgid "ERROR: Can't open {1} to create sqlite3 database, {2}"
+msgstr "错误：无法打开 {1} 创建sqlite3数据库 ，{2} "
+
+msgid "ERROR: Can't create table {1} on sqlite3 database, {2}"
+msgstr "错误：无法在sqlite3数据库创建表 {1}，{2} "
+
+msgid "ERROR: Can't reset insert statement, {1}"
+msgstr "错误：无法重置insert语句，{1} "
+
+msgid "ERROR: Can't prepare {1}, {2}"
+msgstr "错误：无法准备{1}， {2}"
+
+msgid "ERROR: Can't execute begin statement for table {1}, {2}"
+msgstr "错误：无法为表 {1} 执行begin语句， {2}"
+
+msgid "ERROR: Can't create table t_fields on sqlite3 database, {1}"
+msgstr "错误：在sqlite3数据库，无法创建表t_fields， {1}"
+
+msgid "ERROR: Can't insert table t_fields on sqlite3 database, {1}"
+msgstr "错误：在sqlite3数据库，无法插入表t_fields， {1}"
+
+msgid "ERROR: Can't bind data for db_name {1}, {2}"
+msgstr "错误：无法为数据库 {1} 绑定数据，{2}"
+
+msgid "ERROR: Can't insert data to db_name {1}, {2}"
+msgstr "错误：无法插入数据到数据库 {1}，{2}"
+
+msgid "ERROR: Can't reset for db_name {1}, {2}"
+msgstr "错误：无法重置数据库{1}，{2}"
+
+msgid "ERROR: login to domain failed, "
+msgstr "错误：登陆域失败，"
+
+msgid "table_id={1}"
+msgstr "table_id={1}"
+
+msgid "ERROR: Can't allocate rows for index {1}"
+msgstr "错误：无法为索引{1}分配足够的记录"
+
+msgid "ERROR: Function can only be called by dbc_server."
+msgstr "错误：函数只能被dbc_server调用。"
+
+msgid "ERROR: RTE is owned by another process."
+msgstr "错误：注册节点被其它进程所占用。"
+
+msgid "ERROR: dbc_server is not alive."
+msgstr "错误：dbc_server未启动。"
+
+msgid "ERROR: DBCROOT environment variable not set"
+msgstr "错误：DBCROOT环境变量未设置。"
+
+msgid "ERROR: Can't startup dbc_sync - {1}"
+msgstr "错误：无法启动dbc_sync - {1}"
+
+msgid "INFO: dbc_server started successfully."
+msgstr "错误：dbc_server启动成功。"
+
+msgid "INFO: Transfer source to internal format..."
+msgstr "信息：数据源转换到内部格式 ..."
+
+msgid "ERROR: Can't load data for table {1}, missing primary key"
+msgstr "错误：无法加载表 {1} 数据 ，缺失主键"
+
+msgid "ERROR: Can't load data for table {1}"
+msgstr "错误：无法加载表 {1} 数据"
+
+msgid "ERROR: Can't stat file {1} - {2}"
+msgstr "错误：无法获取文件 {1} 的状态 - {2}"
+
+msgid "ERROR: Can't find address for hostid {1}"
+msgstr "错误：无法找到hostid {1} 的地址"
+
+msgid "ERROR: Can't copy data to slave {1} - {2}"
+msgstr "错误：无法拷贝数据至从节点 {1} - {2} "
+
+msgid "ERROR: Can't open ready file {1}"
+msgstr "错误：无法打开准备文件 {1} "
+
+msgid "INFO: Transfer finished, Loading..."
+msgstr "信息：转换结束，开始加载..."
+
+msgid "ERROR: Can't create row for table {1} - {2}"
+msgstr "错误：无法为表 {1} 创建行 - {2} "
+
+msgid "ERROR: Can't apply change log to current DBC"
+msgstr "错误：无法为现有的DBC应用变更日志"
+
+msgid "INFO: table {1} on user {2} apply change log finished, table rows: {3}"
+msgstr "信息：用户 {2} 上的表 {1} 应用变更日志完成，表行数：{3}"
+
+msgid "INFO: Loading finished."
+msgstr "信息：加载完成。"
+
+msgid "ERROR: failed to initialize table {1}"
+msgstr "错误：初始化表{1}失败"
+
+msgid "ERROR: table {1}: unsupported refresh_type given."
+msgstr "错误：表{1}：不支持的refresh_type值。"
+
+msgid "INFO: table {1} load finished, table rows: {2}"
+msgstr "信息：表 {1} 加载完成，表行数：{2}"
+
+msgid "ERROR: index {1}: Can't create index row - {2}"
+msgstr "错误：索引{1}：无法创建索引行  - {2}"
+
+msgid "INFO: index {1} create finished"
+msgstr "信息：索引 {1} 创建完成"
+
+msgid "INFO: table {1} refresh finished, table rows: {2}"
+msgstr "信息：表 {1} 刷新完成，表行数：{2}"
+
+msgid "ERROR: Can't load definition for sequence file {1} - {2}."
+msgstr "错误：无法为序列文件 {1} 加载定义 - {2}。"
+
+msgid "ERROR: Corrupted definition for sequence file {1}, skip it."
+msgstr "错误：序列文件{1} 定义损坏 ，跳过。"
+
+msgid "ERROR: Memory allocation failed"
+msgstr "错误：内存分配失败"
+
+msgid "ERROR: Can't update row for table {1} - {2}"
+msgstr "错误：无法更新表 {1} 的记录 - {2} "
+
+msgid "ERROR: Can't insert row for table {1} - {2}"
+msgstr "错误：无法插入表 {1} 的记录 - {2} "
+
+msgid "ERROR: Can't save data to file for table {1} - {2}"
+msgstr "错误：无法为表 {1} 储存数据到文件 - {2}"
+
+msgid "log_error={1}"
+msgstr "log_error={1}"
+
+msgid "log_error={1}, partition_id={2}, mid={3}, pmid={4}"
+msgstr "log_error={1}, partition_id={2}, mid={3}, pmid={4}"
+
+msgid "ERROR: Can't open database {1}, {2}"
+msgstr "错误：无法打开数据库 {1}, {2}"
+
+msgid "ERROR: Can't prepare select sql"
+msgstr "错误：无法准备 select sql"
+
+msgid "ERROR: table {1} structure is changed, exit"
+msgstr "错误：表 {1} 结构已改变，退出"
+
+msgid "ERROR: Can't get data from table, {1}"
+msgstr "错误：无法从表获取数据，{1}"
+
+msgid "ERROR: Can't create row for table {1}, {2}"
+msgstr "错误：无法为表 {1} 创建行，{2}"
+
+msgid "ERROR: unknown type {1}"
+msgstr "错误：未知类型 {1}"
+
+msgid "ERROR: execute SQL for type {1} failed"
+msgstr "错误：类型 {1} 的执行SQL失败"
+
+msgid "ERROR: Can't insert data to database"
+msgstr "错误：无法插入数据到数据库"
+
+msgid "partition_id={1}, mid={2}"
+msgstr "partition_id={1}, mid={2}"
+
+msgid "ERROR: Can't prepare select sql, {1}"
+msgstr "错误：无法准备 select sql ，{1}"
+
+msgid "ERROR: execute SQL for type {1} failed."
+msgstr "错误：类型 {1} 的执行SQL失败。"
+
+msgid "table_name={1}, refresh={2}"
+msgstr "table_name={1}, refresh={2}"
+
+msgid "ERROR: Unknown field_type {1}"
+msgstr "错误：未知字段类型 {1}"
+
+msgid "WARN: Process {1} on slot {2} died; removing from DBC"
+msgstr "警告：在插槽 {2} 上的进程 {1} 僵死；将从系统中清除"
+
+msgid "ERROR: process {1} died in transaction, try to recover from crash."
+msgstr "错误：在事务中进程 {1} 已死，尝试从崩溃中恢复"
+
+msgid "ERROR: process terminated by signal"
+msgstr "错误：进程被信号终止"
+
+msgid "table_name={1}"
+msgstr "table_name={1}"
+
+msgid "ERROR: Can't attach to shared memory"
+msgstr "错误：无法连接到共享内存"
+
+msgid "ERROR: Can't register to DBC"
+msgstr "错误：不能注册到DBC"
+
+msgid "print current dbc_insert version"
+msgstr "打印当前dbc_insert版本号"
+
+msgid "run dbc_insert in background mode"
+msgstr "后台模式运行dbc_insert"
+
+msgid "target table name"
+msgstr "目标表名"
+
+msgid "select SQL statement to execute"
+msgstr "准备执行的select SQL语句"
+
+msgid "dbc_insert version "
+msgstr "dbc_insert版本号"
+
+msgid "ERROR: Invalid SQL given, missing type"
+msgstr "错误：非法的SQL，缺失类型"
+
+msgid "INFO: {1} rows inserted successfully"
+msgstr "信息：{1} 行插入成功"
+
+msgid "offset={1}"
+msgstr "offset={1}"
+
+msgid "ie={1}"
+msgstr "ie={1}"
+
+msgid "rowid={1}"
+msgstr "rowid={1}"
+
+msgid "data={1}"
+msgstr "data={1}"
+
+msgid "node={1}"
+msgstr "node={1}"
+
+msgid "key={1}"
+msgstr "key={1}"
+
+msgid "ERROR: index count exceeds MAX_INDEXES"
+msgstr "错误：索引数目超过MAX_INDEXES"
+
+msgid "WARN: Table {1} is set readonly since primary key is not defined"
+msgstr "警告：表{1} 主键未定义，设置只读模式"
+
+msgid "ERROR: Can't allocate rows for table {1}"
+msgstr "错误：无法为表 {1} 分配记录"
+
+msgid "ERROR: Missing partition field for table {1}"
+msgstr "错误：表 {1} 缺失分区字段"
+
+msgid "ERROR: staled rowid {1} given."
+msgstr "错误：过期的 rowid {1}。 "
+
+msgid "src={1}"
+msgstr "src={1}"
+
+msgid "dst={1}, src={2}"
+msgstr "dst={1}, src={2}"
+
+msgid "print current DBC version"
+msgstr "打印当前DBC版本号"
+
+msgid "specify DBC's configuration key"
+msgstr "请指定DBC的配置关键字"
+
+msgid "specify DBC's configuration version"
+msgstr "请指定DBC的配置版本号"
+
+msgid "specify SDC's configuration key"
+msgstr "请指定SDC的配置关键字"
+
+msgid "specify SDC's configuration version"
+msgstr "请指定SDC的配置版本号"
+
+msgid "reuse shared memory if exists"
+msgstr "如果存在，重用共享内存"
+
+msgid "run in master mode"
+msgstr "主模式运行"
+
+msgid "finish svrinit() without login on DBC"
+msgstr "不登陆DBC完成svrinit()"
+
+msgid "DBC version "
+msgstr "DBC版本号"
+
+msgid "ERROR: login to domain failed, {1}"
+msgstr "错误：登陆域失败，{1}"
+
+msgid "ERROR: Can't remove corrupted image - {1}"
+msgstr "错误：无法移除过期的镜像  - {1}"
+
+msgid "ERROR: load data failed, {1}"
+msgstr "错误：加载数据失败，{1}"
+
+msgid "WARN: UNABLE TO RESUME process {1}"
+msgstr "警告：无法恢复进程 {1}"
+
+msgid "print current dbc_server version"
+msgstr "打印当前dbc_server版本号"
+
+msgid "enable starting dbc_sync"
+msgstr "允许启动dbc_sync"
+
+msgid "reuse original shared memory"
+msgstr "重用上一个共享内存"
+
+msgid "run dbc_server in background mode"
+msgstr "后台模式启动dbc_server"
+
+msgid "dbc_server version "
+msgstr "dbc_server版本号"
+
+msgid "ERROR: Can't open configuration file.\n"
+msgstr "错误：无法打开配置文件。\n"
+
+msgid "ERROR: mem_block magic doesn't match"
+msgstr "错误：mem_block魔数不匹配"
+
+msgid "ERROR: dbc_dump: Can't login on BB."
+msgstr "错误：dbc_dump：无法登陆系统"
+
+msgid "ERROR: dbc_dump: Can't connect on BB."
+msgstr "错误：dbc_dump：无法连接系统"
+
+msgid "ERROR: permissiion denied"
+msgstr "错误：拒绝访问"
+
+msgid "ERROR: Can't find table definition, table_id = {1}"
+msgstr "错误：无法找到表定义，table_id = {1}"
+
+msgid "ERROR: Can't load dump data for table {1}"
+msgstr "错误：无法为表{1} 加载导出的数据"
+
+msgid "ERROR: Can't allocate rows for redo."
+msgstr "错误：无法为重做分配记录。"
+
+msgid "redo_bucket={1}"
+msgstr "redo_bucket={1}"
+
+msgid "head_offset={1}"
+msgstr "head_offset={1}"
+
+msgid "ERROR: login() required before connect()"
+msgstr "错误：调用connect()前需要先调用login()函数"
+
+msgid "ERROR: Can't find table entry in table list"
+msgstr "错误：无法在表列表中找到表节点"
+
+msgid "ERROR: Can't create data_dir {1} for user {2}"
+msgstr "错误：无法为用户{2} 创建路径data_dir {1}"
+
+msgid "ERROR: Can't create user {1}, too many users"
+msgstr "错误：无法创建用户{1} ，用户太多"
+
+msgid "INFO: client application login SDC successfully."
+msgstr "信息：客户端应用登陆SDC成功。"
+
+msgid "INFO: client application logout SDC successfully."
+msgstr "信息：客户端应用注销SDC成功。"
+
+msgid "ERROR: Can't login on DBC - {1}"
+msgstr "错误：无法登陆DBC - {1}"
+
+msgid "ERROR: Can't connect on DBC - {1}"
+msgstr "错误：无法连接DBC - {1}"
+
+msgid "user_name={1}, password={2}"
+msgstr "user_name={1}, password={2}"
+
+msgid "user_id={1}"
+msgstr "user_id={1}"
+
+msgid "table_name={1}, index_name={2}"
+msgstr "table_name={1}, index_name={2}"
+
+msgid ""
+"table_id={1}, data={2}, result={3}, max_rows={4}, partition_id={5}, "
+"struct_size={6}"
+msgstr ""
+"table_id={1}, data={2}, result={3}, max_rows={4}, partition_id={5}, "
+"struct_size={6}"
+
+msgid ""
+"table_id={1}, index_id={2}, data={3}, result={4}, max_rows={5}, partition_id="
+"{6}, struct_size={7}"
+msgstr ""
+"table_id={1}, index_id={2}, data={3}, result={4}, max_rows={5}, partition_id="
+"{6}, struct_size={7}"
+
+msgid "table_id={1}, data={2}, partition_id={3}, struct_size={4}"
+msgstr "table_id={1}, data={2}, partition_id={3}, struct_size={4}"
+
+msgid "table_id={1}, index_id={2}, data={3}, partition_id={4}, struct_size={5}"
+msgstr ""
+"table_id={1}, index_id={2}, data={3}, partition_id={4}, struct_size={5}"
+
+msgid ""
+"table_id={1}, old_data={2}, new_data={3}, partition_id={4}, struct_size={5}"
+msgstr ""
+"table_id={1}, old_data={2}, new_data={3}, partition_id={4}, struct_size={5}"
+
+msgid ""
+"table_id={1}, index_id={2}, old_data={3}, new_data={4}, partition_id={5}, "
+"struct_size={6}"
+msgstr ""
+"table_id={1}, index_id={2}, old_data={3}, new_data={4}, partition_id={5}, "
+"struct_size={6}"
+
+msgid "ERROR: login to DBC failed."
+msgstr "错误：登陆DBC失败。"
+
+msgid "ERROR: connect to DBC failed."
+msgstr "错误：连接DBC失败。"
+
+msgid "ERROR: commit() failed, {1}"
+msgstr "错误：commit()函数调用失败，{1}"
+
+msgid "ERROR: rollback() failed, {1}"
+msgstr "错误：rollback()函数调用失败，{1}"
+
+msgid "ERROR: unsupported function."
+msgstr "错误：不支持的函数。"
+
+msgid "ERROR: mkstemp failure, {1}"
+msgstr "错误：mkstemp()函数调用失败，{1}"
+
+msgid "ERROR: Can't find TE for table {1}"
+msgstr "错误：无法找到表{1}的入口"
+
+msgid "ERROR: unsupported statement type given."
+msgstr "错误：不支持的语句类型。"
+
+msgid "ERROR: Transaction timeout, please rollback transaction first."
+msgstr "错误：事务超时，请先回退事务。"
+
+msgid "ERROR: insert execution for table {1} failed, {2}"
+msgstr "错误：表 {1} 执行插入失败，{2} "
+
+msgid "ERROR: update execution for table {1} failed, {2}"
+msgstr "错误：表 {1} 执行更新失败，{2} "
+
+msgid "ERROR: delete execution for table {1} failed, {2}"
+msgstr "错误：表 {1} 执行删除失败，{2}"
+
+msgid "ERROR: unsupported SQL statemenet."
+msgstr "错误：不支持的SQL语句。"
+
+msgid "ERROR: Wrong SQL string given."
+msgstr "错误：错误的SQL串。"
+
+msgid "ERROR: some items are not provided in group by sub-statement."
+msgstr "错误：group by字句中缺少部分语法项。"
+
+msgid "ERROR: field_name {1} is not in select_map."
+msgstr "错误：字段名 {1} 不在select_map。"
+
+msgid "ERROR: order field {1} is not in select list."
+msgstr "错误：order字段 {1} 不在select列表中。"
+
+msgid "row_set.size()={1}, flags={2}"
+msgstr "row_set.size()={1}, flags={2}"
+
+msgid "ERROR: Can't open database {1}"
+msgstr "错误：无法打开数据库 {1}"
+
+msgid "ERROR: Can't prepare statement for insert"
+msgstr "错误：无法为insert 准备语句"
+
+msgid "ERROR: Can't begin transaction, {1}"
+msgstr "错误：无法开始事务，{1}"
+
+msgid "ERROR: Can't rollback transaction, {1}"
+msgstr "错误：无法回退事务，{1}"
+
+msgid "ERROR: Can't insert data to sqlite"
+msgstr "错误：无法插入数据到sqlite"
+
+msgid "ERROR: Can't commit transaction, {1}"
+msgstr "错误：无法提交事务，{1}"
+
+msgid "ERROR: Can't prepare statement for select"
+msgstr "错误：无法为select准备语句"
+
+msgid "ERROR: Can't reset statement for select, {1}"
+msgstr "错误：无法重置select语句，{1}"
+
+msgid "ERROR: Can't get row from sqlite"
+msgstr "错误：无法从sqlite获取行"
+
+msgid "ERROR: insert {1} failed, sqlite database may corrupt, {2}"
+msgstr "错误：插入 {1} 失败，sqlite数据库可能被破坏，{2}"
+
+msgid "ERROR: update {1} failed, sqlite database may corrupt, {2}"
+msgstr "错误：更新 {1} 失败，sqlite数据库可能被破坏，{2}"
+
+msgid "ERROR: delete {1} failed, sqlite database may corrupt, {2}"
+msgstr "错误：删除 {1} 失败，sqlite数据库可能被破坏，{2}"
+
+msgid "tran_id={1}"
+msgstr "tran_id={1}"
+
+msgid "target_tran_id={1}"
+msgstr "target_tran_id={1}"
+
+msgid "ERROR: Can't reset statement, {1}"
+msgstr "错误：无法重置语句，{1}"
+
+msgid "ERROR: Can't bind statement, {1}"
+msgstr "错误：无法绑定语句，{1}"
+
+msgid "ERROR: unknown opcode, {1}"
+msgstr "错误：未知操作码，{1}"
+
+msgid "ERROR: Can't delete data from sqlite, {1}"
+msgstr "错误：无法从sqlite删除数据，{1}"
+
+msgid ""
+"tran_id={1}, sequence={2}, type={3}, user_idx={4}, table_id={5}, row_size="
+"{6}, old_row_size={7}"
+msgstr ""
+"tran_id={1}, sequence={2}, type={3}, user_idx={4}, table_id={5}, row_size="
+"{6}, old_row_size={7}"
+
+msgid "ERROR: Can't reset statement for insert, {1}"
+msgstr "错误：无法重置insert语句，{1}"
+
+msgid "user_idx={1}, tran_id={2}"
+msgstr "user_idx={1}, tran_id={2}"
+
+msgid "ERROR: Can't reset statement for delete, {1}"
+msgstr "错误：无法重置delete语句，{1}"
+
+msgid "truncate table {1}"
+msgstr "truncate table {1}"
+
+msgid "ERROR: Can't truncate table {1}, {2}"
+msgstr "错误：无法truncate表 {1}， {2}"
+
+msgid "db_name={1}"
+msgstr "db_name={1}"
+
+msgid "ERROR: Can't open database: {1}"
+msgstr "错误：无法打开数据库：{1}"
+
+msgid "ERROR: PRAGMA synchronous=0 failed: {1}"
+msgstr "错误：PRAGMA synchronous=0失败：{1}"
+
+msgid "ERROR: PRAGMA journal_mode=PERSIST failed: {1}"
+msgstr "错误：PRAGMA journal_mode=PERSIST 失败：{1}"
+
+msgid "ERROR: internal error, invalid type given"
+msgstr "错误：内部错误，无效类型"
+
+msgid "ERROR: Can't create table dbc: {1}"
+msgstr "错误：不能创建表dbc：{1}"
+
+msgid "ERROR: Can't create index idx_dbc: {1}"
+msgstr "错误：不能创建索引idx_dbc：{1}"
+
+msgid "ERROR: Can't reset database: {1}"
+msgstr "错误：无法重置数据库：{1}"
+
+msgid "ERROR: Can't prepare statement: {1}"
+msgstr "错误：无法准备语句：{1}"
+
+msgid "ERROR: unknown sqlite error code {1}, {2}"
+msgstr "错误：未知sqlite错误代码 {1}, {2}"
+
+msgid "ERROR: Can't open library {1}"
+msgstr "错误：不能打开动态库{1}"
+
+msgid "ERROR: Function get_switch() doesn't exist in library {1}"
+msgstr "错误：函数get_switch() 在库文件中不存在 {1}"
+
+msgid "ERROR: get_switch() returned NULL."
+msgstr "错误：函数get_switch() 返回值为空。"
+
+msgid "ERROR: Function get_client_md5sum() doesn't exist in library {1}"
+msgstr "错误：函数get_client_md5sum() 在动态库 {1} 中不存在。"
+
+msgid "dbc_key={1}, dbc_version={2}, sdc_key={3}, sdc_version={4}"
+msgstr "dbc_key={1}, dbc_version={2}, sdc_key={3}, sdc_version={4}"
+
+msgid "ERROR: Failure to load DBC configuration"
+msgstr "错误：加载DBC配置失败。"
+
+msgid "ERROR: Can't open file to write DBC configuration"
+msgstr "错误：无法打开文件用于写入DBC配置。"
+
+msgid "ERROR: Can't write data to DBC configuration file"
+msgstr "错误：无法写入数据到DBC配置文件。"
+
+msgid "ERROR: Failure to load SDC configuration"
+msgstr "错误：加载SDC配置失败。"
+
+msgid "ERROR: Can't open file to write SDC configuration"
+msgstr "错误：无法打开文件用于写入SDC配置"
+
+msgid "ERROR: Can't write data to SDC configuration file"
+msgstr "错误：无法写入数据到SDC配置文件"
+
+msgid "ERROR: md5sum failed"
+msgstr "错误：md5sum失败"
+
+msgid "ERROR: dbcclient library and configuration file don't match"
+msgstr "错误：dbcclient库和配置文件不匹配"
+
+msgid "ERROR: Can't find group for pgid {1}"
+msgstr "错误：无法找到ID为 {1} 的进程组"
+
+msgid "run in readonly mode"
+msgstr "只读模式运行"
+
+msgid "specify login info"
+msgstr "请指定登陆信息"
+
+msgid "ERROR: Invalid sginfo given\n"
+msgstr "错误：非法的sginfo\n"
+
+msgid "ERROR: Can't login to ServiceGalaxy domain\n"
+msgstr "错误：无法登陆ServiceGalaxy域\n"
+
+msgid "ERROR: Can't get DBC/SDC config\n"
+msgstr "错误：无法获取DBC/SDC配置\n"
+
+msgid "ERROR: Can't get master nodes\n"
+msgstr "错误：无法获取主节点\n"
+
+msgid "WARN: dbc_server is not alive, start in normal mode.\n"
+msgstr "警告：dbc_server未运行，以正常模式启动。\n"
+
+msgid "ERROR: permission denied, start in normal mode.\n"
+msgstr "错误：拒绝访问，以正常模式启动。\n"
+
+msgid ""
+"INFO: run in readonly mode since DBC is running in cluster, but dbc_admin is "
+"in standalone."
+msgstr ""
+"信息：由于DBC运行在集群模式下，但dbc_admin运行于单机模式，系统以只读方式运行。"
+
+msgid "ERROR: Error executing {1}\n"
+msgstr "错误：执行 {1} 错误\n"
+
+msgid "INFO: Command: {1}"
+msgstr "信息：命令：{1}"
+
+msgid "You are now in wizard mode.\n"
+msgstr "你目前在导航模式。\n"
+
+msgid "Type help for available commands.\n"
+msgstr "输入help显示有效的命令。\n"
+
+msgid "Exiting wizard mode.\n"
+msgstr "退出导航模式。\n"
+
+msgid "This command is for use with Host Extension only\n"
+msgstr "这个命令只能以主机扩展模式使用\n"
+
+msgid "ERROR: Failure return from {1}, status {2}, {3}"
+msgstr "错误：失败返回 {1} ，状态 {2}, {3} "
+
+msgid "ERROR: Failed to boot processes."
+msgstr "错误：启动进程失败。"
+
+msgid "DBC processes booted successfully.\n"
+msgstr "DBC进程启动成功。\n"
+
+msgid "DBC processes shutdown successfully.\n"
+msgstr "DBC进程停止成功。\n"
+
+msgid "        BB RELEASE: "
+msgstr "          系统版本："
+
+msgid "        BB VERSION: "
+msgstr "        系统版本号："
+
+msgid "      INITIAL SIZE: 0x"
+msgstr "          初始大小：0x"
+
+msgid "           IPC KEY: "
+msgstr "           IPC键值："
+
+msgid "          IPC MODE: 0"
+msgstr "           IPC模式：0"
+
+msgid "        STACK SIZE: 0x"
+msgstr "          堆栈大小：0x"
+
+msgid "        STAT LEVEL: "
+msgstr "          统计级别："
+
+msgid "           SYS DIR: "
+msgstr "          系统路径："
+
+msgid "          SYNC DIR: "
+msgstr "          同步路径："
+
+msgid "          DATA DIR: "
+msgstr "          数据路径："
+
+msgid "         SHM COUNT: "
+msgstr "      共享内存块数："
+
+msgid "     RESERVE COUNT: "
+msgstr "          预留块数："
+
+msgid "        POST SIGNO: "
+msgstr "          通知信号："
+
+msgid "           SHM IDS: \n"
+msgstr "       共享内存IDS：\n"
+
+msgid "          SHM SIZE: 0x"
+msgstr "      共享内存大小：0x"
+
+msgid "         MAX USERS: "
+msgstr "        最大用户数："
+
+msgid "           MAX TES: "
+msgstr "          最大表数："
+
+msgid "           MAX SES: "
+msgstr "        最大序列数："
+
+msgid "          MAX RTES: "
+msgstr "      最大客户端数："
+
+msgid "           SE BKTS: "
+msgstr "          序列桶数："
+
+msgid "         SEG REDOS: "
+msgstr "          重做段值："
+
+msgid "    TRANSACTION ID: "
+msgstr "            事务ID："
+
+msgid "           CUR TES: "
+msgstr "          当前表数："
+
+msgid "          CUR RTES: "
+msgstr "      当前客户端数："
+
+msgid "        CUR MAX TE: "
+msgstr "      当前最大表数："
+
+msgid "          MEM FREE: 0x"
+msgstr "    空闲内存地址头：0x"
+
+msgid "         FREE SIZE: {1}M\n"
+msgstr "      空闲空间大小：{1}M\n"
+
+msgid "         REDO SIZE: {1}B\n"
+msgstr "    重做记录区大小：{1}B\n"
+
+msgid "BB clean finished.\n"
+msgstr "系统清除完成。\n"
+
+msgid "ERROR: object {1} not exist."
+msgstr "错误：对象 {1} 不存在。"
+
+msgid "Name"
+msgstr "名称"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "Primary"
+msgstr "主键"
+
+msgid "ERROR: too long sequence name."
+msgstr "错误：序列名超长。"
+
+msgid "ERROR: missing value for [minvalue]."
+msgstr "错误：缺失值minvalue。"
+
+msgid "ERROR: missing value for [maxvalue]."
+msgstr "错误：缺失值maxvalue。"
+
+msgid "ERROR: missing key word [with]."
+msgstr "错误：缺失关键字with。"
+
+msgid "ERROR: key word [with] should be followed by [start]."
+msgstr "错误：关键字wit需要跟随start。"
+
+msgid "ERROR: missing key word [by]."
+msgstr "错误：缺失关键字by。"
+
+msgid "ERROR: key word [by] should be followed by [increment]."
+msgstr "错误：关键字by需要跟随increment。"
+
+msgid "ERROR: missing value for [cache]."
+msgstr "错误：缺失关键字cache。"
+
+msgid "ERROR: gotten unknown key word {1}"
+msgstr "错误：获取了未知关键值 {1} "
+
+msgid "ERROR: minvalue should be a zero or positive number."
+msgstr "错误：minvalue必须是0或者正数。"
+
+msgid "ERROR: maxvalue should be bigger than minvalue."
+msgstr "错误：maxvalue必须大于最小值。 "
+
+msgid "ERROR: currval should between minvalue and maxvalue."
+msgstr "错误：currval必须在最小值与最大值之间。"
+
+msgid "ERROR: failed to create object {1}, see log for detailed information."
+msgstr "错误：创建对象 {1} 失败，详细信息请看日志。"
+
+msgid "sequence {1} created successfully.\n"
+msgstr "序列 {1} 创建成功。\n"
+
+msgid "table {1} dropped successfully.\n"
+msgstr "表 {1} 删除成功。\n"
+
+msgid "sequence {1} dropped successfully.\n"
+msgstr "序列 {1} 删除成功。\n"
+
+msgid "ERROR: sequence {1} not exist."
+msgstr "错误：序列 {1} 不存在"
+
+msgid "ERROR: failed to alter object {1}, see log for detailed information."
+msgstr "错误：修改对象 {1} 失败，详细信息请看日志。"
+
+msgid "sequence {1} altered successfully.\n"
+msgstr "序列 {1} 修改成功。\n"
+
+msgid "ERROR: permission denied, missing CREATE privilege."
+msgstr "错误：拒绝访问，无CREATE权限。"
+
+msgid "ERROR: table {1} not exist."
+msgstr "错误：表 {1} 不存在。"
+
+msgid "ERROR: index {1} already exists."
+msgstr "错误：索引 {1} 已经存在。"
+
+msgid "ERROR: failed to create index {1}, see log for detailed information."
+msgstr "错误：创建索引 {1} 失败，详细信息请看日志。"
+
+msgid "index {1} enabled successfully.\n"
+msgstr "索引 {1} 激活成功。\n"
+
+msgid "ERROR: index_id {1} doesn't exist in database."
+msgstr "错误：索引id {1} 在数据库中不存在。"
+
+msgid "ERROR: index {1} doesn't exist in database."
+msgstr "错误：索引{1} 在数据库中不存在。 "
+
+msgid "ERROR: permission denied, missing DROP privilege"
+msgstr "错误：拒绝访问，无DROP权限"
+
+msgid "ERROR: index {1} currently used by process {2}"
+msgstr "错误：当前索引 {1} 正在被进程 {2} 使用"
+
+msgid "index {1} disabled successfully.\n"
+msgstr "索引 {1} 禁用成功。\n"
+
+msgid "ERROR: index_id {1} not exist."
+msgstr "错误：索引ID {1}不存在。"
+
+msgid "ERROR: index {2} not exist."
+msgstr "错误：索引{2}不存在。"
+
+msgid "ERROR: Commit execution failed, {1}"
+msgstr "错误：提交执行失败，{1}"
+
+msgid "commit executed successfully.\n"
+msgstr "提交执行成功。\n"
+
+msgid "ERROR: Rollback execution failed."
+msgstr "错误：回滚执行失败。"
+
+msgid "rollback executed successfully.\n"
+msgstr "回滚执行成功。\n"
+
+msgid "ERROR: permission denied, missing RELOAD privilege"
+msgstr "错误：拒绝访问，无RELOAD权限"
+
+msgid "ERROR: reload table {1} failed."
+msgstr "错误：重新加载表 {1} 失败。"
+
+msgid "reload table {1} successfully.\n"
+msgstr "重新加载表{1}成功。\n"
+
+msgid "ERROR: permission denied, missing SELECT privilege"
+msgstr "错误：拒绝访问，无SELECT权限"
+
+msgid "ERROR: dump table {1} failed."
+msgstr "错误：导出表 {1} 失败。"
+
+msgid "dump table {1} successfully.\n"
+msgstr "导出表 {1} 成功。\n"
+
+msgid "dbc_dump executed successfully.\n"
+msgstr "dbc_dump 执行成功。\n"
+
+msgid "extend shared memory successfully.\n"
+msgstr "扩展共享内存成功。\n"
+
+msgid "MEM TOTAL  USED ROWS  FREE ROWS  REF ROWS   CUR COUNT\n"
+msgstr "总内存     使用记录数 空闲记录数 参考记录数 当前记录数\n"
+
+msgid "INDEX NAME                       MEM TOTAL  FREE NODES\n"
+msgstr "索引名称                         总内存     空闲节点\n"
+
+msgid "SESSION_ID PID        ELAPSED_TIME REMAIN_TIME STATUS\n"
+msgstr "会话ID     进程号     经历时间     剩余时间    状态\n"
+
+msgid "TRAN"
+msgstr "事务"
+
+msgid "SUSPEND"
+msgstr "挂起"
+
+msgid "PRECOMMIT"
+msgstr "预提交"
+
+msgid "NAME             TYPE       VALUE\n"
+msgstr "名称             类型       值\n"
+
+msgid "USER ID USER NAME\n"
+msgstr "用户号  用户名\n"
+
+msgid "TABLE NAME\n"
+msgstr "表名\n"
+
+msgid ""
+"SEQUENCE NAME    MINVALUE            MAXVALUE            CURRVAL             "
+"INCREMENT  CACHE CYCLE ORDER\n"
+msgstr ""
+"序列名           最小值              最大值              当前值              "
+"增量       缓存  循环  顺序\n"
+
+msgid "SYSTEM"
+msgstr "系统"
+
+msgid "[GLOBAL]"
+msgstr "[全局]"
+
+msgid "ERROR: session_id given doesn't exist."
+msgstr "错误：提供的会话ID不存在。"
+
+msgid "Session is marked as terminated successfully.\n"
+msgstr "会话被标记为终止成功。\n"
+
+msgid "ERROR: para_value must be numeric\n"
+msgstr "错误：para_value 必须是数值形\n"
+
+msgid "ERROR: unrecognized parameter {1} given."
+msgstr "错误：提供的参数 {1} 不可识别。"
+
+msgid "Paremeter set successfully.\n"
+msgstr "参数设置成功。\n"
+
+msgid "A transaction forgotten successfully.\n"
+msgstr "事务丢弃成功。\n"
+
+msgid ""
+"not found\n"
+"key data:"
+msgstr ""
+"找不到\n"
+"关键字数据："
+
+msgid ""
+"many found\n"
+"key data:"
+msgstr ""
+"找到多条\n"
+"关键字数据："
+
+msgid ""
+"not match:\n"
+"key data:"
+msgstr ""
+"不匹配\n"
+"关键字数据："
+
+msgid "result data:"
+msgstr "结果数据："
+
+msgid "check cancelled with signal\n"
+msgstr "通过信号取消检查\n"
+
+msgid "check finished successfully\n"
+msgstr "检查顺利完成\n"
+
+msgid "check finished with error\n"
+msgstr "检查完成，发现错误\n"
+
+msgid "rows not found: "
+msgstr "未发现行数："
+
+msgid "rows many found: "
+msgstr "发现部分行数："
+
+msgid "rows not match: "
+msgstr "不匹配行数："
+
+msgid "rows success: "
+msgstr "成功行数："
+
+msgid "execution elapsed = {1}s"
+msgstr "执行经历时间 = {1}s"
+
+msgid "ERROR: -I option: argument must be numeric\n"
+msgstr "错误：-I 选项：参数必须是数字型\n"
+
+msgid "ERROR: -c option: argument must be numeric\n"
+msgstr "错误：-c 选项：参数必须是数字型\n"
+
+msgid "ERROR: -S option: argument must be numeric\n"
+msgstr "错误：-S 选项：参数必须是数字型\n"
+
+msgid " now on.\n"
+msgstr "开启。\n"
+
+msgid " now off.\n"
+msgstr "关闭。\n"
+
+msgid " records selected successfully.\n"
+msgstr "条记录选取成功。\n"
+
+msgid " record selected successfully.\n"
+msgstr "条记录选取成功。\n"
+
+msgid "1 record inserted successfully.\n"
+msgstr "1条记录插入成功。\n"
+
+msgid " records updated successfully.\n"
+msgstr "条记录更新成功。\n"
+
+msgid " record updated successfully.\n"
+msgstr "条记录更新成功。\n"
+
+msgid " records deleted successfully.\n"
+msgstr "条记录删除成功。\n"
+
+msgid " record deleted successfully.\n"
+msgstr "条记录删除成功。\n"
+
+msgid "ERROR: invalid truncate SQL statement."
+msgstr "错误：非法的truncate SQL语句。"
+
+msgid "ERROR: truncate execution for table "
+msgstr "错误：执行truncate在表 "
+
+msgid " failed."
+msgstr "失败。"
+
+msgid "table {1} truncated successfully.\n"
+msgstr "表 {1} truncate成功。\n"
+
+msgid "ERROR: table {1} exists"
+msgstr "错误：表 {1} 存在"
+
+msgid ""
+"ERROR: field_size should be at least {1} long when field_type is vstring"
+msgstr "错误：当类型为vstring时field_size 至少{1}长"
+
+msgid "ERROR: field_size should be at most {1} long when field_type is vstring"
+msgstr "错误：当类型为vstring时field_size 最多{1}长"
+
+msgid "ERROR: create execution for table "
+msgstr "错误：执行create在表。"
+
+msgid "table {1} created successfully.\n"
+msgstr "表 {1} 创建成功。\n"
+
+msgid "Result on node "
+msgstr "节点结果"
+
+msgid "ERROR: Call operation on node {1} failed\n"
+msgstr "错误：调用节点 {1} 上的操作失败\n"
+
+msgid "sginfo={1}"
+msgstr "sginfo={1}"
+
+msgid "ERROR: usrname on sginfo too long"
+msgstr "错误：sginfo的usrname内容超长"
+
+msgid "ERROR: cltname on sginfo too long"
+msgstr "错误：sginfo的cltname内容超长"
+
+msgid "ERROR: passwd on sginfo too long"
+msgstr "错误：sginfo的passwd内容超长"
+
+msgid "ERROR: grpname on sginfo too long"
+msgstr "错误：sginfo的grpname内容超长"
+
+msgid "ERROR: Custom Error Message."
+msgstr "错误：自定义错误信息。"
+
+msgid "ERROR: Argument too long."
+msgstr "错误：参数超长。"
+
+msgid "ERROR: No such command."
+msgstr "错误：没有该命令。"
+
+msgid "ERROR: Invalid option."
+msgstr "错误：非法选项。"
+
+msgid "ERROR: Too many arguments."
+msgstr "错误：参数过多。"
+
+msgid "ERROR: Duplicate arguments."
+msgstr "错误：参数重复。"
+
+msgid "ERROR: Must be administrator to execute that command."
+msgstr "错误：执行该命令需要管理员权限。"
+
+msgid "INFO: Break out of main loop."
+msgstr "信息：跳出主循环。"
+
+msgid "ERROR: Syntax error on command line."
+msgstr "错误：命令行的语法错误。"
+
+msgid "ERROR: Error accessing system semaphore."
+msgstr "错误：访问系统信号量错误。"
+
+msgid "ERROR: Error accessing message queue."
+msgstr "错误：访问消息队列错误。"
+
+msgid "ERROR: Error accessing shared memory."
+msgstr "错误：访问共享内存错误。"
+
+msgid "ERROR: Error dumping bulletin board."
+msgstr "错误：导出系统共享内存错误。"
+
+msgid "ERROR: Incorrect release code."
+msgstr "错误：错误的版本代码。"
+
+msgid "set database user name"
+msgstr "设置数据库用户名"
+
+msgid "set database password"
+msgstr "设置数据库密码"
+
+msgid "set database connect string"
+msgstr "设置数据库连接字符串"
+
+msgid "set dbc output XML file"
+msgstr "设置dbc输出XML文件"
+
+msgid "set sdc output XML file"
+msgstr "设置sdc输出XML文件"
+
+msgid "ERROR: dbc_server isn't alive."
+msgstr "错误：dbc_server未运行。"
+
+msgid "ERROR: dbc_sync is not alive."
+msgstr "错误：dbc_sync未运行。"
+
+msgid "INFO: client application login DBC successfully."
+msgstr "信息：客户端应用登陆DBC成功。"
+
+msgid "INFO: client application logout DBC successfully."
+msgstr "信息：客户端应用注销DBC成功。"
+
+msgid "ERROR: permission denied, user name or password not correct."
+msgstr "错误：拒绝访问，用户名或密码不正确。"
+
+msgid "rte={1}"
+msgstr "rte={1}"
+
+msgid "ERROR: index {1} on table {2} not exist."
+msgstr "错误：表 {2} 索引 {1} 不存在。"
+
+msgid "table_id={1}, data={2}, result={3}, max_rows={4}"
+msgstr "table_id={1}, data={2}, result={3}, max_rows={4}"
+
+msgid "table_id={1}, index_id={2}, data={3}, result={4}, max_rows={5}"
+msgstr "table_id={1}, index_id={2}, data={3}, result={4}, max_rows={5}"
+
+msgid "ERROR: wrong index_id {1} given."
+msgstr "错误：指定的索引ID {1} 错误。"
+
+msgid "table_id={1}, data={2}"
+msgstr "table_id={1}, data={2}"
+
+msgid "ERROR: permission denied, current user is not allowed to select table."
+msgstr "错误：拒绝访问，当前用户不允许select表。"
+
+msgid "table_id={1}, index_id={2}, data={3}"
+msgstr "table_id={1}, index_id={2}, data={3}"
+
+msgid "table_id={1}, rowid={2}, result={3}, max_rows={4}"
+msgstr "table_id={1}, rowid={2}, result={3}, max_rows={4}"
+
+msgid "table_id={1}, rowid={2}"
+msgstr "table_id={1}, rowid={2}"
+
+msgid "ERROR: failed to commit transaction."
+msgstr "错误：事务提交失败。"
+
+msgid "table_id={1}, old_data={2}, new_data={3}"
+msgstr "table_id={1}, old_data={2}, new_data={3}"
+
+msgid "table_id={1}, index_id={2}, old_data={3}, new_data={4}"
+msgstr "table_id={1}, index_id={2}, old_data={3}, new_data={4}"
+
+msgid "table_id={1}, rowid={2}, new_data={3}"
+msgstr "table_id={1}, rowid={2}, new_data={3}"
+
+msgid "seq_no={1}"
+msgstr "seq_no={1}"
+
+msgid "seq_name={1}"
+msgstr "seq_name={1}"
+
+msgid "autocommit={1}"
+msgstr "autocommit={1}"
+
+msgid "timeout={1}"
+msgstr "timeout={1}"
+
+msgid "update_func={1}"
+msgstr "update_func={1}"
+
+msgid "where_func={1}"
+msgstr "where_func={1}"
+
+msgid ""
+"ERROR: permission denied, current user is not allowed to truncate table."
+msgstr "错误：拒绝访问，当前用户不允许truncate表。"
+
+msgid "ERROR: table {1} doesn't exist."
+msgstr "错误：表 {1} 不存在。"
+
+msgid "ERROR: Failed to truncate table {1}"
+msgstr "错误：truncate表 {1} 失败"
+
+msgid "ERROR: permission denied, current user is not allowed to create table."
+msgstr "错误：拒绝访问，当前用户不允许创建表。"
+
+msgid "ERROR: table creation conflict, table {1} exists."
+msgstr "错误：表创建冲突 ，表 {1} 已存在。"
+
+msgid "ERROR: TE is full for table {1}"
+msgstr "错误：创建表 {1} 是表节点已满。"
+
+msgid "ERROR: No free thash entry is found for table {1}"
+msgstr "错误：未发现空闲的表哈希节点可提供给表 {1}"
+
+msgid "ERROR: permission denied, current user is not allowed to drop table."
+msgstr "错误：拒绝访问，当前用户不允许DROP表。"
+
+msgid "index_id={1}"
+msgstr "index_id={1}"
+
+msgid "ERROR: permission denied, current user is not allowed to create index."
+msgstr "错误：拒绝访问，当前用户不允许创建索引。"
+
+msgid "ERROR: Failed to create index {1}, index_id conflicts."
+msgstr "错误：创建索引{1} 失败，索引ID冲突"
+
+msgid "ERROR: index {1}: Can't create index row, {2}"
+msgstr "错误：索引 {1}：无法创建索引行 ，{2}"
+
+msgid ""
+"ERROR: permission denied, current user is not allowed to create sequence."
+msgstr "错误：拒绝访问，当前用户不允许创建序列。"
+
+msgid "ERROR: sequence {1} exists."
+msgstr "错误：序列 {1} 已经存在。"
+
+msgid "ERROR: Can't open {1} - {2}"
+msgstr "错误：无法打开 {1} - {2}"
+
+msgid "ERROR: Failed to create sequence {1}, too many sequences."
+msgstr "错误：创建序列 {1} 失败，序列太多。"
+
+msgid ""
+"ERROR: permission denied, current user is not allowed to alter sequence."
+msgstr "错误：拒绝访问，当前用户不允许修改序列。"
+
+msgid "ERROR: permission denied, current user is not allowed to drop sequence."
+msgstr "错误：拒绝访问，当前用户不允许删除序列。"
+
+msgid "ERROR: Can't remove {1} - {2}"
+msgstr "错误：无法移除 {1} - {2}"
+
+msgid "ERROR: Failed to drop sequence {1}, no such sequence."
+msgstr "错误：删除序列 {1} 失败，无此序列。"
+
+msgid "partition_type={1}, partitions={2}, key={3}"
+msgstr "partition_type={1}, partitions={2}, key={3}"
+
+msgid "ERROR: Can't lock row for rowid {1}"
+msgstr "错误：无法通过rowid {1} 锁定该行。"
+
+msgid ""
+"ERROR: Can't insert row into redo tree, {1} - {2}, table_id {3}, rowid {4}"
+msgstr "错误：无法插入行到重做树，{1} - {2}, table_id {3}, rowid {4}"
+
+msgid "table_id={1}, data={2}, old_rowid={3}"
+msgstr "table_id={1}, data={2}, old_rowid={3}"
+
+msgid "table_id={1}, rowid= {2}, redo_sequence={3}"
+msgstr "table_id={1}, rowid= {2}, redo_sequence={3}"
+
+msgid "root={1}, row_set.size()={2}"
+msgstr "root={1}, row_set.size()={2}"
+
+msgid "root={1}"
+msgstr "root={1}"
+
+msgid "table_id={1}, redo_sequence={2}"
+msgstr "table_id={1}, redo_sequence={2}"
+
+msgid "ERROR: exception caught on logout_atexit(), {1}"
+msgstr "错误：logout_atexit()函数捕捉到异常，{1}"
+
+msgid "ERROR: sequence {1} is not yet defined in this session."
+msgstr "错误：序列 {1} 在当前会话还未定义。"
+
+msgid "ERROR: sequence {1} does not exist."
+msgstr "错误：序列 {1} 不存在。"
+
+msgid "ERROR: sequence {1} overflow."
+msgstr "错误：序列 {1} 溢出。"
+
+msgid "ERROR: Can't write file {1} - {2}"
+msgstr "错误：无法写文件 {1} - {2}"
+
+msgid "ERROR: Can't write file {1}sequence.dat - {2}"
+msgstr "错误：无法写文件 {1}sequence.dat - {2}"
+
+msgid "ERROR: dbc_sync: Can't login on BB."
+msgstr "错误：dbc_sync：无法登陆系统。"
+
+msgid "ERROR: DBCPROFILE environment variable not set"
+msgstr "错误：DBCPROFILE环境变量未设置"
+
+msgid "ERROR: too many primary keys for table {1}."
+msgstr "错误：表 {1} 设置了太多主键"
+
+msgid "is_client={1}"
+msgstr "is_client={1}"
+
+msgid "ERROR: resource.ipckey invalid, {1}."
+msgstr "错误：resource.ipckey 非法，{1}。"
+
+msgid "ERROR: resource.ipckey too large."
+msgstr "错误：resource.ipckey 太大。"
+
+msgid "ERROR: resource.sysdir is empty."
+msgstr "错误：resource.sysdir 为空。"
+
+msgid "ERROR: resource.sysdir is too long."
+msgstr "错误：resource.sysdir 超长。"
+
+msgid "ERROR: resource.syncdir is empty."
+msgstr "错误：resource.syncdir 为空。"
+
+msgid "ERROR: resource.syncdir is too long."
+msgstr "错误：resource.syncdir 超长。"
+
+msgid "ERROR: resource.datadir is empty."
+msgstr "错误：resource.datadir 为空。"
+
+msgid "ERROR: resource.datadir is too long."
+msgstr "错误：resource.datadir 超长。"
+
+msgid "ERROR: resource.shmcount must be equal or less than {1}."
+msgstr "错误：resource.shmcount 必须小于等于 {1} 。"
+
+msgid "ERROR: resource.libs is too long."
+msgstr "错误：resource.libs 配置项太长。"
+
+msgid "ERROR: shm_size * shm_count too small"
+msgstr "错误：shm_size * shm_count 的值太小"
+
+msgid "ERROR: Parse section resource failure, {1} ({2})"
+msgstr "错误：解析resource章节失败，{1} ({2})"
+
+msgid "ERROR: Parse section resource failure, {1}"
+msgstr "错误：解析resource章节失败，{1}"
+
+msgid "ERROR: users.user.usrname is too long."
+msgstr "错误：users.user.usrname 太长。"
+
+msgid "ERROR: users.user.password is too long."
+msgstr "错误：users.user.password 太长。"
+
+msgid "ERROR: users.user.dbname is too long."
+msgstr "错误：users.user.dbname 太长。"
+
+msgid "ERROR: users.user.openinfo is too long."
+msgstr "错误：users.user.openinfo 太长。"
+
+msgid "ERROR: Parse section users failure, {1} ({2})"
+msgstr "错误：解析users章节失败，{1} ({2})"
+
+msgid "ERROR: Parse section users failure, {1}"
+msgstr "错误：解析users章节失败，{1}"
+
+msgid "ERROR: tables.table.table_id out of range."
+msgstr "错误：tables.table.table_id 超出范围。"
+
+msgid "ERROR: tables.table.table_name is too long."
+msgstr "错误：tables.table.table_name 太长。"
+
+msgid "ERROR: tables.table.dbtable_name is too long."
+msgstr "错误：tables.table.dbtable_name 太长。"
+
+msgid "ERROR: tables.table.conditions is too long."
+msgstr "错误：tables.table.conditions 太长。"
+
+msgid "ERROR: tables.table.dbname is too long."
+msgstr "错误：tables.table.dbname 太长。"
+
+msgid "ERROR: tables.table.openinfo is too long."
+msgstr "错误：tables.table.openinfo 太长。"
+
+msgid "ERROR: tables.table.segment_rows out of range."
+msgstr "错误：tables.table.segment_rows 超出范围。"
+
+msgid "ERROR: tables.table.partition_type value invalid."
+msgstr "错误：tables.table.partition_type 值无效。"
+
+msgid "ERROR: tables.table.fields too many children."
+msgstr "错误：tables.table.fields 的子节点过多。"
+
+msgid "ERROR: tables.table.fields.field.field_name is too long."
+msgstr "错误：tables.table.fields.field.field_name 太长。"
+
+msgid "ERROR: tables.table.fields.field.fetch_name is too long."
+msgstr "错误：tables.table.fields.field.fetch_name 太长。"
+
+msgid "ERROR: tables.table.fields.field.update_name is too long."
+msgstr "错误：tables.table.fields.field.update_name 太长。"
+
+msgid "ERROR: tables.table.fields.field.column_name is too long."
+msgstr "错误：tables.table.fields.field.column_name 太长。"
+
+msgid "ERROR: tables.table.fields.field.field_type value invalid."
+msgstr "错误：tables.table.fields.field.field_type 值无效。"
+
+msgid ""
+"ERROR: tables.table.fields.field.field_size should be at least {1} long when "
+"field_type is vstring"
+msgstr ""
+"错误：当field_type配置为vstring时 tables.table.fields.field.field_size 配置的"
+"长度至少应为 {1} "
+
+msgid "ERROR: tables.table.fields.field.is_primary value invalid."
+msgstr "错误：tables.table.fields.field.is_primary 值无效。"
+
+msgid ""
+"ERROR: tables.table.fields.field.agg_type should not be sum for field_type "
+"char/uchar/string/vstring"
+msgstr ""
+"错误：tables.table.fields.field.agg_type对于char/uchar/string/vstring类型"
+"不能为sum"
+
+msgid "ERROR: tables.table.fields.field.agg_type should be sum/min/max"
+msgstr "错误：tables.table.fields.field.agg_type 必须为sum、min、max之一"
+
+msgid "ERROR: indexes.index.fields.field.is_partition value invalid."
+msgstr "错误：indexes.index.fields.field.is_partition 值无效。"
+
+msgid "ERROR: indexes.index.fields.field.partition_format is too long."
+msgstr "错误：indexes.index.fields.field.partition_format 太长。"
+
+msgid ""
+"ERROR: tables.table.fields.field.field_size should be at most {1} long when "
+"field_type is vstring"
+msgstr ""
+"错误：当field_type配置为vstring时 tables.table.fields.field.field_size 配置的"
+"长度最大为 {1} "
+
+msgid "ERROR: Parse section tables failure, {1} ({2})"
+msgstr "错误：解析tables章节失败，{1} ({2})"
+
+msgid "ERROR: Parse section tables failure, {1}"
+msgstr "错误：解析tables章节失败，{1}"
+
+msgid "ERROR: indexes.index.table_id out of range."
+msgstr "错误：indexes.index.table_id 超出范围。"
+
+msgid "ERROR: indexes.index.index_id out of range."
+msgstr "错误：indexes.index.index_id 超出范围。"
+
+msgid "ERROR: indexes.index.index_name is too long."
+msgstr "错误：indexes.index.index_name 太长。"
+
+msgid "ERROR: indexes.index.buckets out of range."
+msgstr "错误：indexes.index.buckets 超出范围。"
+
+msgid "ERROR: indexes.index.segment_rows out of range."
+msgstr "错误：indexes.index.segment_rows 超出范围。"
+
+msgid "ERROR: indexes.index.fields too many children."
+msgstr "错误：indexes.index.fields 的字节点过多。"
+
+msgid "ERROR: indexes.index.fields.field.field_name is too long."
+msgstr "错误：indexes.index.fields.field.field_name 太长。"
+
+msgid "ERROR: indexes.index.fields.field.is_hash value invalid."
+msgstr "错误：indexes.index.fields.field.is_hash 值无效。"
+
+msgid "ERROR: indexes.index.fields.field.hash_format is too long."
+msgstr "错误：indexes.index.fields.field.hash_format 太长。"
+
+msgid "ERROR: Parse section indexes failure, {1} ({2})"
+msgstr "错误：解析indexes章节失败，{1} ({2})"
+
+msgid "ERROR: Parse section indexes failure, {1}"
+msgstr "错误：解析indexes章节失败，{1}"
+
+msgid ""
+"ERROR: METHOD_TYPE_SEQ should be set for method_type if index_type is "
+"INDEX_TYPE_RANGE, table_id={1}, index_id={2}"
+msgstr ""
+"错误：如果index_type配置为INDEX_TYPE_RANGE，则method_type应该配置为"
+"METHOD_TYPE_SEQ，table_id={1}, index_id={2}"
+
+msgid ""
+"ERROR: search_type for range_group {1} is not a closure, table_id={2}, "
+"index_id={3}"
+msgstr ""
+"错误：range_group {1} 的search_type不是一个封闭区间，table_id={2}, index_id="
+"{3}"
+
+msgid ""
+"ERROR: missing corresponding field for range_group={1}, table_id={2}, "
+"index_id={3}"
+msgstr "错误：range_group={1}缺少对应的字段，table_id={2}, index_id={3}"
+
+msgid ""
+"ERROR: too many corresponding field for range_group={1}, table_id={2}, "
+"index_id={3}"
+msgstr "错误：range_group={1}对应的字段太多，table_id={2}, index_id={3}"
+
+msgid ""
+"ERROR: search_type can only be in any combination of MORE, EQUAL, LESS and "
+"IGNORE_CASE, field_name={1}, table_id={2}, index_id={3}"
+msgstr ""
+"错误：search_type只能配置为MORE, EQUAL, LESS 和 IGNORE_CASE的组合，"
+"field_name={1}, table_id={2}, index_id={3}"
+
+msgid "ERROR: functions.function.table_id out of range."
+msgstr "错误：functions.function.table_id 超出范围。"
+
+msgid "ERROR: functions.function.index_id out of range."
+msgstr "错误：functions.function.index_id 超出范围。"
+
+msgid "ERROR: functions.function.fields too many children."
+msgstr "错误：functions.function.fields 子节点过多。"
+
+msgid "ERROR: functions.function.fields.field.nullable value invalid."
+msgstr "错误：functions.function.fields.field.nullable 值无效。"
+
+msgid "ERROR: Parse section functions failure, {1} ({2})"
+msgstr "错误：解析functions章节失败，{1} ({2})"
+
+msgid "ERROR: Parse section functions failure, {1}"
+msgstr "错误：解析functions章节失败，{1}"
+
+msgid "ERROR: Can't load library {1}, {2}"
+msgstr "错误：不能加载库文件 {1}, {2}"
+
+msgid "specify table names to advertise operation"
+msgstr "指定需要发布操作的表名"
+
+msgid "ERROR: Failed to advertise operation {1}"
+msgstr "错误：发布操作失败 {1}"
+
+msgid "ERROR: No .SDC_SVC operation provided on sgcompile time"
+msgstr "错误：在sgcompile时没有发现 .SDC_SVC 操作"
+
+msgid "ERROR: No .SDC_SQLSVC operation provided on sgcompile time"
+msgstr "错误：在sgcompile时没有发现 .SDC_SQLSVC 操作"
+
+msgid "ERROR: invalid message given"
+msgstr "错误：无效消息"
+
+msgid "ERROR: invalid user"
+msgstr "错误：无效用户"
+
+msgid "ERROR: not a select statement"
+msgstr "错误：不是一个select语句"
+
+msgid "ERROR: object {1} does not exist."
+msgstr "错误：对象 {1} 不存在"
+
+msgid "ERROR: Function should be called after login."
+msgstr "错误：登陆后才能调用函数"
+
+msgid "WARN: dbc_admin is already started, start in normal mode.\n"
+msgstr "警告：dbc_admin已经运行，正常模式启动。\n"
+
+msgid "ERROR: No free RTE is available."
+msgstr "错误：没有可用的空闲注册节点"
+
+msgid "print current dbc_dump version"
+msgstr "打印当前dbc_dump的版本"
+
+msgid "specify table_id to dump"
+msgstr "指定要导出的表ID"
+
+msgid "specify table_name to dump"
+msgstr "指定要导出的表名"
+
+msgid "specify parallel threads to dump"
+msgstr "指定导出时的并发线程数"
+
+msgid "specify rows to commit"
+msgstr "指定提交行数"
+
+msgid "dbc_dump version "
+msgstr "dbc_dump版本"
+
+msgid "ERROR: Can't specify -t and -T options together.\n"
+msgstr "错误：不能同时指定-t和-T选项。\n"
+
+msgid "ERROR: must specify -t or -T option.\n"
+msgstr "错误：必须指定-t或-T选项。\n"
+
+msgid "ERROR: dbc_dump failed, please see LOG for more information.\n"
+msgstr "错误：dbc_dump操作失败，请查看LOG获取更多信息。\n"
+
+msgid " rows dumped to database successfully.\n"
+msgstr " 行成功导入到数据库。\n"
+
+msgid " row dumped to database successfully.\n"
+msgstr " 行成功导入到数据库。\n"
+
+msgid "ERROR: SDCPROFILE environment variable not set"
+msgstr "错误：没有配置SDCPROFILE环境变量"
+
+msgid "ERROR: Can't open DBCPROFILE."
+msgstr "错误：不能打开DBCPROFILE"
+
+msgid "WARN: Index {1} on table {2} - parition field {3} is not of hash key"
+msgstr "警告：表 {2} 的索引 {1} - 分区字段 {3} 不是哈希字段"
+
+msgid "ERROR: table {1} is not defined in DBCPROFILE."
+msgstr "错误：表 {1} 在DBCPROFILE中没有定义。"
+
+msgid ""
+"ERROR: Operation for table {1} is not advertised for lack of its definition"
+msgstr "错误：由于缺少定义，表 {1} 不能发布"
+
+msgid "ERROR: tables.table.redundancy value invalid."
+msgstr "错误：tables.table.redundancy 值无效。"
+
+msgid "ERROR: hostid {1} is not defined in SGPROFILE."
+msgstr "错误：hostid {1} 在SGPROFILE中没有定义。"
+
+msgid "table_id={1}, struct_name={2}"
+msgstr "table_id={1}, struct_name={2}"
+
+msgid "is_dbc={1}, is_array={2}"
+msgstr "is_dbc={1}, is_array={2}"
+
+msgid "ERROR: table {1}: Unknown field_type {2}"
+msgstr "错误：表 {1}：未知的field_type {2}"
+
+msgid "is_array={1}"
+msgstr "is_array={1}"
+
+msgid "table_name={1}, index={2}, func_name={3}, is_array={4}"
+msgstr "table_name={1}, index={2}, func_name={3}, is_array={4}"
+
+msgid "table_name={1}, macro_name={2}"
+msgstr "table_name={1}, macro_name={2}"
+
+msgid "struct_name={1}"
+msgstr "struct_name={1}"
+
+msgid "ERROR: index {1}: Unknown field_type {2}"
+msgstr "错误：索引 {1}：未知的 field_type {2}"
+
+msgid "ERROR: index {1}: method_type is hash, but not given hash key."
+msgstr "错误：索引 {1}：method_type配置为哈希，但没有给出哈希字段。"
+
+msgid "ERROR: Can't find field_name {1}, range_group = {2}, index_name = {3}"
+msgstr "错误：没有找到field_name {1}, range_group = {2}, index_name = {3}"
+
+msgid "special_type={1}, field_name={2}"
+msgstr "special_type={1}, field_name={2}"
+
+msgid "ERROR: index {1}: field_name must be is_prefix."
+msgstr "错误：索引 {1}：field_name必须是is_prefix"
+
+msgid ""
+"ERROR: index {1}: field_name must be begin_step, end_step, begin_free or "
+"end_free."
+msgstr ""
+"错误：索引 {1}：field_name必须是begin_step，end_step，begin_free或者"
+"end_free。"
+
+msgid "ERROR: index {1}: field_name must be special_number or match_type."
+msgstr "错误：索引 {1}：field_name必须是special_number或者match_type"
+
+msgid "ERROR: index {1}: index must have begin_weekday and end_weekday."
+msgstr "错误：索引 {1}：索引必须有begin_weekday和end_weekday"
+
+msgid "ERROR: index {1}: field_name must be begin_weekday or end_weekday."
+msgstr "错误：索引 {1}：field_name必须是begin_weekday或者end_weekday"
+
+msgid "ERROR: index {1}: field_name must be begin_time or end_time."
+msgstr "错误：索引 {1}：field_name必须是begin_time或者end_time"
+
+msgid "ERROR: index {1}: special_type not defined."
+msgstr "错误：索引 {1}：special_type没有定义"
+
+msgid "ERROR: Can't find table name in table_id {1}"
+msgstr "错误：在表ID {1}中找不到表名"
+
+msgid "field_name={1}"
+msgstr "field_name={1}"
+
+msgid "ERROR: Can't find field_name {1} in {2}"
+msgstr "错误：在{2}中找不到字段名{1}"
+
+msgid "ERROR: Can't find index info in table_id {1}, index_id {2}"
+msgstr "错误：table_id {1}, index_id {2}中找不到索引信息"
+
+msgid ""
+"field_type={1}, search_type={2}, index_name={3}, field_name1={4}, "
+"field_name2={5}, match={6}"
+msgstr ""
+"field_type={1}, search_type={2}, index_name={3}, field_name1={4}, "
+"field_name2={5}, match={6}"
+
+msgid "ERROR: index {1}: search_type {2} not supported."
+msgstr "错误：索引 {1}：不支持的search_type {2}"
+
+msgid "ERROR: Invalid agg_type {1} for field {2}"
+msgstr "错误：对字段 {2} 的 agg_type {1} 无效"
+
+msgid " system call error"
+msgstr "系统调用失败"
+
+msgid " unknown system call error"
+msgstr "不认识的系统调用"
+
+msgid "ERROR: could not make pipe, errno={1}"
+msgstr "错误：不能创建管道，错误代码={1}"
+
+msgid "ERROR: child dup error, rc={1}, errno={2}"
+msgstr "错误：子进程调用dup()函数失败，rc={1}, errno={2}"
+
+msgid "ERROR: {1}: rc={2}, errno={3}"
+msgstr "错误：{1}：rc={2}, errno={3}"
+
+msgid "ERROR: could not fork, errno={1}"
+msgstr "错误：不能创建子进程，错误代码={1}"
+
+msgid "ERROR: parent dup error while saving stdout, errno={1}"
+msgstr "错误：在保存标准输出时父进程调用dup函数失败，错误代码={1}"
+
+msgid "ERROR: parent dup error for pipe, rc={1}, errno={2}"
+msgstr "错误：管道操作时父进程调用dup函数失败，返回值={1}, 错误代码={2}"
+
+msgid "ERROR: restore dup error, rc={1}, errno={2}"
+msgstr "错误：在恢复时调用dup函数失败，返回值={1}, 错误代码={2}"
+
+msgid "ERROR: {1}: wait status {2}, errno={3}"
+msgstr "错误：{1}：等待状态 {2}，错误代码={3}"
+
+msgid "ERROR: Open /dev/zero failed, errno = {1}"
+msgstr "错误：打开/dev/zero文件失败，错误代码 = {1}"
+
+msgid "ERROR: process mmap failed, errno = {1}"
+msgstr "错误：进程调用mmap失败，错误代码 = {1}"
+
+msgid "ERROR: process unmmap failed, errno = {1}"
+msgstr "错误：进程调用unmmap失败，错误代码 = {1}"
+
+msgid "ERROR: shm_segsz <= sizeof(ushm_map)"
+msgstr "错误：shm_segsz <= sizeof(ushm_map)"
+
+msgid "INFO: ServiceGalaxy version {1}, {2}-bit"
+msgstr "信息：ServiceGalaxy 版本 {1}, {2}-位"
+
+msgid "WARN: Label {1} not found in environment file"
+msgstr "警告：在环境变量文件中没有找到标签 {1}"
+
+msgid "ERROR: In file {1}:{2}: {3} - error_code {4}"
+msgstr "错误：在文件 {1}：{2}: {3} - 错误代码 {4}"
+
+msgid "ERROR: Can't get host by name {1}"
+msgstr "错误：找不到以 {1} 命名的主机"
+
+msgid "ERROR: Failed to set compress for ssh session, {1}"
+msgstr "错误：为SSH会话设置压缩模式失败， {1}"
+
+msgid "ERROR: Failed to establish ssh session for {1}, {2}, error_code {3}"
+msgstr "错误：为 {1} 建立SSH会话失败， {2}， 错误代码 {3}"
+
+msgid "ERROR: Can't open a session on {1} - {2}"
+msgstr "错误：在节点 {1} 上打开会话失败 - {2}"
+
+msgid "ERROR: Can't write on {1} - {2}"
+msgstr "不能在节点 {1} 上写入 - {2}"
+
+msgid "ERROR: Can't open directory {1} on {2} - {3}"
+msgstr "不能打开节点 {2} 上的目录 {1} - {3}"
+
+msgid "ERROR: Can't unlink file {1} on node {2} - {3}"
+msgstr "错误：不能删除节点 {2} 上的文件 {1} - {3}"
+
+msgid "ERROR: Can't create directory {1} on node {2} - {3}"
+msgstr "错误：不能创建节点 {2} 上的文件 {1} - {3}"
+
+msgid "ERROR: Can't rename file {1} to {2} on node {3} - {4}"
+msgstr "错误：不能重命名节点{3} 上的文件 {1} 到 {2} - {4}"
+
+msgid "ERROR: Can't open file {1} on node {2}"
+msgstr "错误：不能打开节点 {2} 上的文件 {1}"
+
+msgid "FATAL: internal error"
+msgstr "致命：内部错误"
+
+msgid "sftp_prefix={1}, dir_name={2}, pattern={3}"
+msgstr "sftp_prefix={1}, dir_name={2}, pattern={3}"
+
+msgid "sftp_prefix={1}, dir_name={2}"
+msgstr "sftp_prefix={1}, dir_name={2}"
+
+msgid "sftp_prefix={1}, filename={2}"
+msgstr "sftp_prefix={1}, filename={2}"
+
+msgid "sftp_prefix={1}, src_name={2}, dst_name={3}"
+msgstr "sftp_prefix={1}, src_name={2}, dst_name={3}"
+
+msgid ""
+"ERROR: operations.operation.policy value invalid, LF and RR are conflict."
+msgstr ""
+"错误：operations.operation.policy非法，LF 和 RR 冲突。"
+
+msgid "lmid={1}"
+msgstr "lmid={1}"
+
+msgid "ERROR: Out of table id."
+msgstr "错误：表ID超出范围"
+
+msgid "ERROR: Can't truncate table {1} - {2}."
+msgstr "错误：不能清空表 {1} - {2}"
+
+msgid "ERROR: Can't execute command {1}, retval = {2}"
+msgstr "错误：不能执行命令 {1}，返回值 = {2}"
+
+msgid "ERROR: Can't execute command {1} - {2}"
+msgstr "错误：不能执行命令 {1} - {2}"
+
+msgid "ERROR: Can't open ready file {1} on node {2}"
+msgstr "错误：不能打开节点 {2} 上的就绪文件 {1}"
+
+msgid "ERROR: Can't write to ready file {1} on node {2}"
+msgstr "错误：不能写入节点 {2} 上的就绪文件 {1}"
+
+msgid "command={1}"
+msgstr "command={1}"
+
+msgid "specify table name to describe, 1st positional parameter takes same effect."
+msgstr "执行需要展示的表名，第一个位置参数起相同的作用。"
+
+msgid ""
+"specify topic to show, session, parameter, table, sequence, or stat, 1st positional parameter takes same effect."
+msgstr ""
+"指定主题：show， session， parameter， table， sequence， 或 stat，第一个位置参数起相同的作用。"
+
+msgid "specify pattern to match topic, 2nd positional parameter takes same effect."
+msgstr "指定匹配主题的正则表达式，第二个位置参数起相同的作用。"
+
+msgid "USER     CATEGORY                         TYPE TIMES      CLOCKS(S)  ELAPSED_TIME    TPS        MIN      MAX\n"
+msgstr "用户     归类                             类型 次数       时钟数     经历时间        TPS        最小值   最大值\n"
+
+msgid "ERROR: Out of memory, please use dbc_admin to extend shared memory"
+msgstr "错误：内存不足，请使用 dbc_admin 扩展共享内存"
+
+msgid "ERROR: unknown command {1} given."
+msgstr "错误：给定命令 {1} 未知。"
+
+msgid "ERROR: truncate execution for table {1} failed."
+msgstr "错误：清空表 {1} 失败。"
+
+msgid "ERROR: Argument too long\n"
+msgstr "错误：参数太长\n"
+
+msgid "ERROR: No such command\n"
+msgstr "错误：没有该命令\n"
+
+msgid "ERROR: Invalid option\n"
+msgstr "错误：无效选项\n"
+
+msgid "ERROR: Too many arguments\n"
+msgstr "错误：太多参数\n"
+
+msgid "ERROR: Duplicate arguments\n"
+msgstr "错误：重复参数\n"
+
+msgid "ERROR: Must be administrator to execute that command"
+msgstr "错误：必须以管理员身份执行该命令"
+
+msgid "ERROR: Syntax error on command line"
+msgstr "错误：命令行语法错误"
+
+msgid "ERROR: Error accessing system semaphore"
+msgstr "错误：访问系统信号量失败"
+
+msgid "ERROR: Error accessing shared memory"
+msgstr "错误：访问共享内存失败"
+
+msgid "ERROR: Error dumping bulletin board"
+msgstr "错误：导出共享内存块失败"
+
+msgid "set dbc XML file"
+msgstr "设置DBC XML文件"
+
+msgid "set sdc XML file"
+msgstr "设置SDC XML文件"
+
+msgid "INFO: DBC processes booted successfully.\n"
+msgstr "信息：启动DBC进程成功。\n"
+
+msgid "INFO: DBC processes shutdown successfully.\n"
+msgstr "信息：停止DBC进程成功。\n"
+
+msgid "specify table name to dump, 1st positional parameter takes same effect."
+msgstr "指定需要导出的表名，第一个位置参数起相同的作用。"
+
+msgid "extend additional block count"
+msgstr "扩展额外的内存块数"
+
+msgid "Extend shared memory successfully.\n"
+msgstr "成功扩展共享内存。\n"
+
+msgid "session id to be killed"
+msgstr "待终止的会话ID"
+
+msgid "signo to be sent"
+msgstr "待发送的信号"
+
+msgid "specify parameter name to be set, 1st positional parameter takes same effect."
+msgstr "指定需要设置的参数名，第一个位置参数起相同的作用。"
+
+msgid "specify parameter value to be set, 2nd positional parameter takes same effect."
+msgstr "指定需要设置的参数值，第二个位置参数起相同的作用。"
+
+msgid "specify table name to check"
+msgstr "指定需要检查的表名"
+
+msgid "specify index name to check"
+msgstr "指定需要检查的索引名"
+
+msgid "specify index id to check"
+msgstr "指定需要检查的索引ID"
+
+msgid "specify table name to enable"
+msgstr "指定需要激活的表名"
+
+msgid "specify index name to enable"
+msgstr "指定需要激活的索引名"
+
+msgid "specify index id to enable"
+msgstr "指定需要激活的索引ID"
+
+msgid "specify table name to disable"
+msgstr "指定需要禁用的表名"
+
+msgid "specify index name to disable"
+msgstr "指定需要禁用的索引名"
+
+msgid "specify index id to disable"
+msgstr "指定需要禁用的索引ID"
+
+msgid "specify table name(s) to reload, positional parameter(s) take same effect."
+msgstr "指定需要重新加载的表名列表，位置参数起相同的作用。"
+
+msgid "load table in safe mode"
+msgstr "以安全模式加载表"
+
+msgid "ERROR: table {1} is specified multiple times"
+msgstr "错误：表 {1} 指定了多次"
+
+msgid "ERROR: No operation provided on sgcompile time"
+msgstr "错误：在sgconmpile时，没有发现操作"
+
+msgid "specify which type is allowed: GET, PUT, or ADMIN"
+msgstr "设置允许的类型：GET，PUT或ADMIN"
+
+msgid "ERROR: Invalid type {1} given."
+msgstr "错误：给定的类型 {1} 非法。"
+
+msgid "produce information of specified qname, 1st positional parameter takes same effect."
+msgstr "打印指定队列名的信息，第一个位置参数起相同的作用。"
+
+msgid "print information of topics"
+msgstr "打印主题相关的信息"
+
+msgid "set default parameters available for current session"
+msgstr "设置当前会话可用的默认参数"
+
+msgid "toggle echo option"
+msgstr "切换回显选项"
+
+msgid "toggle verbose option"
+msgstr "切换详细选项"
+
+msgid "toggle paginate option"
+msgstr "切换分页选项"
+
+msgid "exit command line"
+msgstr "退出命令行"
+
+msgid "advertise an operation"
+msgstr "发布一个操作"
+
+msgid "unadvertise an operation"
+msgstr "取消发布一个操作"
+
+msgid "cleanup dead entries"
+msgstr "清理已死节点"
+
+msgid "shared shared memory internals"
+msgstr "显示共享内存内部信息"
+
+msgid "shared shared memory mappings"
+msgstr "详细共享内存映射信息"
+
+msgid "show shared memory parameters"
+msgstr "显示共享内存参数"
+
+msgid "leave shared memory"
+msgstr "离开共享内存"
+
+msgid "show system statistics"
+msgstr "显示系统统计信息"
+
+msgid "startup framework"
+msgstr "启动框架"
+
+msgid "shutdown framework"
+msgstr "停止框架"
+
+msgid "change cost for given parameters"
+msgstr "变更指定参数的开销"
+
+msgid "change priority for given parameters"
+msgstr "变更指定参数的优先级"
+
+msgid "change configuration"
+msgstr "变更配置"
+
+msgid "dump distributed shared memory to file"
+msgstr "导出分布共享内存到文件"
+
+msgid "dump local shared memory to file"
+msgstr "导出本地共享内存到文件"
+
+msgid "load file to local shared memory"
+msgstr "加载文件到本地共享内存"
+
+msgid "change master to backup node"
+msgstr "迁移主节点到备份节点"
+
+msgid "migrate to backup group"
+msgstr "迁移到备份组"
+
+msgid "migrate to backup node"
+msgstr "迁移到备份节点"
+
+msgid "cleanup partitioned nodes"
+msgstr "清理已分区的节点"
+
+msgid "print client information"
+msgstr "打印客户端信息"
+
+msgid "print group information"
+msgstr "打印进程组信息"
+
+msgid "print network information"
+msgstr "打印网络信息"
+
+msgid "print queue information"
+msgstr "打印队列信息"
+
+msgid "print process information"
+msgstr "打印进程信息"
+
+msgid "print operation information"
+msgstr "打印操作信息"
+
+msgid "reconnect to remote node"
+msgstr "重连远程节点"
+
+msgid "resume connections"
+msgstr "恢复连接"
+
+msgid "suspend connections"
+msgstr "挂起连接"
+
+msgid "print process parameters"
+msgstr "打印进程参数"
+
+msgid "print statistics"
+msgstr "打印统计信息"
+
+msgid "stop agent"
+msgstr "停止代理程序"
+
+msgid "startup dbc server"
+msgstr "启动DBC"
+
+msgid "shutdown dbc server"
+msgstr "停止DBC"
+
+msgid "show description of a table"
+msgstr "显示表的描述"
+
+msgid "execute select SQL statement"
+msgstr "执行 select 语句"
+
+msgid "execute insert SQL statement"
+msgstr "执行 insert 语句"
+
+msgid "execute update SQL statement"
+msgstr "执行 update 语句"
+
+msgid "execute delete SQL statement"
+msgstr "执行 delete 语句"
+
+msgid "execute truncate SQL statement"
+msgstr "执行 truncate 语句"
+
+msgid "execute create SQL statement"
+msgstr "执行 create 语句"
+
+msgid "execute drop SQL statement"
+msgstr "执行 drop 语句"
+
+msgid "execute alter SQL statement"
+msgstr "执行 alter 语句"
+
+msgid "enable index of table"
+msgstr "激活表索引"
+
+msgid "disable index of table"
+msgstr "禁用表索引"
+
+msgid "commit current transaction"
+msgstr "提交当前事务"
+
+msgid "rollback current transaction"
+msgstr "回退当前事务"
+
+msgid "reload given table(s)"
+msgstr "加载指定表(列表)"
+
+msgid "dump given table to file"
+msgstr "导出给定表到文件"
+
+msgid "dump given table to database"
+msgstr "导出给定表到数据库"
+
+msgid "extend shared memory usage"
+msgstr "扩展共享内存使用"
+
+msgid "print a summary of given table's parameters"
+msgstr "大定给定表的简略参数"
+
+msgid "show data for session, parameter, table, sequence, or stat"
+msgstr "展示session, parameter, table, sequence, or stat 的数据"
+
+msgid "kill an active session"
+msgstr "杀死活跃的会话"
+
+msgid "set parameters for current session"
+msgstr "设置当前会话的参数"
+
+msgid "forget a transaction"
+msgstr "放弃事务"
+
+msgid "check table consistency for given index"
+msgstr "检查给定索引的表一致性"
+
+msgid "ERROR: queue {1} is removed since owner {2} is dead"
+msgstr "错误：由于属主 {2} 已死，队列 {1} 被删除"
+
+msgid "ERROR: Cannot remove server entry - {1}"
+msgstr "错误：不能删除进程节点 - {1}"
+
+msgid "ERROR: Failed to open channel session, {1}"
+msgstr "错误：打开通道会话失败，{1}"
+
+msgid "usrname={1}, hostname={2}"
+msgstr "usrname={1}, hostname={2}"
+
+msgid "ERROR: Can't execute command {1} on {2}"
+msgstr "错误：不能在 {2} 上执行命令 {1}"
+
+msgid "usrname={1}, hostname={2}, expire={3}, pid={4}"
+msgstr "usrname={1}, hostname={2}, expire={3}, pid={4}"
+
+msgid "ERROR: Failed to execute command {1} with return code {2}"
+msgstr "错误：执行命令 {1} 失败，返回值 {2}"
+
+msgid "ERROR: In file {1}:{2}: error code: {3}, error message: {4}"
+msgstr "错误：文件{1}：{2}：错误代码：{3}，错误消息：{4}"
+
+msgid "ERROR: Session died, please do bbclean to cleanup session."
+msgstr "错误：会话僵死，请调用bbclean清理会话。"
+
+msgid "ERROR: Session not in transaction."
+msgstr "错误：会话不在事务中。"
+
+msgid "ERROR: missing option -I or -i"
+msgstr "错误：缺少选项 -I 或 -i"

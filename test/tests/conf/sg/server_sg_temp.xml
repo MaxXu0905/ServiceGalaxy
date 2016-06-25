@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<servicegalaxy xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:noNamespaceSchemaLocation="server.xsd">
+<resource>
+	<ipckey>${sg_ipckey}</ipckey>
+<!--	<uid>423</uid>
+	<gid>421</gid>-->
+	<perm>0660</perm>
+	<options>MIGALLOWED</options>
+	<master>M1</master>
+	<curent>0</curent>
+	<maxpes>100</maxpes>
+	<maxnodes>100</maxnodes>
+	<maxaccsrs>10000</maxaccsrs>
+	<maxques>10000</maxques>
+	<maxsgt>1000</maxsgt>
+	<maxsvrs>10000</maxsvrs>
+	<maxsvcs>10000</maxsvcs>
+	<quebkts>10000</quebkts>
+	<sgtbkts>10000</sgtbkts>
+	<svrbkts>10000</svrbkts>
+	<svcbkts>10000</svcbkts>
+	<scan_unit>6</scan_unit>
+	<sanity_scan>10</sanity_scan>
+	<stack_size>33554432</stack_size>
+	<max_num_msg>1000</max_num_msg>
+	<max_msg_size>4096</max_msg_size>
+	<block_time>1</block_time>
+	<dbbm_wait>10</dbbm_wait>
+	<bbm_query>10</bbm_query>
+</resource>
+<machines>
+	<machine>
+		<pmid>${PMID1}</pmid>
+		<lmid>M1</lmid>
+		<sgdir>${SGROOT}</sgdir>
+		<appdir>${APPROOT}</appdir>
+		<sgconfig>${SGPROFILE}</sgconfig>
+		<envfile>${APPROOT}/envfile</envfile>
+		<ulogpfx/>
+		<maxaccsrs>10000</maxaccsrs>
+		<perm>0660</perm>
+		<netload>1000</netload>
+	</machine>
+</machines>
+<networks>
+	<network>
+		<lmid>M1</lmid>
+		<naddr>${PMID1_naddr}</naddr>
+		<nlsaddr>${PMID1_nlsaddr}</nlsaddr>
+		<netgroup>DEFAULTNET</netgroup>
+		<tcpkeepalive>Y</tcpkeepalive>
+	</network>
+</networks>
+<sgroups>
+	<sgroup>
+		<sgname>GRP1</sgname>
+		<curmid>0</curmid>
+		<lmid>M1</lmid>
+		<grpid>1</grpid>
+		<envfile/>
+	</sgroup>
+</sgroups>
+<servers>
+      <server>
+                <restart>Y</restart>
+                <grace>60</grace>
+                <maxgen>100</maxgen>
+                <sqname/>
+                <rcmd/>
+                <filename>TestServer</filename>
+                <svrid>410</svrid>
+                <rqperm>0660</rqperm>
+                <rpperm>0660</rpperm>
+                <min>1</min>
+                <max>1</max>
+                <max_num_msg>1000</max_num_msg>
+                <max_msg_size>4096</max_msg_size>
+                <sgname>GRP1</sgname>
+                <replyq>N</replyq>
+                <clopt>-A -- --address=${net_server_addr} --port=${net_server_port}</clopt>
+                <envfile/>
+        </server>
+	 <server>
+                <restart>Y</restart>
+                <grace>60</grace>
+                <maxgen>100</maxgen>
+                <sqname>MSSQQUE</sqname>
+                <rcmd/>
+                <filename>TestMSSQ</filename>
+                <svrid>411</svrid>
+                <rqperm>0660</rqperm>
+                <rpperm>0660</rpperm>
+                <min>4</min>
+                <max>4</max>
+                <max_num_msg>1000</max_num_msg>
+                <max_msg_size>4096</max_msg_size>
+                <sgname>GRP1</sgname>
+                <replyq>N</replyq>
+                <clopt>-A -- --address=${net_server_addr} --port=${net_server_port}</clopt>
+                <envfile/>
+        </server>
+	<server>
+		<restart>Y</restart>
+		<grace>60</grace>
+		<maxgen>100</maxgen>
+		<sqname/>
+		<rcmd/>
+		<filename>TestServerSendBack</filename>
+		<svrid>420</svrid>
+		<rqperm>0660</rqperm>
+		<rpperm>0660</rpperm>
+		<min>1</min>
+		<max>1</max>
+		<max_num_msg>1000</max_num_msg>
+		<max_msg_size>4096</max_msg_size>
+		<sgname>GRP1</sgname>
+		<replyq>N</replyq>
+		<clopt>-A -- --address=${net_server_addr} --port=${net_server_port}</clopt>
+		<envfile/>
+	</server>
+	<server>
+            <restart>Y</restart>
+            <grace>60</grace>
+            <maxgen>100</maxgen>
+            <sqname/>
+            <rcmd/>
+            <filename>TestServerAllInOne</filename>
+            <svrid>430</svrid>
+            <rqperm>0660</rqperm>
+            <rpperm>0660</rpperm>
+            <min>1</min>
+            <max>1</max>
+            <max_num_msg>1000</max_num_msg>
+            <max_msg_size>4096</max_msg_size>
+            <sgname>GRP1</sgname>
+            <replyq>N</replyq>
+            <clopt>-s TESTSERVICEADVERTISE -- --address=${net_server_addr} --port=${net_server_port}</clopt>
+            <envfile/>
+    </server>
+	<server>
+                <restart>Y</restart>
+                <grace>60</grace>
+                <maxgen>100</maxgen>
+                <sqname/>
+                <rcmd/>
+		<sequence>3</sequence>
+                <filename>3bootSequence</filename>
+                <svrid>440</svrid>
+                <rqperm>0660</rqperm>
+                <rpperm>0660</rpperm>
+                <min>1</min>
+                <max>1</max>
+                <max_num_msg>1000</max_num_msg>
+                <max_msg_size>4096</max_msg_size>
+                <sgname>GRP1</sgname>
+                <replyq>N</replyq>
+                <clopt>-A -- --address=${net_server_addr} --port=${net_server_port}</clopt>
+                <envfile/>
+        </server>
+	 <server>
+                <restart>Y</restart>
+                <grace>60</grace>
+                <maxgen>100</maxgen>
+                <sqname/>
+                <rcmd/>
+                <sequence>1</sequence>
+                <filename>1bootSequence</filename>
+                <svrid>441</svrid>
+                <rqperm>0660</rqperm>
+                <rpperm>0660</rpperm>
+                <min>1</min>
+                <max>1</max>
+                <max_num_msg>1000</max_num_msg>
+                <max_msg_size>4096</max_msg_size>
+                <sgname>GRP1</sgname>
+                <replyq>N</replyq>
+                <clopt>-A  -- --address=${net_server_addr} --port=${net_server_port}</clopt>
+                <envfile/>
+        </server>
+	<server>
+                <restart>Y</restart>
+                <grace>60</grace>
+                <maxgen>100</maxgen>
+                <sqname/>
+                <rcmd/>
+                <sequence>2</sequence>
+                <filename>2bootSequence</filename>
+                <svrid>442</svrid>
+                <rqperm>0660</rqperm>
+                <rpperm>0660</rpperm>
+                <min>1</min>
+                <max>1</max>
+                <max_num_msg>1000</max_num_msg>
+                <max_msg_size>4096</max_msg_size>
+                <sgname>GRP1</sgname>
+                <replyq>N</replyq>
+                <clopt>-A -- --address=${net_server_addr} --port=${net_server_port}</clopt>
+                <envfile/>
+        </server>
+</servers>
+
+<services>
+	<service>
+		<sgname>GRP1</sgname>
+		<priority>100</priority>
+		<svc_name>SERVICE</svc_name>
+		<svc_load>100</svc_load>
+		<load_limit>10000</load_limit>
+		<svctimeout>60</svctimeout>
+		<svcblktime>60</svcblktime>
+	</service>
+</services>
+</servicegalaxy>

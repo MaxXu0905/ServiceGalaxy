@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xs:element name="servicegalaxy">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="cluster">
+					<xs:annotation>
+						<xs:documentation><![CDATA[
+通用参数定义。
+						]]></xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:group ref="cluster"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="nodes">
+					<xs:annotation>
+						<xs:documentation><![CDATA[
+所有主机定义。
+						]]></xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:group ref="nodes"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="networks">
+					<xs:annotation>
+						<xs:documentation><![CDATA[
+所有网络定义。
+						]]></xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:group ref="networks"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="pgroups">
+					<xs:annotation>
+						<xs:documentation><![CDATA[
+所有服务分组定义。
+						]]></xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:group ref="pgroups"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="processes">
+					<xs:annotation>
+						<xs:documentation><![CDATA[
+所有SERVER定义。
+						]]></xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:group ref="processes"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="operations" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation><![CDATA[
+所有服务定义。
+						]]></xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:group ref="operations"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:group name="cluster">
+		<xs:all>
+			<xs:element name="clstid">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+唯一标识SG平台实例的ID，不同的SG实例要求该值不同。可配置环境变量。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="uid" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建系统资源（共享内存、消息队列）时的用户ID。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="gid" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建系统资源（共享内存、消息队列）时的组ID。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="perm" default="0660" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建系统资源（共享内存、消息队列）时的权限。支持10进制和8进制两种写法。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[0-9]+"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="options" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+启动选项，可支持（各个选项间以空格分隔）：
+LAN – 暂不支持
+MIGALLOWED – 暂不支持
+HA – 暂不支持
+ACCSTATS – 暂不支持
+CLEXITL – 暂不支持
+AA – 是否加密
+RR – 轮询负载均衡
+RT – 实时负载均衡
+设置了AA选项后，在sgpack时需要指定密码，系统将创建$HOME/.sgpasswd记录加密后的密码，加入到系统中的进程（客户端、服务端）都需要密码验证（如果$HOME/.sgpasswd存在，则自动验证）。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:list>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="LAN"/>
+								<xs:enumeration value="MIGALLOWED"/>
+								<xs:enumeration value="HA"/>
+								<xs:enumeration value="ACCSTATS"/>
+								<xs:enumeration value="CLEXITL"/>
+								<xs:enumeration value="AA"/>
+								<xs:enumeration value="RR"/>
+								<xs:enumeration value="RT"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:list>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="master">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+Master节点可以部署的逻辑主机名，以空格分隔，最多可以有两个。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="curid" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+当前Master节点的位置。
+					]]></xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="maxnodes" default="100" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+集群中可以设置的最大主机数量。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxnets" default="100" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+集群中可以设置的最大网络节点数量。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxclts" default="10000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+单个节点上可以连接的最大客户端数量。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxques" default="10000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+集群中可以创建的最大Q节点数量。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxpgs" default="1000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+集群中可以创建的最大进程组数量。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxprocs" default="10000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+集群中可以创建的最大进程数。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxops" default="10000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+集群中可以创建的最大操作数。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="quebkts" default="10000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+集群中查找队列节点的哈希数组大小。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="pgbkts" default="1000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+集群中查找进程组节点的哈希数组大小。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="procbkts" default="10000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+集群中查找进程节点的哈希数组大小。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="opbkts" default="10000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+集群中查找操作节点的哈希数组大小。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="polltime" default="60" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+sgmngr进行系统巡检的时间间隔，单位秒。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="robustint" default="10" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+sgmngr进行健壮性检查的间隔，单位次，即等待robustint * polltime秒。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="stacksize" default="33554432" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+在多线程模式下，新创建的线程栈大小。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="msgmnb" default="1000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建的队列能容纳的最大消息数量。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="msgmax" default="4096" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建的队列能容纳的最大消息字节数。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="cmprslimit" default="102400" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+压缩的阀值，低于该值不做压缩。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="costfix" default="1000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+多少次调用后修正负载值。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nfiles" default="1000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+进程在发送和接收消息时，需要打开队列文件。该参数指定最大允许打开的队列数。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="blktime" default="10" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+发起或接收请求的等待间隔，单位次，即等待blk_time * polltime秒。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="clstwait" default="10" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+sgclst发起RPC请求的等待超时间隔，单位次，即等待clstwait * polltime秒。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="mngrquery" default="10" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+sgclst健壮性检查的间隔，单位次，即等待mngrquery * polltime秒。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="initwait" default="3600" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+等待服务端初始化的时间间隔，单位秒。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:all>
+	</xs:group>
+	<xs:group name="nodes">
+		<xs:sequence>
+			<xs:element name="node" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+主机定义。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:group ref="node"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="node">
+		<xs:all>
+			<xs:element name="hostname">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+物理主机名称，通过uname –n获取。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="31"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="hostid">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+在整个配置文件中，互相间的关系都通过主机ID关联。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="31"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="sgroot">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+该主机上平台的安装目录。可配置环节变量，如${sgroot}。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="511"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="approot">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+该主机上应用程序的安装目录。可配置环节变量，如${approot}。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="511"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="sgprofile">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+配置文件生成路径。可配置环境变量，如${sgprofile}。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="511"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="args" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+特定主机上GWS的启动参数。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="profile" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+如果指定，则在启动进程前，系统保证该profile文件中的环境变量设置生效。可配置环境变量，如${profile}。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="logname" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+如果设置，该日志前缀优先于默认的前缀被才用。可配置环节变量，如${logname}。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxclts" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+单个节点上可以连接的最大客户端数量。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="perm" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建系统资源（共享内存、消息队列）时的权限。支持10进制和8进制两种写法。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[0-9]*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="uid" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建系统资源（共享内存、消息队列）时的用户ID。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="gid" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建系统资源（共享内存、消息队列）时的组ID。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="netcost" default="100" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+调用远程服务的网络开销。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxconn" default="1" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+从主机发起到别的主机的最大网络连接数，实际的网络连接数为两个主机间的最小值。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:all>
+	</xs:group>
+	<xs:group name="networks">
+		<xs:sequence>
+			<xs:element name="network" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+网络定义。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:group ref="network"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="network">
+		<xs:all>
+			<xs:element name="hostid">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+在整个配置文件中，互相间的关系都通过主机ID关联。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="31"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="gwsaddr">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+GWS的监听地址，以//开始，主机名或IP地址，用:分隔，接着是端口。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="63"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="agtaddr">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+sgagent的监听地址，以//开始，主机名或IP地址，用:分隔，接着是端口。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="63"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="netname">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+网络名称，用于标识连接的相关性。DEFAULTNET对应的节点将作为sgagent的连接地址。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="31"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="tcpkeepalive" default="Y" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+当没有请求时，是否一直保持连接存活。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Y"/>
+						<xs:enumeration value="N"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nodelay" default="N" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+是否启动延迟发送算法。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Y"/>
+						<xs:enumeration value="N"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:all>
+	</xs:group>
+	<xs:group name="pgroups">
+		<xs:sequence>
+			<xs:element name="pgroup" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+分组定义。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:group ref="pgroup"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="pgroup">
+		<xs:all>
+			<xs:element name="pgname">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+进程组的名称。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="31"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="curid" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+当前分组有效的主机索引。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="hostid">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+可提供多个主机ID，以空格分隔。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="pgid">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+进程组ID。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxExclusive value="30000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="profile" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+如果指定，则在当前分组相关的进程系统初始化后，但在svrinit()之前，系统保证该profile文件中的环境变量设置生效。可配置环境变量，如${profile}。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:all>
+	</xs:group>
+	<xs:group name="processes">
+		<xs:sequence>
+			<xs:element name="process" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+SERVER定义。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:group ref="process"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="process">
+		<xs:all>
+			<xs:element name="options" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+启动选项，可支持（各个选项间以空格分隔）：
+NONRESTART – 进程不可重启
+REPLYQ － 是否创建应答队列
+PRESERVE_FD －是否保留标准输入
+进程异常终止后，能否自动重启。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="NONRESTART"/>
+						<xs:enumeration value="REPLYQ"/>
+						<xs:enumeration value="PRESERVE_FD"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rstint" default="60" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+系统自动尝试重启的时间间隔。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxrst" default="2147483648" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+进程可重启的次数。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="lqname" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+如果有值，则在同一主机上指定了相同队列名称的进程共享一个请求队列。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="31"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="exitcmd" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+进程退出前执行的命令。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="procname">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+进程的可执行文件名称。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="prcid">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+必须大于2，低于2的svrid为系统保留。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minExclusive value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rqperm" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建请求消息队列时的权限，默认标识使用全局的创建权限。支持10进制和8进制两种写法。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[0-9]*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rpperm" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建应答消息队列时的权限，默认标识使用全局的创建权限。支持10进制和8进制两种写法。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="[0-9]*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="priority" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+值越小，越先启动。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="min" default="1" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+系统启动的最小进程数，合法的值为0-1000。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="max" default="1" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+系统启动的最大进程数，合法的值为1-1000。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+						<xs:maxInclusive value="1000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="msgmnb" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建的队列能容纳的最大消息数量。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="msgmax" default="0" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+创建的队列能容纳的最大消息字节数。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="cmprslimit" default="102400" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+压缩的阀值，低于该值不做压缩。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="costfix" default="1000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+多少次调用后修正负载值。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>	
+			<xs:element name="pgname" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+进程组的名称。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="31"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="args" default="-A" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+启动参数分两个部分：
+1. 平台要求的启动参数，由平台解释处理。
+2. 应用特有的启动参数，传递给应用提供的svrinit()函数。
+两个部分间以 -- 分隔。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="profile" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+如果指定，则在启动当前进程系统初始化后，但在svrinit()之前，系统保证该profile文件中的环境变量设置生效。可配置环境变量，如${profile}。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:all>
+	</xs:group>
+	<xs:group name="operations">
+		<xs:sequence>
+			<xs:element name="operation" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+服务定义。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:group ref="operation"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+	<xs:group name="operation">
+		<xs:all>
+			<xs:element name="pgname" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+进程组的名称。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="31"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="priority" default="50" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+操作调用的优先级，值越大，越优先被服务端处理。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="0"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="pattern">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+客户端调用的操作名称正则表达式。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="31"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="policy" default="RR" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+操作调用策略：
+LF：本地优先
+RR：轮询
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:list>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="LF"/>
+								<xs:enumeration value="RR"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:list>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="cost" default="100" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+调用操作的开销。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="costlimit" default="10000" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+当选择需要调用的操作时，如果当前操作的负载低于该值，则直接选中该操作，而不去继续查找最优操作。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="timeout" default="60" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+调用操作的超时时间，超过该时间进程将被异常终止。实际超时时间需要按polltime向上取整。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="blktime" default="60" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+调用操作的等待时间。实际等待时间需要按polltime向上取整。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:all>
+	</xs:group>
+</xs:schema>

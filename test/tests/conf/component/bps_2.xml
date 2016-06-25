@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 系统配置 -->
+<bps>
+	<resource>
+		<svc_name>BPS_TEST</svc_name>
+	</resource>
+	<!-- 全局变量 -->
+	<global_variables>
+		<variable>
+			<field_name>max_sub_id</field_name>
+			<default_value/>
+			<field_length>100</field_length>
+		</variable>
+		<variable>
+			<field_name>lk_test</field_name>
+			<default_value>0123456789</default_value>
+			<field_length>10</field_length>
+		</variable>
+	</global_variables>
+	</global_variables>
+	<!-- 输入变量 -->
+	<src_records>
+		<records>
+			<record_type>0</record_type>
+			<record_mode>1</record_mode>
+			<delimit>|</delimit>
+			<rule_condition>return 0;</rule_condition>
+			<comments/>
+			<fields>
+				<field>
+					<factor1>30</factor1>
+					<factor2>30</factor2>
+					<field_name>TOTAL_COUNT</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+			</fields>
+		</records>
+		<records>
+			<record_type>1</record_type>
+			<record_mode>1</record_mode>
+			<delimit>|</delimit>
+			<rule_condition>return 0;</rule_condition>
+			<comments/>
+			<fields>
+				<field>
+					<factor1>6</factor1>
+					<factor2>6</factor2>
+					<field_name>PROVINCE_CODE</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+				<field>
+					<factor1>6</factor1>
+					<factor2>6</factor2>
+					<field_name>AREA_CODE</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+				<field>
+					<factor1>6</factor1>
+					<factor2>6</factor2>
+					<field_name>COUNTY_CODE</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+				<field>
+					<factor1>16</factor1>
+					<factor2>16</factor2>
+					<field_name>SUBS_ID</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+				<field>
+					<factor1>40</factor1>
+					<factor2>40</factor2>
+					<field_name>SERVICE_NUM</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+				<field>
+					<factor1>2</factor1>
+					<factor2>2</factor2>
+					<field_name>SUBS_TYPE</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+			</fields>
+		</records>
+		<records>
+			<record_type>2</record_type>
+			<record_mode>1</record_mode>
+			<delimit>|</delimit>
+			<rule_condition>return 0;</rule_condition>
+			<comments/>
+			<fields>
+				<field>
+					<factor1>30</factor1>
+					<factor2>30</factor2>
+					<field_name>END_TIME</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+			</fields>
+		</records>
+	</src_records>
+	<out_records>
+		<records>
+			<record_type/>
+			<record_mode/>
+			<delimit/>
+			<rule_condition/>
+			<comments/>
+			<fields>
+				<field>
+					<factor1>6</factor1>
+					<factor2>6</factor2>
+					<field_name>PROVINCE_CODE</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+				<field>
+					<factor1>6</factor1>
+					<factor2>6</factor2>
+					<field_name>AREA_CODE</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+				<field>
+					<factor1>6</factor1>
+					<factor2>6</factor2>
+					<field_name>COUNTY_CODE</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+				<field>
+					<factor1>16</factor1>
+					<factor2>16</factor2>
+					<field_name>SUBS_ID</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+				<field>
+					<factor1>40</factor1>
+					<factor2>40</factor2>
+					<field_name>SERVICE_NUM</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+				<field>
+					<factor1>2</factor1>
+					<factor2>2</factor2>
+					<field_name>SUBS_TYPE</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+				<field>
+					<factor1>10</factor1>
+					<factor2>10</factor2>
+					<field_name>TOTAL_COUNT</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+				<field>
+					<factor1>14</factor1>
+					<factor2>14</factor2>
+					<field_name>END_TIME</field_name>
+					<encode_type>ASCII</encode_type>
+					<parent_field/>
+					<comments/>
+				</field>
+			</fields>
+		</records>
+	</out_records>
+	<process>
+		<rules>
+			<rule><![CDATA[
+printf("----%s\n",$TOTAL_COUNT);
+char *pos=strchr($TOTAL_COUNT,'=');
+if (pos!=NULL)
+strcpy(#TOTAL_COUNT, pos+1);]]></rule>
+		</rules>
+		<rules>
+			<rule><![CDATA[
+strcpy(#PROVINCE_CODE, $PROVINCE_CODE);
+strcpy(#AREA_CODE, $AREA_CODE);
+strcpy(#SUBS_ID, $SUBS_ID);
+strcpy(#SERVICE_NUM, $SERVICE_NUM);
+strcpy(#SUBS_TYPE, $SUBS_TYPE);
+return 1111111;
+		]]></rule>
+		</rules>
+		<rules>
+			<rule><![CDATA[
+char *pos=strchr($END_TIME,'=');
+if (pos!=NULL){
+if (strcmp(sysdate,pos+1)>0)
+strcpy(#END_TIME,sysdate);
+else{
+strcpy(#END_TIME, pos+1);
+strcpy(sysdate,pos+1);
+}
+}]]></rule>
+		</rules>
+	</process>
+</bps>

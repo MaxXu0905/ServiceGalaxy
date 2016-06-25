@@ -1,0 +1,45 @@
+#if !defined(__DBC_INTERNAL_H__)
+#define __DBC_INTERNAL_H__
+
+#include <dlfcn.h>
+
+#include "gpenv.h"
+#include "scan_file.h"
+#include "dbc_struct.h"
+#include "dbc_manager.h"
+#include "dbcp_ctx.h"
+#include "dbct_ctx.h"
+#include "dbc_config.h"
+#include "dbc_lock.h"
+#include "dbc_ue.h"
+#include "dbc_te.h"
+#include "dbc_ie.h"
+#include "dbc_rte.h"
+#include "dbc_redo.h"
+#include "dbc_sqlite.h"
+#include "redo_rbtree.h"
+#include "inode_rbtree.h"
+#include "inode_list.h"
+#include "endian_convert.h"
+#include "dbc_function.h"
+#include "dbc_se.h"
+#include "dbc_stat.h"
+#include "dbc_api.h"
+#include "t_sys_index_lock.h"
+#include "sql_control.h"
+#include "sql_extern.h"
+#include "sql_select.h"
+#include "sql_insert.h"
+#include "sql_update.h"
+#include "sql_delete.h"
+#include "sql_create.h"
+#include "sql_drop.h"
+#include "sql_truncate.h"
+#include "struct_dynamic.h"
+#include "dbc_server.h"
+#include "dbc_control.h"
+#include "sdc_struct.h"
+#include "sdc_config.h"
+
+#endif
+

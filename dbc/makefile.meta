@@ -1,0 +1,50 @@
+include $(SGROOT)/etc/env_public.mk
+CFLAGS = $(PCFLAGS) -I$(SQLITE_ROOT)/include
+LDFLAGS = $(PLDFLAGS) -lgp -lsg -L$(BOOST_ROOT)/stage/lib -lboost_system -lboost_thread \
+    -lboost_program_options -lboost_filesystem -lboost_chrono -L$(SQLITE_ROOT)/lib -lsqlite3 \
+	-L$(SGROOT)/lib -ldbc
+ifdef PERF_TABLE
+BINS = bin/dbc_perf
+endif
+LIBS = lib/libdbcclient.$(SO) lib/libdbcsearch.$(SO) lib/libsdcsearch.$(SO)
+TARGET = $(LIBS) $(BINS)
+
+SSRCS = $(wildcard src/t_*.cpp)
+SOBJS = $(patsubst %.cpp,%.o,$(SSRCS)) src/meta_switch.o
+DBCS_OBJS = src/search_dbc.o
+SDCS_OBJS = src/search_sdc.o
+PERF_OBJS = src/dbc_perf.o
+
+all:
+	DEBUG_LEVEL=0 build_meta $(SGROOT)/etc/dbc.xml
+	$(MAKE) -f $(SGROOT)/etc/makefile.meta ALL
+
+ALL: $(TARGET)
+
+install:
+
+lib/libdbcclient.$(SO):$(SOBJS)
+	$(CC) $(CFLAGS) $(SOFLAGS) -o $@ $(SOBJS) $(LDFLAGS)
+
+lib/libdbcsearch.$(SO):$(DBCS_OBJS)
+	$(CC) $(CFLAGS) $(SOFLAGS) -o $@ $(DBCS_OBJS) $(LDFLAGS)
+
+lib/libsdcsearch.$(SO):$(SDCS_OBJS)
+	$(CC) $(CFLAGS) $(SOFLAGS) -o $@ $(SDCS_OBJS) $(LDFLAGS)
+
+bin/dbc_perf:$(PERF_OBJS) lib/libdbcclient.$(SO)
+	$(CC) $(CFLAGS) -o $@ $(PERF_OBJS) -L$(SGROOT)/lib -ldbc -ldbcclient $(LDFLAGS)
+
+src/dbc_perf.o: src/dbc_perf.cpp include/perf_macro.h
+	$(CC) -c $(CFLAGS) -o $@ $<
+
+include/perf_macro.h:
+	echo "#if !defined(__PERF_MACRO_H__)" > include/perf_macro.h
+	echo "#define __PERF_MACRO_H__" >> include/perf_macro.h
+	echo "" >> $(SGROOT)/include/perf_macro.h
+	echo "#define PERF_TABLE_TYPE t_"$(PERF_TABLE) >> include/perf_macro.h
+	echo "#define PERF_TABLE_NAME \""$(PERF_TABLE)"\"" >> include/perf_macro.h
+	echo "" >> include/perf_macro.h
+	echo "#endif" >> include/perf_macro.h
+
+include $(SGROOT)/etc/env_suffix.mk

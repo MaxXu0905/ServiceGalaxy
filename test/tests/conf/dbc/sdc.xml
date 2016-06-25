@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="sdc.xsd">
+	<tables>
+		<table>
+			<table_name>sdc_test_find</table_name>
+			<lmid>M1 M2</lmid>
+			<redundancy>1</redundancy>
+		</table>
+	</tables>
+</sdc>

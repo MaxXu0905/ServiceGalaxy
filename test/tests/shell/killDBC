@@ -1,0 +1,6 @@
+for i in DBCTest dbc_server
+do
+	ps -ef|grep $LOGNAME|grep $i |awk '{print "kill -9 " $2}'|ksh
+done
+exit 0;
+

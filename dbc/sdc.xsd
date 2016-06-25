@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="qualified">
+	<xs:element name="sdc">
+		<xs:complexType>
+			<xs:sequence minOccurs="0">
+				<xs:element name="tables">
+					<xs:annotation>
+						<xs:documentation><![CDATA[
+所有表定义。
+						]]></xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:choice maxOccurs="unbounded">
+							<xs:element name="table">
+								<xs:annotation>
+									<xs:documentation><![CDATA[
+表定义。
+									]]></xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:group ref="table"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="partitions">
+								<xs:annotation>
+									<xs:documentation><![CDATA[
+所有分区定义。
+									]]></xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:group ref="partition" maxOccurs="unbounded"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:choice>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:group name="table">
+		<xs:all>
+			<xs:element name="table_name">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+需要发布的表名称。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="127"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="hostid">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+主机ID列表，以空格分隔，必须在SGPROFILE中已经配置。可配置环境变量。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="redundancy" default="0">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+数据的冗余度，用来计算分区数据的分布情况。如果小于0，则表示完全冗余。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:integer">
+						<xs:minInclusive value="-1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:all>
+	</xs:group>
+	<xs:group name="partition">
+		<xs:sequence>
+			<xs:element name="partition">
+				<xs:annotation>
+					<xs:documentation><![CDATA[
+分区定义。
+					]]></xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:all>
+						<xs:element name="hostid">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+主机ID列表，以空格分隔，必须在SGPROFILE中已经配置。可配置环境变量。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="partition_id">
+							<xs:annotation>
+								<xs:documentation><![CDATA[
+如果未指定分区，则表示表不做分区，每个节点上都保存了整个表数据。可指定多个分区，以空格分隔。
+								]]></xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:integer">
+									<xs:minInclusive value="0"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+					</xs:all>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+</xs:schema>

@@ -1,0 +1,11 @@
+<repositories xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="metarep.xsd">
+	<repository>
+		<key>DBC</key>
+		<config>${dbc_config}</config>
+	</repository>
+	<repository>
+		<key>SDC</key>
+		<config>${sdc_config}</config>
+	</repository>
+</repositories>
